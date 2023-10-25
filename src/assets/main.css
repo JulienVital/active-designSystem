@@ -1,0 +1,27 @@
+body {
+    user-select: none;
+    height: 100vh;
+    color: var(--color-text);
+    transition:
+      color 0.5s,
+      background-color 0.5s;
+    line-height: 1.6;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Poppins", sans-serif;
+  }
+  #app {
+    font-weight: normal;
+    position: relative;
+    min-height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  html {
+    background-color: var(--grey-dark3);
+  }
+  
