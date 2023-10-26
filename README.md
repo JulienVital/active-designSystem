@@ -8,7 +8,7 @@ A brief description of what this project does and who it's for
 ## Install
 
 ```bash
-npm update  active-designsystem
+npm install active-designsystem
 ```
 ## Import
 Import style css in your project
@@ -69,3 +69,24 @@ Color variable css
 | --select             | ![#00adf1](https://via.placeholder.com/10/00adf1?text=+) #00adf1       |
 | --select-tr          | ![#5cbdecbf](https://via.placeholder.com/10/5cbdecbf?text=+) #5cbdecbf |
 | --gutter             | 8px                                                                    |
+
+## Component
+
+```vue
+/* MyComponent.vue */
+<script setup lang="ts">
+    import {InputNumber} from "active-designsystem";
+
+    const myvalue = "";
+    const myCallBackFn = ()=>{}
+</script>
+
+<template>
+    <InputNumber
+        :value="myvalue"
+        @onChange="myCallBackFn"
+    />
+</template>
+
+
+```

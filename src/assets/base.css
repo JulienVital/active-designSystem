@@ -51,3 +51,8 @@
   position: relative;
   font-weight: lighter;
 }
+
+html {
+  background-color: var(--grey-dark3);
+  font-family: "Poppins", sans-serif;
+}
