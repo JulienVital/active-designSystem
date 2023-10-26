@@ -3,19 +3,21 @@
 
 A brief description of what this project does and who it's for
 
-
-
 ## Install
 
 ```bash
 npm install active-designsystem
 ```
+
 ## Import
+
 Import style css in your project
+
 ```ts
 // main.ts
 import "active-designsystem/style.css"
 ```
+
 ## Usage/Examples
 
 ```css
@@ -26,6 +28,7 @@ div{
 ```
 
 ## Color
+
 Color variable css
 | Color                | Hex                                                                    |
 |----------------------|------------------------------------------------------------------------|
@@ -77,14 +80,14 @@ Color variable css
 <script setup lang="ts">
     import {InputNumber} from "active-designsystem";
 
-    const myvalue = "";
-    const myCallBackFn = ()=>{}
+    const myvalue = reactive("");
+    const myHandler = (newValue)=>{ myvalue = newValue}
 </script>
 
 <template>
     <InputNumber
         :value="myvalue"
-        @onChange="myCallBackFn"
+        @onChange="myHandler"
     />
 </template>
 

@@ -41,6 +41,7 @@
   --select: #00adf1;
   --select-tr: #5cbdecbf;
   --gutter: 8px;
+  --smallForm : calc( var(--gutter) * 4)
 }
 
 *,
@@ -53,6 +54,5 @@
 }
 
 html {
-  background-color: var(--grey-dark3);
   font-family: "Poppins", sans-serif;
 }
