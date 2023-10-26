@@ -46,7 +46,7 @@ const props = defineProps({
   },
 });
 const emit = defineEmits<{
-  (e: "change", value:number): void;
+  (e: "change", newValue:number): void;
 }>();
 
 const inputNumberSize = computed(() => ({
