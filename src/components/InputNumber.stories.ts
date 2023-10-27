@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import Button from './InputNumber.vue';
+import InputNumber from './InputNumber.vue';
 
 const meta = {
   title: 'Design System/Form/InputNumber',
-  component: Button,
+  component: InputNumber,
   tags: ['autodocs'],
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
-    onChange: { action: 'change' },
+    onChange: {action: 'change' },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof InputNumber>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

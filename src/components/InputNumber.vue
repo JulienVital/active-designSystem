@@ -5,7 +5,7 @@
       :class="['inputNumber', inputNumberSize]"
       :value="props.value"
       :step="props.step"
-      @input="onChange"
+      @input="handlerChange"
     />
     <span class=" border bottom"></span>
     <span class=" border right"></span>
@@ -25,6 +25,7 @@ const props = defineProps({
     type: Number,
     required: false,
   },
+
   /**
    * Step increment/decrement value
    */
@@ -54,7 +55,7 @@ const inputNumberSize = computed(() => ({
 }));
 
 
-const onChange = (event: Event) => {
+const handlerChange = (event: Event) => {
   const inputValue = parseFloat((event.target as HTMLInputElement).value);
   emit("change", inputValue)
 
