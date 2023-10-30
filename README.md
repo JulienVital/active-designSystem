@@ -3,6 +3,8 @@
 
 A brief description of what this project does and who it's for
 
+![Banner](/src/stories/assets/illustration-banner.png "Titre de l'image" ).
+
 ## Install
 
 ```bash
@@ -99,3 +101,7 @@ Color variable css
 </template>
 
 ```
+
+## 🔗 Links
+
+[StoryBook](https://julienvital.github.io/active-designSystem)
