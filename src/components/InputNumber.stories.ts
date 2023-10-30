@@ -8,7 +8,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
-    onChange: {action: 'change' },
+    "onUpdate:value": {action: 'onUpdate:value' },
   },
 } satisfies Meta<typeof InputNumber>;
 

@@ -47,7 +47,7 @@ const props = defineProps({
   },
 });
 const emit = defineEmits<{
-  (e: "change", newValue:number): void;
+  (e: "update:value", newValue:number): void;
 }>();
 
 const inputNumberSize = computed(() => ({
@@ -57,7 +57,7 @@ const inputNumberSize = computed(() => ({
 
 const handlerChange = (event: Event) => {
   const inputValue = parseFloat((event.target as HTMLInputElement).value);
-  emit("change", inputValue)
+  emit("update:value", inputValue)
 
 };
 
