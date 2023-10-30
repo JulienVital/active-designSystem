@@ -31,6 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - run: npm ci
       - name: Build Storybook
         run: npm run storybook-publish
       - name: Setup Pages
