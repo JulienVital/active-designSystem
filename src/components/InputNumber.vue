@@ -1,12 +1,8 @@
 <template>
   <div :class="inputNumberSize">
-    <input
-      type="number"
-      :class="['inputNumber', inputNumberSize]"
-      :value="props.value"
-      :step="props.step"
-      @input="handlerChange"
-    />
+    <input type="number" :class="['inputNumber', inputNumberSize]" :value="modelValue" :step="props.step"
+      @input="handlerChange" 
+      />
     <span class=" border bottom"></span>
     <span class=" border right"></span>
     <span class=" border top"></span>
@@ -21,7 +17,7 @@ const props = defineProps({
   /**
    * Actual value to display
    */
-  value: {
+  modelValue: {
     type: Number,
     required: false,
   },
@@ -47,7 +43,7 @@ const props = defineProps({
   },
 });
 const emit = defineEmits<{
-  (e: "update:value", newValue:number): void;
+  (e: "update:modelValue", newValue: number): void;
 }>();
 
 const inputNumberSize = computed(() => ({
@@ -57,7 +53,7 @@ const inputNumberSize = computed(() => ({
 
 const handlerChange = (event: Event) => {
   const inputValue = parseFloat((event.target as HTMLInputElement).value);
-  emit("update:value", inputValue)
+  emit("update:modelValue", inputValue)
 
 };
 
