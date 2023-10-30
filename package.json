@@ -1,11 +1,17 @@
 {
   "name": "active-designsystem",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "type": "module",
   "typings": "./dist/active-designsystem.d.ts",
   "author": "Julien V",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JulienVital/active-designSystem.git"
+  },
+  "homepage": "https://julienvital.github.io/active-designSystem",
   "files": [
-    "dist"
+    "dist",
+    "illustration-banner.png"
   ],
   "main": "./dist/active-designsystem.umd.cjs",
   "module": "./dist/active-designsystem.js",
