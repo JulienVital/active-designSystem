@@ -22,19 +22,6 @@ jobs:
 
       - name: Unit test
         run: npm run test:unit
-
-      - run: npm run build
-      - name: Build Storybook
-        run: npm run storybook-publish
-      
-      - name: Add Storybook in repository
-        run: |
-          git config --global user.email "githubAction@email.com"
-          git config --global user.name "Github action"
-          git checkout main
-          git add .
-          git commit -m "Deploy Storybook"
-          git push 
         
   publish:
     needs: test-build
