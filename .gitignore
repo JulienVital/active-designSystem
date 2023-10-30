@@ -31,4 +31,3 @@ test-results/
 playwright-report/
 .vscode/
 .storybook
-storybook-static/
