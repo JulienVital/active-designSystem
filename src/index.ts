@@ -1,3 +1,4 @@
-import InputNumber from '@/components/InputNumber.vue'
 import '@/assets/main.css'
-export { InputNumber }
+import InputNumber from '@/components/Inputs/InputNumber/InputNumber.vue'
+import InputText from '@/components/Inputs/InputText/InputText.vue'
+export { InputNumber, InputText }

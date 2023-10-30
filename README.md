@@ -80,16 +80,22 @@ Color variable css
 <script setup lang="ts">
     import {InputNumber} from "active-designsystem";
 
-    const myvalue = reactive("");
-    const myHandler = (newValue)=>{ myvalue = newValue}
+    const myvalue = ref("");
+    const myHandler = (newValue:number)=>{ myvalue = newValue}
 </script>
 
 <template>
     <InputNumber
-        :value="myvalue"
-        @onChange="myHandler"
+        :modelValue="myvalue"
+        @update:modelValue="myHandler"
     />
 </template>
 
+//or
+<template>
+    <InputNumber
+        v-model="myvalue"
+    />
+</template>
 
 ```
