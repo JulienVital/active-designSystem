@@ -1,53 +1,50 @@
 <template>
   <div :class="inputNumberSize">
-    <input
-    :value="modelValue"
-    @input="$emit('update:modelValue', $event.target.value)"
-  />
-    <span class=" border bottom"></span>
-    <span class=" border right"></span>
-    <span class=" border top"></span>
-    <span class=" border left"></span>
+      <input type="number" :class="['inputNumber', inputNumberSize]" :value="props.modelValue" :step="props.step"
+          @input="handlerChange" />
+      <span class=" border bottom"></span>
+      <span class=" border right"></span>
+      <span class=" border top"></span>
+      <span class=" border left"></span>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-// const props = defineProps({
-//   /**
-//    * Actual value to display
-//    */
-//   modelValue: {
-//     type: Number,
-//     required: false,
-//   },
+const props = defineProps({
+  /**
+   * Actual value to display
+   */
+   modelValue: {
+      type: Number,
+      required: false,
+  },
 
-//   /**
-//    * Step increment/decrement value
-//    */
-//   step: {
-//     type: Number,
-//     required: false,
-//     default: 1,
-//   },
-//   /**
-//    * Size of input
-//    */
-//   size: {
-//     validator(value: string) {
-//       // The value must match one of these strings
-//       return ['small', 'medium', 'large'].includes(value)
-//     },
-//     required: false,
-//     default: "medium",
-//   },
-// });
-// const emit = defineEmits<{
-//   (e: "update:modelValue", newValue: number): void;
-// }>();
-defineProps(['modelValue'])
-defineEmits(['update:modelValue'])
+  /**
+   * Step increment/decrement value
+   */
+  step: {
+      type: Number,
+      required: false,
+      default: 1,
+  },
+  /**
+   * Size of input
+   */
+  size: {
+      validator(value: string) {
+          // The value must match one of these strings
+          return ['small', 'medium', 'large'].includes(value)
+      },
+      required: false,
+      default: "medium",
+  },
+});
+const emit = defineEmits<{
+  (e: "update:modelValue", newValue: number): void;
+}>();
+
 const inputNumberSize = computed(() => ({
   [`inputNumber--${props.size}`]: true,
 }));

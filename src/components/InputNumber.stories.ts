@@ -8,7 +8,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
-    "onUpdate:value": {action: 'onUpdate:value' },
+    "onUpdate:modelValue": {action: 'onUpdate:modelValue' },
   },
 } satisfies Meta<typeof InputNumber>;
 
@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Small: Story = {
   args: {
-   value:0,
+    modelValue:0,
    step: 1,
    size: 'small'
   },
@@ -25,7 +25,7 @@ export const Small: Story = {
 
 export const Medium: Story = {
   args: {
-    value:0,
+    modelValue:0,
     step: 1,
     size: 'medium'
   },
@@ -33,7 +33,7 @@ export const Medium: Story = {
 
 export const Large: Story = {
   args: {
-    value:0,
+    modelValue:0,
     step: 1,
     size: 'large'
   },
