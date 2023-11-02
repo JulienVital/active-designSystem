@@ -36,3 +36,24 @@ export const Large: Story = {
     size: 'large'
   }
 }
+
+export const WithCustomLabel: Story = {
+  args: {
+    modelValue: [
+      {
+        label: 'label1',
+        value: 'value1'
+      },
+      {
+        label: 'label2',
+        value: 'value2'
+      },
+      {
+        label: 'label3',
+        value: 'value3'
+      }
+    ],
+    actualValue: 'value3',
+    size: 'medium'
+  }
+}
