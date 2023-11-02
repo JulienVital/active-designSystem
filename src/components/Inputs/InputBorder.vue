@@ -35,7 +35,7 @@
   transform-origin: bottom right;
 }
 
-input:focus ~ .input-border-bottom {
+.InputForm:focus ~ .input-border-bottom {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
@@ -45,7 +45,7 @@ input:focus ~ .input-border-bottom {
   transform-origin: top right;
 }
 
-input:focus ~ .input-border-right {
+.InputForm:focus ~ .input-border-right {
   transform-origin: bottom right;
   transform: scaleY(1);
 }
@@ -55,7 +55,7 @@ input:focus ~ .input-border-right {
   transform-origin: top left;
 }
 
-input:focus ~ .input-border-top {
+.InputForm:focus ~ .input-border-top {
   transform-origin: top right;
   transform: scaleX(1);
 }
@@ -65,7 +65,7 @@ input:focus ~ .input-border-top {
   transform-origin: bottom left;
 }
 
-input:focus ~ .input-border-left {
+.InputForm:focus ~ .input-border-left {
   transform-origin: top left;
   transform: scaleY(1);
 }
