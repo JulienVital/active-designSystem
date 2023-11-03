@@ -8,7 +8,6 @@
       </option>
     </select>
     <InputBorder />
-
   </div>
 </template>
 
