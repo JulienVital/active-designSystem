@@ -65,7 +65,7 @@ describe('InputText Render value', () => {
 
   test('render, simpleList', async () => {
     const props = {
-      modelValue: ['value1', 'value2','value3','value4'],
+      modelValue: ['value1', 'value2', 'value3', 'value4'],
       actualValue: 'value3'
     }
     const wrapper = mount(InputSelect, { props: props })

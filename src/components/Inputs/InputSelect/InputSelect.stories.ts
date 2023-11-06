@@ -1,6 +1,6 @@
 // Button.stories.js
 
-import InputSelect from "./InputSelect.vue";
+import InputSelect from './InputSelect.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 
 const meta = {
@@ -18,21 +18,21 @@ type Story = StoryObj<typeof meta>
 
 export const Small: Story = {
   args: {
-    modelValue: ["value1","value2","value3","value4"],
+    modelValue: ['value1', 'value2', 'value3', 'value4'],
     size: 'small'
   }
 }
 
 export const Medium: Story = {
   args: {
-    modelValue: ["value1","value2","value3","value4"],
+    modelValue: ['value1', 'value2', 'value3', 'value4'],
     size: 'medium'
   }
 }
 
 export const Large: Story = {
   args: {
-    modelValue: ["value1","value2","value3","value4"],
+    modelValue: ['value1', 'value2', 'value3', 'value4'],
     size: 'large'
   }
 }
