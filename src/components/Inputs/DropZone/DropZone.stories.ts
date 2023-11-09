@@ -7,7 +7,7 @@ const meta = {
   component: DropZone,
   tags: ['autodocs'],
   argTypes: {
-    'onUpdate:modelValue': { action: 'onUpdate:modelValue' }
+    'onUpdate:dropFile': { action: 'update:dropFile' }
   }
 } satisfies Meta<typeof DropZone>
 
@@ -27,6 +27,12 @@ export const WithTitle: Story = {
 }
 export const WithCustomFormat: Story = {
   args: {
-    formats: ['.jpg', '.png', '.jpeg']
+    formats: ['image/svg+xml', 'image/png', 'image/jpeg'],
+    multiple: true
+  }
+}
+export const Multiple: Story = {
+  args: {
+    multiple: true
   }
 }

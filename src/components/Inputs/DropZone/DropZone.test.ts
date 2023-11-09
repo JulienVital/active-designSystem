@@ -9,7 +9,7 @@ describe('Text Title display', () => {
     expect(wrapper.text()).toContain(defaultValue)
   })
 
-  test('test props text display', async () => {
+  test('test props CustomText', async () => {
     const propsText = 'Custom Text !!!'
     const props = {
       title: propsText
@@ -19,14 +19,15 @@ describe('Text Title display', () => {
   })
 })
 
-describe('Text Format default display', () => {
-  test('test Default text display', async () => {
+describe('Format Format support', () => {
+  test('test Default support', async () => {
     const defaultValue = '*'
     const wrapper = mount(DropZone)
     expect(wrapper.text()).toContain('Supported formats : ' + defaultValue)
   })
 
-  test('test props format display', async () => {
+  
+  test('test props format custom', async () => {
     const propsText = ['.jpg', '.png', '.jpeg']
     const textExpect = 'Supported formats : .jpg, .png, .jpeg';
     const props = {
@@ -35,4 +36,19 @@ describe('Text Format default display', () => {
     const wrapper = mount(DropZone, { props: props })
     expect(wrapper.text()).toContain(textExpect)
   })
+})
+
+describe('Multiple', () => {
+  test('test Input is not multiple default', async () => {
+    const wrapper = mount(DropZone)
+    expect(wrapper.find('.dropzone-Input').attributes('multiple')).toBe(undefined);
+  })
+  test('test Input is multiple', async () => {
+    const props = {
+      multiple: true
+    }
+    const wrapper = mount(DropZone, { props: props })
+    expect(wrapper.find('.dropzone-Input').attributes('multiple')).toBeDefined();
+  })
+
 })

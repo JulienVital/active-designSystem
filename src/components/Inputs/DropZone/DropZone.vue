@@ -1,47 +1,104 @@
 <template>
-  <div class="dropzoneWrapper">
+  <div class="dropzoneWrapper" @mouseover="() => (colorZone = 'var(--white)')"
+    @mouseleave="() => (colorZone = 'var(--grey-light6)')" @dragleave.self="() => (colorZone = 'var(--grey-light6)')"
+    @dragover.prevent="() => (colorZone = 'var(--primary)')" @drop.prevent="onDrop" @dragenter.prevent>
     <IconLayer width="75" height="75" :iconColor="colorZone" />
-    <label for="file"  class="dropzone--title"> {{ props.title }}</label>
-    <h2 class="dropzone--formats">Supported formats : {{ props.formats.join(", ")  }} </h2>
-    <input type="file" name="file" id="file" class="hidden" :accept="fileaccepted" />
+    <label class="dropzone--title"> {{ props.title }}
+      <input type="file" name="file" class="dropzone-Input hidden" :accept="fileaccepted" :multiple="props.multiple" @change="onInput" />
+    </label>
+    <h2 class="dropzone--formats">Supported formats : {{ props.formats.join(", ") }} </h2>
+    <div class="wrapperList">
+      <ul v-if="validDroppedFile.length > 0">
+        <li class="dropzone-listFile dropzone-listFile-valid" v-for=" file in validDroppedFile" :key="file.name">{{ file.name }}</li>
+      </ul>
+      
+      <ul v-if="invalidDroppedFile.length > 0">
+        <li class="dropzone-listFile dropzone-listFile-invalid" v-for=" file in invalidDroppedFile" :key="file.name">{{ file.name }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
-import { computed, ref, type ComputedRef } from 'vue';
+import {  ref, type Ref } from 'vue';
 import IconLayer from "@/components/Icons/IconLayer.vue";
-
 const props = defineProps({
-  title:{
+  title: {
     default: 'Drop a file here or click to select one',
     required: false,
     type: String
   },
-  formats:{
-    default: ()=>['*'],
+  multiple:{
+    default:false,
+    require:false,
+    type: Boolean
+  },
+  formats: {
+    default: () => ['*'],
     required: false,
     type: Array
   }
 })
-
-
+const invalidDroppedFile: Ref<File[]> = ref([])
+const validDroppedFile: Ref<File[]> = ref([])
 const colorZone = ref("var(--grey-light6)");
-const droppedFile = ref(null);
+const fileaccepted= props.formats.join(", ")
+const emit = defineEmits<{
+  (e: 'update:dropFile', newValue: File[]): void
+}>()
+const emitEvent = (fileList: File[]) => {
+  emit('update:dropFile', fileList)
+}
+const onInput = (e: Event) => {
+  const target = e.target as HTMLInputElement;
+  const files = target.files;
+  if (files) {
+    validFormat(files);
+  }
 
-const fileaccepted: ComputedRef<string> = computed(() => {
-  return ''
-})
-// import IconSvg from "@/DesignSystem/Icons/IconSvg.vue";
-// import Layers from "@/DesignSystem/Icons/List/Layers";
-//     const emit = defineEmits<{
-//   (e: 'update:modelValue', newValue: File): void
-// }>()
-//     const handlerChange = (event: Event) => {
-//       const inputValue = (event.target as HTMLInputElement).files[0];
-//       console.log(inputValue)
-//       emit('update:modelValue', inputValue)
-//     }
+}
+const validFormat = (fileList: FileList) => {
+  if(!props.multiple && fileList.length >1){
+    return;
+  }
+  const allowedFormats = props.formats;
+  invalidDroppedFile.value = []
+  validDroppedFile.value = []
+  for (let i = 0; i < fileList.length; i++) {
+    const file = fileList[i];
+    if (allowedFormats.includes('*') || allowedFormats.includes(file.type)) {
+      validDroppedFile.value = [...validDroppedFile.value, file]
+      continue;
+    }
+    invalidDroppedFile.value = [...invalidDroppedFile.value, file]
+
+  }
+  emitEvent(validDroppedFile.value);
+}
+const onDrop = (event: DragEvent) => {
+  const files = event.dataTransfer?.files;
+  if (files) {
+    validFormat(files);
+  }
+}
+
 </script>
 <style>
+ul{
+  list-style-type: none;
+  padding:0;
+}
+.dropzone-listFile{
+  font-size: 8pt;
+}
+.fileName {
+  color: var(--primary);
+}
+.dropzone-listFile-valid{
+  color: var(--state-validate);
+}
+.dropzone-listFile-invalid{
+  color: var(--state-draft);
+}
 .dropzone--title:hover {
   cursor: pointer;
 }
@@ -61,9 +118,7 @@ const fileaccepted: ComputedRef<string> = computed(() => {
 .hidden {
   display: none;
 }
-.fileName {
-  color: var(--primary);
-}
+
 .fileUploaded {
   color: v-bind(colorZone);
   font-size: 15px;

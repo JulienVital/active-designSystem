@@ -9,7 +9,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
-    'onUpdate:modelValue': { action: 'onUpdate:modelValue' }
+    'onUpdate:modelValue': { action: 'update:modelValue' }
   }
 } satisfies Meta<typeof InputSelect>
 
