@@ -83,6 +83,7 @@ const onDrop = (event: DragEvent) => {
 
 </script>
 <style>
+
 ul{
   list-style-type: none;
   padding:0;
@@ -113,20 +114,12 @@ ul{
   color: v-bind(colorZone);
   font-size: 10px;
 }
-</style>
-<style scoped>
 .hidden {
   display: none;
 }
 
-.fileUploaded {
-  color: v-bind(colorZone);
-  font-size: 15px;
-}
-
-
-
 .dropzoneWrapper {
+  color: var(--grey-light6);
   background-color: #474747;
   border-color: v-bind(colorZone);
   border-width: 2px;

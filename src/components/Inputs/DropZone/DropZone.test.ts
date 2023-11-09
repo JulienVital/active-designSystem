@@ -50,5 +50,4 @@ describe('Multiple', () => {
     const wrapper = mount(DropZone, { props: props })
     expect(wrapper.find('.dropzone-Input').attributes('multiple')).toBeDefined();
   })
-
 })
