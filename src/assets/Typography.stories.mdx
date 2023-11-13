@@ -1,0 +1,61 @@
+import { Meta, Typeset } from '@storybook/blocks'
+
+<Meta title="Tokens/Typography" />
+
+export const typography = {
+  type: {
+    primary: '"Poppins", sans-serif'
+  },
+  weight: {
+    light: '200',
+    regular: '400',
+    bold: '700'
+  },
+  size: {
+    xs: 10
+  }
+}
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+
+# Typography
+
+**Font:** Poppins
+
+**Weights:** 200(light), 400(regular), 700(bold)
+
+### Light
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.xs),
+
+]}
+fontWeight={typography.weight.light}
+sampleText={SampleText}
+fontFamily={typography.type.primary}
+/>
+
+### Regular
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.xs),
+
+]}
+fontWeight={typography.weight.regular}
+sampleText={SampleText}
+fontFamily={typography.type.primary}
+/>
+
+### Bold
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.xs),
+
+]}
+fontWeight={typography.weight.bold}
+sampleText={SampleText}
+fontFamily={typography.type.primary}
+/>

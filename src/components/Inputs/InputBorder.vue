@@ -6,8 +6,7 @@
 </template>
 
 <script setup lang="ts"></script>
-<style></style>
-<style scoped>
+<style>
 .input-border {
   position: absolute;
   background-color: var(--primary);

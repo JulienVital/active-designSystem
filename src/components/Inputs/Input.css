@@ -15,15 +15,18 @@
 }
 .input--small {
   width: calc(var(--gutter) * 5);
-  height: calc(var(--gutter) * 4);
+  height: calc(var(--gutter) * 3);
+  position: absolute;
 }
 .input--medium {
   width: calc(var(--gutter) * 9);
-  height: calc(var(--gutter) * 4);
+  height: calc(var(--gutter) * 3);
+  position: absolute;
 }
 .input--large {
   width: 100%;
-  height: calc(var(--gutter) * 4);
+  height: calc(var(--gutter) * 3);
+  position: absolute;
 }
 .InputForm:focus {
   outline: none;

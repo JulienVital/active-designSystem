@@ -26,10 +26,9 @@ describe('Format Format support', () => {
     expect(wrapper.text()).toContain('Supported formats : ' + defaultValue)
   })
 
-  
   test('test props format custom', async () => {
     const propsText = ['.jpg', '.png', '.jpeg']
-    const textExpect = 'Supported formats : .jpg, .png, .jpeg';
+    const textExpect = 'Supported formats : .jpg, .png, .jpeg'
     const props = {
       formats: propsText
     }
@@ -41,13 +40,13 @@ describe('Format Format support', () => {
 describe('Multiple', () => {
   test('test Input is not multiple default', async () => {
     const wrapper = mount(DropZone)
-    expect(wrapper.find('.dropzone-Input').attributes('multiple')).toBe(undefined);
+    expect(wrapper.find('.dropzone-Input').attributes('multiple')).toBe(undefined)
   })
   test('test Input is multiple', async () => {
     const props = {
       multiple: true
     }
     const wrapper = mount(DropZone, { props: props })
-    expect(wrapper.find('.dropzone-Input').attributes('multiple')).toBeDefined();
+    expect(wrapper.find('.dropzone-Input').attributes('multiple')).toBeDefined()
   })
 })

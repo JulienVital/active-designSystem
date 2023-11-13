@@ -1,0 +1,18 @@
+:root {
+  --radius: 5px;
+
+  /* text */
+  --text-color-primary: var(--grey-light5);
+  --text-size-xs: 10px;
+
+  /* Panel */
+  --panel-background-header: var(--grey-dark4);
+  --panel-background: var(--grey-dark4);
+  --panel-radius: var(--radius);
+  --panel-shadow: 1px 1px 1px var(--grey-dark4);
+  --panel-border: solid 1px var(--grey-dark4);
+
+  /* Size */
+  --sizePoint: 8px;
+  --sizePointDouble: calc(var(--sizePoint) * 2);
+}

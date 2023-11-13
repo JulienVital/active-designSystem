@@ -1,0 +1,29 @@
+{/* Colors.stories.mdx */}
+
+import { Meta, Source } from '@storybook/blocks'
+import { styled } from '@storybook/theming'
+
+<Meta title="Tokens/Misc" />
+
+# Misc Tokens
+
+Example of use
+{/* Don't forget to replace (") with (```) when you copy the snippet to your own app */}
+
+```css
+.my-title {
+  box-shadow: var(--panel-shadow-regular);
+}
+```
+
+> - --panel-shadow-regular <StyledDiv style={{boxShadow: 'var(--panel-shadow)'}}></StyledDiv>
+> - --panel-radius <StyledDiv style={{borderRadius: 'var(--panel-radius)'}}></StyledDiv>
+
+export const StyledDiv = styled.div`
+height:40px;
+width:40px;
+display: inline-block;
+border: 1px solid #ccc;
+
+
+`
