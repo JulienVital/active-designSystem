@@ -1,0 +1,18 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import IconLayer from "./IconLayer.vue";
+import IconMark from "./IconMark.vue";
+
+<Meta title="Design System/Icons"/>
+```ts
+import IconMark from "./IconMark.vue";
+
+<IconMark :iconColor="'var(--text-color-primary)'"/>
+```
+<Story name="ListIcon">
+  {() => {
+    return {
+      components: { IconMark, IconLayer },
+      template: `<IconMark  :iconColor="'var(--text-color-primary)'"/> <IconLayer  :iconColor="'var(--text-color-primary)'"/>`,
+    };
+  }}
+</Story>
