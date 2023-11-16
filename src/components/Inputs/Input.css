@@ -12,7 +12,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: absolute;
 }
 .input--small {
   width: calc(var(--gutter) * 5);
