@@ -1,23 +1,26 @@
 import '@/assets/main.css'
-import InputNumber from '@/components/Inputs/InputNumber/InputNumber.vue'
-import InputText from '@/components/Inputs/InputText/InputText.vue'
-import InputSelect from '@/components/Inputs/InputSelect/InputSelect.vue'
-import DropZone from '@/components/Inputs/DropZone/DropZone.vue'
-import BasePanel from '@/components/Panels/BasePanel.vue'
-export { InputNumber, InputText, InputSelect, DropZone, BasePanel }
+import ApInputNumber from '@/components/Inputs/InputNumber/ApInputNumber.vue'
+import ApInputText from '@/components/Inputs/InputText/ApInputText.vue'
+import ApInputSelect from '@/components/Inputs/InputSelect/ApInputSelect.vue'
+import ApDropZone from '@/components/Inputs/DropZone/ApDropZone.vue'
+import ApBasePanel from '@/components/Panels/ApBasePanel.vue'
+export { ApInputNumber, ApInputText, ApInputSelect, ApDropZone, ApBasePanel }
+
 export {
-  InputNumber as ApInputNumber,
-  InputText as ApInputText,
-  InputSelect as ApInputSelect,
-  DropZone as ApDropZone,
-  BasePanel as ApBasePanel
+  ApInputNumber as InputNumber,
+  ApInputText as InputText,
+  ApInputSelect as InputSelect,
+  ApDropZone as DropZone,
+  ApBasePanel as BasePanel
 }
 
 export function ActPubResolver() {
   return {
     type: 'component',
     resolve: async (name: string) => {
-      if (name.substring(0, 2) === 'Ap') return { name, from: 'active-designsystem' }
+      if (name.substring(0, 2) === 'Ap') {
+        return { name: name.replace(/-/, ''), from: 'active-designsystem' }
+      }
     }
   }
 }

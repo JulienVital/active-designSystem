@@ -1,6 +1,6 @@
 // Button.stories.js
 
-import InputSelect from './InputSelect.vue'
+import InputSelect from './ApInputSelect.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 
 const meta = {

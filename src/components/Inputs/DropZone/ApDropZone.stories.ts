@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
-import DropZone from './DropZone.vue'
+import DropZone from './ApDropZone.vue'
 
 const meta = {
   title: 'Design System/Form/DropZone',

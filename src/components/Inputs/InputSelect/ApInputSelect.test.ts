@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import InputSelect from './InputSelect.vue'
+import InputSelect from './ApInputSelect.vue'
 import { describe, expect, test } from 'vitest'
 
 describe('InputSelect Event', () => {

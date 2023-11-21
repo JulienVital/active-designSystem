@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import InputNumber from './InputNumber.vue'
+import InputNumber from './ApInputNumber.vue'
 import { describe, expect, test } from 'vitest'
 
 describe('InputNumber logic', () => {

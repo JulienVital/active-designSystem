@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
-import BasePanel from './BasePanel.vue'
-import DropZone from '../Inputs/DropZone/DropZone.vue'
+import BasePanel from './ApBasePanel.vue'
+import DropZone from '../Inputs/DropZone/ApDropZone.vue'
 
 const meta = {
   title: 'Design System/Panel/BasePanel',

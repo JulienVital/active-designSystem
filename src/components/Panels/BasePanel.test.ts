@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import BasePanel from './BasePanel.vue'
+import BasePanel from './ApBasePanel.vue'
 import { describe, expect, test } from 'vitest'
 
 describe('Text can mount', () => {

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import DropZone from './DropZone.vue'
+import DropZone from './ApDropZone.vue'
 import { describe, expect, test } from 'vitest'
 
 describe('Text Title display', () => {
