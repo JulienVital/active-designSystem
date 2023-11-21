@@ -12,6 +12,3 @@ describe('Text can mount', () => {
     expect(wrapper.text()).toContain(title)
   })
 })
-
-
-

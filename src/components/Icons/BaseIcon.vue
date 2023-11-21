@@ -8,9 +8,7 @@
     :class="[{ disable: isDisable }, 'svg']"
   >
     <g>
- <slot>
-  
- </slot>
+      <slot></slot>
     </g>
   </svg>
 </template>

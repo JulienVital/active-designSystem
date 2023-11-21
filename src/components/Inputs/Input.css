@@ -24,7 +24,6 @@
 .input--large {
   width: 100%;
   height: calc(var(--gutter) * 3);
-
 }
 .InputForm:focus {
   outline: none;

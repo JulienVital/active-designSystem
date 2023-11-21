@@ -56,6 +56,28 @@ div{
 
 ```
 
+## Use unplugin-vue-components
+
+```bash
+npm install unplugin-vue-components
+``` 
+
+```js
+//vite.config.ts
+import {ActPubResolver} from 'active-designsystem'
+
+export default defineConfig({
+    plugins: [
+        Components({ 
+            dts: true, 
+            resolvers: [
+                ActPubResolver()
+            ],
+        })
+    ]
+})
+``` 
+
 ## 🔗 Links
 
 [StoryBook](https://julienvital.github.io/active-designSystem)
