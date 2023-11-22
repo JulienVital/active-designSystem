@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
-import DropZone from './ApDropZone.vue'
+import ApDropZone from './ApDropZone.vue'
 
 const meta = {
-  title: 'Design System/Form/DropZone',
-  component: DropZone,
+  title: 'Design System/Form/ApDropZone',
+  component: ApDropZone,
   tags: ['autodocs'],
   argTypes: {
     'onUpdate:dropFile': { action: 'update:dropFile' }
   }
-} satisfies Meta<typeof DropZone>
+} satisfies Meta<typeof ApDropZone>
 
 export default meta
 type Story = StoryObj<typeof meta>

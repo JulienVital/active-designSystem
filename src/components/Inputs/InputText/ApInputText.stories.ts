@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
-import InputText from './ApInputText.vue'
+import ApInputText from './ApInputText.vue'
 
 const meta = {
-  title: 'Design System/Form/InputText',
-  component: InputText,
+  title: 'Design System/Form/ApInputText',
+  component: ApInputText,
   tags: ['autodocs'],
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
     'onUpdate:modelValue': { action: 'onUpdate:modelValue' }
   }
-} satisfies Meta<typeof InputText>
+} satisfies Meta<typeof ApInputText>
 
 export default meta
 type Story = StoryObj<typeof meta>

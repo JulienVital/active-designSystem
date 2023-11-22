@@ -6,6 +6,8 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
+    { name: 'storybook-design-token', options: { preserveCSSVars: true } }
   ],
   framework: {
     name: '@storybook/vue3-vite',

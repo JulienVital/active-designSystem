@@ -19,7 +19,7 @@ export function ActPubResolver() {
     type: 'component',
     resolve: async (name: string) => {
       if (name.substring(0, 2) === 'Ap') {
-        return { name: name.replace(/-/, ''), from: 'active-designsystem' }
+        return { name, from: 'active-designsystem' }
       }
     }
   }

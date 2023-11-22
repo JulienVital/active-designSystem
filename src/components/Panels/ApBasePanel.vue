@@ -2,6 +2,7 @@
   <div class="basePanel">
     <header :class="['basePanel--header', { 'basePanel--header-draggable': props.draggable }]">
       <span class="basePanel--header--title">{{ props.title }}</span>
+      <slot name="header"></slot>
       <IconMark
         v-if="props.closable"
         :width="6"
@@ -75,7 +76,7 @@ const handlerClose = () => {
 }
 .basePanel--content {
   padding: var(--sizePoint);
-  background-color: var(--grey-dark2);
+  background-color: var(--panel-background);
   border: var(--panel-border);
   box-shadow: var(--panel-shadow);
 }

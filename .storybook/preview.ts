@@ -3,6 +3,9 @@ import '../src/assets/main.css';
 
 const preview: Preview = {
   parameters: {
+    designToken: {
+      disable: true
+    },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {

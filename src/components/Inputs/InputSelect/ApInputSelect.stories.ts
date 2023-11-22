@@ -1,17 +1,17 @@
 // Button.stories.js
 
-import InputSelect from './ApInputSelect.vue'
+import ApInputSelect from './ApInputSelect.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 
 const meta = {
-  title: 'Design System/Form/InputSelect',
-  component: InputSelect,
+  title: 'Design System/Form/ApInputSelect',
+  component: ApInputSelect,
   tags: ['autodocs'],
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
     'onUpdate:modelValue': { action: 'update:modelValue' }
   }
-} satisfies Meta<typeof InputSelect>
+} satisfies Meta<typeof ApInputSelect>
 
 export default meta
 type Story = StoryObj<typeof meta>
