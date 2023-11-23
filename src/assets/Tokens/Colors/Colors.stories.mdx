@@ -4,7 +4,7 @@ import { Meta } from '@storybook/blocks'
 import { DesignTokenDocBlock } from 'storybook-design-token';
 import { ColorPresenter } from '@/stories/Presenter/ColorPresenter';
 
-<Meta title="Tokens/Semantic" />
+<Meta title="Tokens/Colors" />
 
 # Semantics Colors Tokens
 Example of use
@@ -22,7 +22,7 @@ Example of use
 
 <DesignTokenDocBlock
   categoryName="Primitive"
-  viewType="card"
-  showValueColumn={false}
+  viewType="table"
   presenters={{ Color: ColorPresenter }}
 />
+  {/* showValueColumn={false} */}
