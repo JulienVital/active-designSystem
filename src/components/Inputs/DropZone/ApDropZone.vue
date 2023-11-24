@@ -113,9 +113,7 @@ ul {
 .dropzone-listFile {
   font-size: 8pt;
 }
-.fileName {
-  color: var(--primary);
-}
+
 .dropzone-listFile-valid {
   color: var(--state-validate);
 }

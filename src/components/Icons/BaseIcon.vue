@@ -66,9 +66,6 @@ const iconColorHover = computed(() =>
   fill: v-bind(iconColorHover);
 }
 
-/* .svg:active {
-    fill: var(--primary);
-  } */
 .disable {
   opacity: 0.3;
 }
