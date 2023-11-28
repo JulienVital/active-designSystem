@@ -1,7 +1,7 @@
 .InputForm {
   line-height: 11pt;
   font-size: 11pt;
-  background-color: var(--color-grey-55);
+  background-color: var(--color-input-background);
   border: 1px solid var(--color-grey-30);
   color: var(--color-text);
   outline: none;
