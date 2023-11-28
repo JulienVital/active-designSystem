@@ -1,10 +1,9 @@
 <template>
   <div
     class="dropzoneWrapper"
-    @mouseover="() => (colorZone = 'var(--white)')"
-    @mouseleave="() => (colorZone = 'var(--text-color-primary)')"
-    @dragleave.self="() => (colorZone = 'var(--text-color-primary)')"
-    @dragover.prevent="() => (colorZone = 'var(--primary)')"
+    @mouseleave="() => (colorZone = 'var(--color-text)')"
+    @dragleave.self="() => (colorZone = 'var(--color-text)')"
+    @dragover.prevent="() => (colorZone = 'var(--color-hover)')"
     @drop.prevent="onDrop"
     @dragenter.prevent
   >
@@ -66,7 +65,7 @@ const props = defineProps({
 })
 const invalidDroppedFile: Ref<File[]> = ref([])
 const validDroppedFile: Ref<File[]> = ref([])
-const colorZone = ref('var(--text-color-primary)')
+const colorZone = ref('var(--color-text)')
 const fileaccepted = props.formats.join(', ')
 const emit = defineEmits<{
   (e: 'update:dropFile', newValue: File[]): void
@@ -115,10 +114,10 @@ ul {
 }
 
 .dropzone-listFile-valid {
-  color: var(--state-validate);
+  color: var(--color-valid);
 }
 .dropzone-listFile-invalid {
-  color: var(--state-draft);
+  color: var(--color-error);
 }
 .dropzone--title:hover {
   cursor: pointer;
@@ -139,8 +138,8 @@ ul {
 }
 
 .dropzoneWrapper {
-  color: var(--text-color-primary);
-  background-color: var(--panel-background-header);
+  color: var(--color-text);
+  background-color: var(--color-panel-header-background);
   border-color: v-bind(colorZone);
   border-width: 2px;
   border-style: dashed;

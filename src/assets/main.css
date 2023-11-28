@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 @import '../components/Inputs/Input.css';
-@import './Tokens/main.css';
 @import './Primitive.css';
+@import './Tokens/Tokens.css';
 
 :root {
+    /**
+  * @tokens OldColors
+  * @presenter Color
+  */
   --primary: #5cbdec;
   --primary-tr: #5cbdec40;
   --secondary: #e72179;
@@ -43,6 +47,10 @@
   --state-validate-tr2: #97dc6233;
   --select: #00adf1;
   --select-tr: #5cbdecbf;
+
+  /**
+  * @tokens-end
+  */
   --gutter: 8px;
   --radius: 5px;
 }

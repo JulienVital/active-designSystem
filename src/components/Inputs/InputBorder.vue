@@ -9,7 +9,7 @@
 <style>
 .input-border {
   position: absolute;
-  background-color: var(--primary);
+  background-color: var(--color-focus);
   transition: transform 0.5s ease;
 }
 

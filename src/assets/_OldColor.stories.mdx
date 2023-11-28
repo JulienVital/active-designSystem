@@ -1,0 +1,17 @@
+{/* Colors.stories.mdx */}
+
+import { DesignTokenDocBlock } from 'storybook-design-token';
+import { ColorPresenter } from '@/stories/Presenter/ColorPresenter';
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Tokens/Colors/OldColors" />
+
+# Old colors
+They should not be used.
+They are documented in order to migrate the code
+
+<DesignTokenDocBlock
+  categoryName="OldColors"
+  viewType="table"
+  presenters={{ Color: ColorPresenter }}
+/>

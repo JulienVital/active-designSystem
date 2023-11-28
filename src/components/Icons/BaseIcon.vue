@@ -27,7 +27,7 @@ const props = defineProps({
   },
   iconColor: {
     type: String,
-    default: 'var(--white)'
+    default: 'var(--color-icon)'
   },
   background: {
     type: String,

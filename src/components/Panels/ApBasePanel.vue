@@ -7,7 +7,7 @@
         v-if="props.closable"
         :width="6"
         :height="6"
-        :iconColor="'var(--text-color-primary)'"
+        :iconColor="'var(--color-text)'"
         class="basePanel--header-close"
         @click="handlerClose"
       />
@@ -59,10 +59,10 @@ const handlerClose = () => {
   justify-content: space-between;
   align-items: center;
   text-align: right;
-  color: var(--text-color-primary);
+  color: var(--color-text);
   font-size: var(--text-size-xs);
   box-shadow: var(--panel-shadow);
-  background-color: var(--panel-background-header);
+  background-color: var(--color-panel-header-background);
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   padding: var(--sizePoint);
@@ -76,7 +76,7 @@ const handlerClose = () => {
 }
 .basePanel--content {
   padding: var(--sizePoint);
-  background-color: var(--panel-background);
+  background-color: var(--color-panel-body-background);
   border: var(--panel-border);
   box-shadow: var(--panel-shadow);
 }
