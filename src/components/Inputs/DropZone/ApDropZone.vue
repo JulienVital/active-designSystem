@@ -147,6 +147,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 9px;
+  border-radius: var(--radius);
 }
 </style>

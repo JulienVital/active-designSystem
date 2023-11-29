@@ -1,6 +1,6 @@
 <template>
   <div :class="inputSize">
-    <select :class="['InputForm', inputSize]" :value="actualValue" @change="handlerChange">
+    <select :class="['InputForm', inputSize]" :value="actualValue" @change="handlerChange" :disabled="props.disable">
       <option
         v-for="currentOption in modelValue"
         :value="typeof currentOption == 'string' ? currentOption : currentOption.value"
@@ -39,6 +39,11 @@ const props = defineProps({
     type: String,
     required: false,
     default: 'medium'
+  },
+  disable:{
+    type: Boolean, 
+    required: false,
+    default: false
   }
 })
 

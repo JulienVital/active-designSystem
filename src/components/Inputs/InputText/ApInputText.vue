@@ -6,6 +6,7 @@
       :value="props.modelValue"
       @input="handlerChange"
       :placeholder="props.placeholder"
+      :disabled="props.disable"
     />
     <InputBorder />
   </div>
@@ -43,6 +44,11 @@ const props = defineProps({
     type: String,
     required: false,
     default: ''
+  },
+  disable:{
+    type: Boolean, 
+    required: false,
+    default: false
   }
 })
 

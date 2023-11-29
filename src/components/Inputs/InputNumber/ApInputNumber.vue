@@ -6,6 +6,7 @@
       :value="props.modelValue"
       :step="props.step"
       @input="handlerChange"
+      :disabled="props.disable"
     />
     <InputBorder />
   </div>
@@ -42,6 +43,11 @@ const props = defineProps({
     },
     required: false,
     default: 'medium'
+  },
+  disable:{
+    type: Boolean, 
+    required: false,
+    default: false
   }
 })
 const emit = defineEmits<{
