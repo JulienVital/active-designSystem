@@ -28,7 +28,17 @@ Ready-to-use for create bundle plugins and new functionality, quickly, in a cohe
 ```bash
 npm install active-designsystem
 ```
+## Config
 
+```ts
+//main.ts
+import 'active-designsystem/style.css'
+import { config } from 'active-designsystem'
+
+const app = createApp(...)
+....
+app.use(config)
+```
 ## 🔗 Links
 
 [NpmJs Package](https://www.npmjs.com/package/active-designsystem)

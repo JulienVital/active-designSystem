@@ -1,0 +1,21 @@
+import { Canvas, Meta, Source } from '@storybook/blocks';
+
+import * as ApTooltip from './ApTooltip.stories';
+
+<Meta title="Directive/ApTooltip" parameters={{ previewTabs: {} }} />
+
+# v-ApTooltip
+
+Directive to display tooltips on any node in the dom
+
+## How to use 
+
+```html
+<node v-ApTooltip="'my tooltip'">
+```
+
+### Examples with Paragraph and input :
+
+<Canvas of={ApTooltip.Paragraph} />
+<Canvas of={ApTooltip.Input} />
+<Canvas of={ApTooltip.InputTextStory} />

@@ -4,6 +4,9 @@ import ApInputText from '@/components/Inputs/InputText/ApInputText.vue'
 import ApInputSelect from '@/components/Inputs/InputSelect/ApInputSelect.vue'
 import ApDropZone from '@/components/Inputs/DropZone/ApDropZone.vue'
 import ApBasePanel from '@/components/Panels/ApBasePanel.vue'
+import PrimeVue from 'primevue/config'
+import ApTooltip from './directives/ApTooltip/ApTooltip'
+
 export { ApInputNumber, ApInputText, ApInputSelect, ApDropZone, ApBasePanel }
 
 export {
@@ -22,5 +25,11 @@ export function ActPubResolver() {
         return { name, from: 'active-designsystem' }
       }
     }
+  }
+}
+
+export const config = {
+  install: (app: any) => {
+    app.use(PrimeVue), app.directive('ApTooltip', ApTooltip)
   }
 }

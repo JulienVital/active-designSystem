@@ -47,8 +47,7 @@ export const Draggable: Story = {
 }
 
 export const HeaderSlot: Story = {
-  args: {
-  },
+  args: {},
   render: (args) => ({
     components: { ApBasePanel, DropZone, IconLayer },
     setup() {
@@ -57,7 +56,8 @@ export const HeaderSlot: Story = {
     template: `
       <ApBasePanel  style="width:250px;">
         <template v-slot:header>
-          Slot Header
+        Slot Header
+        <IconLayer/>
         </template>
         <DropZone/>
       </ApBasePanel>

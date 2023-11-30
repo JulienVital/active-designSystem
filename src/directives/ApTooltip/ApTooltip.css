@@ -1,0 +1,10 @@
+.p-tooltip {
+}
+.p-tooltip-arrow {
+  border-right-color: #00adf1;
+}
+.p-tooltip-text {
+  background-color: #00adf1;
+  font-size: 9pt;
+  padding: 0.6rem;
+}

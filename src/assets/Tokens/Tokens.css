@@ -16,8 +16,7 @@
   --input-background: var(--color-grey-55);
   --background: var(--color-grey-55);
 
-
-    /**
+  /**
     * @tokens Color
     * @presenter Color
     */
@@ -33,7 +32,7 @@
 
   --color-panel-separator: var(--panel-background-separator);
   --panel-background-onBackground: var(--panel-background-alternative);
-  
+
   --color-input-background: var(--input-background);
   --color-app-background: var(--background);
   --color-info: var(--info-color);

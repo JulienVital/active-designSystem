@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export function ColorPresenter({ token }) {
   return (
@@ -9,5 +9,5 @@ export function ColorPresenter({ token }) {
         background: token.rawValue
       }}
     ></div>
-  );
+  )
 }

@@ -17,12 +17,15 @@
 }
 .input--small {
   width: calc(var(--gutter) * 5);
+  position: relative;
 }
 .input--medium {
   width: calc(var(--gutter) * 9);
+  position: relative;
 }
 .input--large {
   width: 100%;
+  position: relative;
 }
 .InputForm:focus {
   outline: none;
