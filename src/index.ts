@@ -30,6 +30,10 @@ export function ActPubResolver() {
 
 export const config = {
   install: (app: any) => {
-    app.use(PrimeVue), app.directive('ApTooltip', ApTooltip)
+    app.use(PrimeVue,{
+      zIndex: {
+        tooltip: 100000      
+      }
+    }), app.directive('ApTooltip', ApTooltip)
   }
 }

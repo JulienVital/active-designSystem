@@ -18,7 +18,7 @@ export const Input: Story = {
       return { args }
     },
     template: `
-      <InputNumber  v-ApTooltip="'tooltip inputNumber'">
+      <InputNumber  v-ApTooltip="'Tooltip inputNumber'">
       </InputNumber>
     `
   })
@@ -31,7 +31,7 @@ export const InputTextStory: Story = {
       return { args }
     },
     template: `
-      <InputText  v-ApTooltip="'tooltip inputNumber'">
+      <InputText  v-ApTooltip="'Tooltip inputNumber'">
       </InputText>
     `
   })

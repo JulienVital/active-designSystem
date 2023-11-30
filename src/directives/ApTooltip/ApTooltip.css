@@ -1,10 +1,10 @@
 .p-tooltip {
 }
 .p-tooltip-arrow {
-  border-right-color: #00adf1;
+  border-right-color: var(--primary-color);
 }
 .p-tooltip-text {
-  background-color: #00adf1;
-  font-size: 9pt;
-  padding: 0.6rem;
+  background-color: var(--primary-color);
+  font-size: var(--text-size-xs);
+  padding: var( --sizePoint);
 }
