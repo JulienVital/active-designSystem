@@ -6,6 +6,8 @@ import ApDropZone from '@/components/Inputs/DropZone/ApDropZone.vue'
 import ApBasePanel from '@/components/Panels/ApBasePanel.vue'
 import PrimeVue from 'primevue/config'
 import ApTooltip from './directives/ApTooltip/ApTooltip'
+import { DomHandler } from "primevue/utils";
+
 
 export { ApInputNumber, ApInputText, ApInputSelect, ApDropZone, ApBasePanel }
 
@@ -28,12 +30,24 @@ export function ActPubResolver() {
   }
 }
 
+function getTarget(el:any) {
+  return DomHandler.hasClass(el, "p-inputwrapper")
+    ? DomHandler.findSingle(el, "input")
+    : el;
+}
 export const config = {
   install: (app: any) => {
     app.use(PrimeVue,{
       zIndex: {
         tooltip: 100000      
       }
-    }), app.directive('ApTooltip', ApTooltip)
+    }), app.directive("ApTooltip", {
+      mounted(el:any) {
+        const target = getTarget(el);
+        target.$_ptooltipZIndex ??=
+          app.config.globalProperties.$primevue.config.zIndex.tooltip;
+      },
+      ...ApTooltip,
+    });
   }
 }

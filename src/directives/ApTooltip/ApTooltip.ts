@@ -4,7 +4,7 @@ function addDelayOnTooltip(options: any) {
   options.value = {
     value: options.value,
     hideDelay: 300,
-    showDelay: 1000
+    showDelay: 2000
   }
 }
 
