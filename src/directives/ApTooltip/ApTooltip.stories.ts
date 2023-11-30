@@ -36,19 +36,6 @@ export const InputTextStory: Story = {
     `
   })
 }
-export const Paragraph: Story = {
-  tags: ['isHidden'],
-  render: (args) => ({
-    components: { InputNumber },
-    setup() {
-      return { args }
-    },
-    template: `
-    <p :style="{ width: '150px', backgroundColor:'#ccc' }" v-ApTooltip="'Tooltip on a paragraph'">
-    Hover your mouse over the parapgraph.
-    <p/>
-    `
-  })
-}
+
 
 
