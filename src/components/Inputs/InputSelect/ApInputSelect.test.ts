@@ -63,6 +63,25 @@ describe('InputText Render value', () => {
     expect(input.element.selectedOptions[0].textContent).toEqual('label1')
   })
 
+  test('render, the value with currentValue', async () => {
+    const props = {
+      modelValue: [
+        {
+          label: 'label1',
+          value: 'value1'
+        },
+        {
+          label: 'label2',
+          value: 'value2'
+        }
+      ],
+      currentValue: 'value1'
+    }
+    const wrapper = mount(InputSelect, { props: props })
+    const input = wrapper.find('select')
+    expect(input.element.selectedOptions[0].value).toEqual('value1')
+    expect(input.element.selectedOptions[0].textContent).toEqual('label1')
+  })
   test('render, simpleList', async () => {
     const props = {
       modelValue: ['value1', 'value2', 'value3', 'value4'],

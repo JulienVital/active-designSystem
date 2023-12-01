@@ -53,7 +53,8 @@ export const WithCustomLabel: Story = {
         value: 'value3'
       }
     ],
-    actualValue: 'value3',
+    currentValue: 'value3',
     size: 'medium'
   }
 }
+

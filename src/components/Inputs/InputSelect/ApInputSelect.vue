@@ -2,7 +2,7 @@
   <div :class="inputSize">
     <select
       :class="['InputForm', inputSize]"
-      :value="actualValue"
+      :value="currentValue ?? actualValue"
       @change="handlerChange"
       :disabled="props.disable"
     >
@@ -34,8 +34,13 @@ const props = defineProps({
     type: Array as PropType<OptionsSelect | string[]>,
     required: true
   },
-  // Currently selected option value
+  // Old props
   actualValue: {
+    required: false,
+    type: String
+  },
+    // Currently selected option value
+  currentValue: {
     required: false,
     type: String
   },
