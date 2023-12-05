@@ -5,6 +5,7 @@
 @import './Primitive.css';
 @import './Tokens/Tokens.css';
 @import '../directives/directives.css';
+@import '../components/Panels/Tabview/ApTabView.css';
 
 :root {
   /**

@@ -4,7 +4,7 @@
     * @presenter Color
     */
   --primary-color: var(--color-blue);
-  --text-default-color: var(--color-grey-10);
+  --text-default-color: var(--white);
   --error-color: var(--color-red);
   --valid-color: var(--color-green);
   --info-color: var(--color-orange);
