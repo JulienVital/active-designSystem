@@ -39,7 +39,7 @@ const props = defineProps({
     required: false,
     type: String
   },
-    // Currently selected option value
+  // Currently selected option value
   currentValue: {
     required: false,
     type: String

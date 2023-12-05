@@ -57,4 +57,3 @@ export const WithCustomLabel: Story = {
     size: 'medium'
   }
 }
-

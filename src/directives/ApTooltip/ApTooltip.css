@@ -6,5 +6,5 @@
 .p-tooltip-text {
   background-color: var(--primary-color);
   font-size: var(--text-size-xs);
-  padding: var( --sizePoint);
+  padding: var(--sizePoint);
 }

@@ -1,19 +1,18 @@
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-    border-color: var( --primary-color);
-    color: var( --primary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
-.p-tabview .p-tabview-nav li .p-tabview-nav-link{
-    color: var(--color-text);
-    background-color: inherit;
-
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  color: var(--color-text);
+  background-color: inherit;
 }
 
 .p-tabview .p-tabview-nav {
-    background-color: inherit;
-
+  background-color: inherit;
+  font-size: 12px;
 }
 .p-tabview .p-tabview-panels {
-    background-color: inherit;
-    color: var(--color-text);
-
+  background-color: inherit;
+  color: var(--color-text);
+  padding: 0.25rem;
 }

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
 import ApTabView from './ApTabView.vue'
-import {ApTabPanel} from '@/index'
-import TabPanel from 'primevue/tabpanel';
+import { ApTabPanel } from '@/index'
+import TabPanel from 'primevue/tabpanel'
 
 const meta = {
   title: 'Design System/Panel/ApTabView',
@@ -24,11 +24,10 @@ const meta = {
     </ApTabView>
 
     `
-  }),
+  })
 } satisfies Meta<typeof ApTabView>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {
-}
+export const Default: Story = {}

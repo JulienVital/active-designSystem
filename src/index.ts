@@ -6,10 +6,18 @@ import ApDropZone from '@/components/Inputs/DropZone/ApDropZone.vue'
 import ApBasePanel from '@/components/Panels/BasePanel/ApBasePanel.vue'
 import PrimeVue from 'primevue/config'
 import ApTooltip from './directives/ApTooltip/ApTooltip'
-import TabPanel  from 'primevue/tabpanel';
-import ApTabView  from '@/components/Panels/Tabview/ApTabView.vue';
+import TabPanel from 'primevue/tabpanel'
+import ApTabView from '@/components/Panels/Tabview/ApTabView.vue'
 
-export { ApInputNumber, ApInputText, ApInputSelect, ApDropZone, ApBasePanel, ApTabView, TabPanel as ApTabPanel }
+export {
+  ApInputNumber,
+  ApInputText,
+  ApInputSelect,
+  ApDropZone,
+  ApBasePanel,
+  ApTabView,
+  TabPanel as ApTabPanel
+}
 
 export {
   ApInputNumber as InputNumber,
@@ -32,10 +40,11 @@ export function ActPubResolver() {
 
 export const config = {
   install: (app: any) => {
-    app.use(PrimeVue,{
+    app.use(PrimeVue, {
       zIndex: {
-        tooltip: 100000      
+        tooltip: 100000
       }
-    }), app.directive('ApTooltip', ApTooltip)
+    }),
+      app.directive('ApTooltip', ApTooltip)
   }
 }

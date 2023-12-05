@@ -1,8 +1,8 @@
 <template>
-<TabPanel header="test">esff</TabPanel>
+  <TabPanel header="test">esff</TabPanel>
 </template>
 <script setup lang="ts">
-import TabPanel from 'primevue/tabpanel';
+import TabPanel from 'primevue/tabpanel'
 
 // const props = defineProps({
 //   /**
@@ -16,6 +16,4 @@ import TabPanel from 'primevue/tabpanel';
 // })
 </script>
 
-<style>
-  </style>
-  
+<style></style>

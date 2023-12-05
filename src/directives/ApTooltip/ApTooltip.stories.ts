@@ -1,14 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import InputNumber from '@/components/Inputs/InputNumber/ApInputNumber.vue';
-import InputText from '@/components/Inputs/InputText/ApInputText.vue';
+import InputNumber from '@/components/Inputs/InputNumber/ApInputNumber.vue'
+import InputText from '@/components/Inputs/InputText/ApInputText.vue'
 
 const meta = {
-  title: 'Directives/ApTooltip',
+  title: 'Directives/ApTooltip'
 }
 
-export default meta;
-type Story = StoryObj;
-
+export default meta
+type Story = StoryObj
 
 export const Input: Story = {
   tags: ['isHidden'],
@@ -36,6 +35,3 @@ export const InputTextStory: Story = {
     `
   })
 }
-
-
-
