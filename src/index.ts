@@ -8,6 +8,7 @@ import PrimeVue from 'primevue/config'
 import ApTooltip from './directives/ApTooltip/ApTooltip'
 import TabPanel from 'primevue/tabpanel'
 import ApTabView from '@/components/Panels/Tabview/ApTabView.vue'
+import ApToolbar from '@/components/Panels/Toolbar/ApToolbar.vue'
 
 export {
   ApInputNumber,
@@ -16,6 +17,7 @@ export {
   ApDropZone,
   ApBasePanel,
   ApTabView,
+  ApToolbar,
   TabPanel as ApTabPanel
 }
 
