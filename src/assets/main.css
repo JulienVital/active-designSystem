@@ -57,14 +57,21 @@
   */
   --gutter: 8px;
   --radius: 5px;
+  
+  --font-family: 'Poppins', sans-serif;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family);
+}
+.p-component {
+  font-size: 1rem;
+  font-weight: normal;
 }
