@@ -9,7 +9,7 @@ import ApTooltip from './directives/ApTooltip/ApTooltip'
 import TabPanel from 'primevue/tabpanel'
 import ApTabView from '@/components/Panels/Tabview/ApTabView.vue'
 import ApToolbar from '@/components/Panels/Toolbar/ApToolbar.vue'
-
+import ApContextMenu from '@/components/Menu/ApContextMenu.vue'
 export {
   ApInputNumber,
   ApInputText,
@@ -18,6 +18,7 @@ export {
   ApBasePanel,
   ApTabView,
   ApToolbar,
+  ApContextMenu,
   TabPanel as ApTabPanel
 }
 

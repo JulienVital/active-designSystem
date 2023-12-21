@@ -22,7 +22,7 @@ import * as ApContextMenu from './ApContextMenu.stories';
     <ul>
     <li v-for="currentLi in props.items" @contextmenu="onRightClick($event, currentLi.id)">
   </ul>
-    <ContextMenu ref="menu" :model="items" @hideMenu="hide" />
+    <ApContextMenu ref="menu" :model="items" @hideMenu="hide" />
 </template>
 
 ```
