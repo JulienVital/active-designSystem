@@ -1,6 +1,6 @@
 {
   "name": "active-designsystem",
-  "version": "1.0.50",
+  "version": "1.0.52",
   "type": "module",
   "typings": "./dist/active-designsystem.d.ts",
   "author": "Julien V",
@@ -39,6 +39,7 @@
     "@storybook/addon-a11y": "^7.5.3",
     "@storybook/manager-api": "^7.6.1",
     "primevue": "^3.42.0",
+    "storybook-addon-vue-mdx": "^0.1.5",
     "vue": "^3.3.4"
   },
   "devDependencies": {

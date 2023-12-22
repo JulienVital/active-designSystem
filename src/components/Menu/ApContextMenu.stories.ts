@@ -20,7 +20,7 @@ const meta: Meta = {
   </ApContextMenu >
   `,
     methods: {
-      test(e: any, c) {
+      test(e: any) {
         this.$refs.menu.show(e)
       }
     }
@@ -37,16 +37,25 @@ export const Example: Story = {
   args: {
     items: [
       {
+        icon: 'ap-icons ap-trash',
         label: 'Option 1',
         command: () => {
           console.log('Option 1')
         }
       },
       {
-        label: 'Option 2',
-        command: (e) => {
-          console.log(e)
-        }
+        icon: 'ap-icons ap-update',
+        label: 'SousMenu 2',
+        items: [
+          {
+              label: 'Option 2',
+              icon: 'ap-icons ap-zoom-in',
+            },
+          {
+              label: 'Option3',
+              icon: 'ap-icons ap-zoom-out',
+            }
+      ]
       }
     ]
   }

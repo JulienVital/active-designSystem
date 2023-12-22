@@ -3,6 +3,7 @@
 
 @import '../components/Inputs/Input.css';
 @import './Primitive.css';
+@import './Icons.css';
 @import './Tokens/Tokens.css';
 @import '../directives/directives.css';
 @import '../components/Panels/Tabview/ApTabView.css';

@@ -22,7 +22,7 @@ import * as ApContextMenu from './ApContextMenu.stories';
     <ul>
     <li v-for="currentLi in props.items" @contextmenu="onRightClick($event, currentLi.id)">
   </ul>
-    <ApContextMenu ref="menu" :model="items" @hideMenu="hide" />
+    <ApContextMenu ref="menu" :items="items" @hideMenu="hide" />
 </template>
 
 ```
@@ -42,19 +42,28 @@ const onRightClick = (event, id) => {
 const hide = ()=>{
   selectedLi.value = null;
 }
-const item = [
-  {
-    label: 'Option 1',
-    command: () => {
-      console.log('Option 1 ' + selectedLi.value)
-    }
-  },
-  {
-    label: 'Option 2',
-    command: () => {
-      console.log('Option 2' + selectedLi.value)
-    }
-  }
-]
+const  items: [
+      {
+        icon: 'ap-icons ap-trash',
+        label: 'Option 1',
+        command: () => {
+          console.log('Option 1')
+        }
+      },
+      {
+        icon: 'ap-icons ap-update',
+        label: 'SousMenu 2',
+        items: [
+          {
+              label: 'Option 2',
+              icon: 'ap-icons ap-zoom-in',
+            },
+          {
+              label: 'Option3',
+              icon: 'ap-icons ap-zoom-out',
+            }
+      ]
+      }
+    ]
 </script>
 ```

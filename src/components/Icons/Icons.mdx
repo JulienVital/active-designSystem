@@ -1,0 +1,61 @@
+import { Meta, Canvas, Story, Stories, IconItem, IconGallery } from '@storybook/addon-docs'
+import ApIcon from './ApIcon.vue'
+
+
+<Meta title="Style Guide/Icons" />
+
+# Icons
+<IconGallery>
+  <IconItem name="ap-icons ap-trash">
+    <ApIcon name="ap-icons ap-trash" key="uniq"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-update">
+    <ApIcon name="ap-icons ap-update" key="update"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-edit">
+    <ApIcon name="ap-icons ap-edit" key="edit"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-palet">
+    <ApIcon name="ap-icons ap-palet" key="palet"/>
+  </IconItem>
+    <IconItem name="ap-icons ap-zoom-in">
+    <ApIcon name="ap-icons ap-zoom-in" key="zoomin"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-zoom-out">
+    <ApIcon name="ap-icons ap-zoom-out" key="zoom-out"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-shuffle">
+    <ApIcon name="ap-icons ap-shuffle" key="shuffle"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-fullscren-close">
+    <ApIcon name="ap-icons ap-fullscren-close" key="fullscren-close"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-fullscren-open">
+    <ApIcon name="ap-icons ap-fullscren-open" key="fullscren-open"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-lock">
+    <ApIcon name="ap-icons ap-lock" key="lock"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-lock-open">
+    <ApIcon name="ap-icons ap-lock-open" key="lock-open"/>
+  </IconItem>
+    <IconItem name="ap-icons ap-align-left">
+    <ApIcon name="ap-icons ap-align-left" key="align-left"/>
+  </IconItem>
+    <IconItem name="ap-icons ap-align-center">
+    <ApIcon name="ap-icons ap-align-center" key="align-center"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-align-right">
+    <ApIcon name="ap-icons ap-align-right" key="align-right"/>
+  </IconItem>
+  <IconItem name="ap-icons ap-align-justify">
+    <ApIcon name="ap-icons ap-align-justify" key="align-justify"/>
+  </IconItem>
+</IconGallery>
+
+
+## Use 
+
+```
+  <i :class="ap-icons ap-align-justify" />
+```
