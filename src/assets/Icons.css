@@ -145,7 +145,6 @@
 .ap-settings:before{
   content: "\e8b8";
 }
-
 .ap-stacks:before{
-  content: "\e8b8";
+  content: "\f500";
 }
