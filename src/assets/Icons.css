@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn-pim2print-dev.datasolution.site/assets/material-icons.woff2) format('woff2');
+}
+.ap-icons {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.ap-trash:before {
+  content: "\e872";
+}
+
+.ap-update:before{
+  content: "\e923";
+}
+.ap-edit:before{
+  content: "\e3c9";
+}
+
+.ap-palet:before{
+  content: "\e40a";
+}
+
+.ap-zoom-in:before{
+  content: "\e8ff";
+}
+.ap-zoom-out:before{
+  content: "\e900";
+}
+.ap-shuffle:before{
+  content: "\e043";
+}
+.ap-fullscren-close:before{
+  content: "\f1cf";
+}
+.ap-fullscren-open:before{
+  content: "\f1ce";
+}
+.ap-lock:before{
+  content: "\e897";
+}
+.ap-lock-open:before{
+  content: "\e898";
+}
+.ap-align-left:before{
+  content: "\e236";
+}
+.ap-align-center:before{
+  content: "\e234";
+}
+.ap-align-right:before{
+  content: "\e237";
+}
+.ap-align-justify:before{
+  content: "\e235";
+}
