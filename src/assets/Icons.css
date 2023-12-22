@@ -4,7 +4,7 @@
   font-weight: 400;
   src: url(https://cdn-pim2print-dev.datasolution.site/assets/material-icons.woff2) format('woff2');
 }
-.ap-icons {
+.ap-icon {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
@@ -68,4 +68,84 @@
 }
 .ap-align-justify:before{
   content: "\e235";
+}
+.ap-logout:before{
+  content: "\e9ba";
+}
+.ap-login:before{
+  content: "\ea77";
+}
+.ap-align-vertical-bottom:before{
+  content: "\e015";
+}
+.ap-align-vertical-top:before{
+  content: "\e00c";
+}
+.ap-align-vertical-center:before{
+  content: "\e011";
+}
+
+.ap-align-horizontal-left:before{
+  content: "\e00d";
+}
+.ap-align-horizontal-right:before{
+  content: "\e00f";
+}
+.ap-align-horizontal-center:before{
+  content: "\e010";
+}
+
+.ap-chevron-bottom:before{
+  content: "\e5cf";
+}
+.ap-chevron-left:before{
+  content: "\e5cb";
+}
+.ap-chevron-right:before{
+  content: "\e5cc";
+}
+.ap-chevron-top:before{
+  content: "\e5ce";
+}
+.ap-first-page:before{
+  content: "\e5dc";
+}
+.ap-last-page:before{
+  content: "\e5dd";
+}
+.ap-bold:before{
+  content: "\e238";
+}
+.ap-italic:before{
+  content: "\e23f";
+}
+.ap-underlined:before{
+  content: "\e249";
+}
+
+
+.ap-close:before{
+  content: "\e5cd";
+}
+.ap-search:before{
+  content: "\e8b6";
+}
+.ap-add:before{
+  content: "\e145";
+}
+.ap-download:before{
+  content: "\f090";
+}
+.ap-image:before{
+  content: "\e3f4";
+}
+.ap-transform:before{
+  content: "\e428";
+}
+.ap-settings:before{
+  content: "\e8b8";
+}
+
+.ap-stacks:before{
+  content: "\e8b8";
 }

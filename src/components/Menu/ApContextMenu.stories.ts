@@ -37,23 +37,23 @@ export const Example: Story = {
   args: {
     items: [
       {
-        icon: 'ap-icons ap-trash',
+        icon: 'ap-icon ap-trash',
         label: 'Option 1',
         command: () => {
           console.log('Option 1')
         }
       },
       {
-        icon: 'ap-icons ap-update',
+        icon: 'ap-icon ap-update',
         label: 'SousMenu 2',
         items: [
           {
               label: 'Option 2',
-              icon: 'ap-icons ap-zoom-in',
+              icon: 'ap-icon ap-zoom-in',
             },
           {
               label: 'Option3',
-              icon: 'ap-icons ap-zoom-out',
+              icon: 'ap-icon ap-zoom-out',
             }
       ]
       }
