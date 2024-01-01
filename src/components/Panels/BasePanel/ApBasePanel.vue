@@ -19,6 +19,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
 import IconMark from '@/components/Icons/IconMark.vue'
 
 const props = defineProps({

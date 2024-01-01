@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
 import ApTabView from './ApTabView.vue'
+//@ts-ignore
 import { ApTabPanel } from '@/index'
 import TabPanel from 'primevue/tabpanel'
 

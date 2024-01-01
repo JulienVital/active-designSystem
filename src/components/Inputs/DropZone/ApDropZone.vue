@@ -45,6 +45,7 @@
 </template>
 <script setup lang="ts">
 import { ref, type PropType, type Ref } from 'vue'
+// @ts-ignore
 import IconLayer from '@/components/Icons/IconLayer.vue'
 const props = defineProps({
   title: {
