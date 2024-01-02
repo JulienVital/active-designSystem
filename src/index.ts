@@ -1,5 +1,5 @@
 import PrimeVue from 'primevue/config'
-import ToastService from 'primevue/toastservice';
+import ToastService from 'primevue/toastservice'
 import * as components from './components'
 
 import './assets/main.css'
@@ -7,12 +7,9 @@ import './assets/main.css'
 import ApTooltip from './directives/ApTooltip/ApTooltip'
 import TabPanel from 'primevue/tabpanel'
 // @ts-ignore
-import useToast  from '@/composables/Toast/useToast'
-import type { App } from 'vue';
-export {
-  TabPanel as ApTabPanel,
-  useToast
-}
+import useToast from '@/composables/Toast/useToast'
+import type { App } from 'vue'
+export { TabPanel as ApTabPanel, useToast }
 
 export function ActPubResolver() {
   return {
@@ -24,13 +21,13 @@ export function ActPubResolver() {
     }
   }
 }
-function install (app: App) {
+function install(app: App) {
   app.use(PrimeVue, {
     zIndex: {
       tooltip: 100000
     }
   }),
-  app.use(ToastService);
+    app.use(ToastService)
   app.directive('ApTooltip', ApTooltip)
 
   for (const key in components) {
@@ -38,9 +35,8 @@ function install (app: App) {
   }
 }
 export const config = {
- install
+  install
 }
-
 
 export * from './components'
 // export * from './constants'

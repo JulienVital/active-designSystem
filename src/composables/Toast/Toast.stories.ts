@@ -7,7 +7,7 @@ const meta = {
   component: toastButton,
   tags: ['autodocs'],
   argTypes: {
-    severity: { control: 'select', options: ['info', 'success', 'warn', 'error'] },
+    severity: { control: 'select', options: ['info', 'success', 'warn', 'error'] }
   }
 } satisfies Meta<typeof toastButton>
 

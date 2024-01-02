@@ -48,14 +48,14 @@ export const Example: Story = {
         label: 'SousMenu 2',
         items: [
           {
-              label: 'Option 2',
-              icon: 'ap-icon ap-zoom-in',
-            },
+            label: 'Option 2',
+            icon: 'ap-icon ap-zoom-in'
+          },
           {
-              label: 'Option3',
-              icon: 'ap-icon ap-zoom-out',
-            }
-      ]
+            label: 'Option3',
+            icon: 'ap-icon ap-zoom-out'
+          }
+        ]
       }
     ]
   }

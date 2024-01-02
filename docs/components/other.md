@@ -1,3 +1,15 @@
+# Introduction {#introduction}
+
+:::info You are reading the documentation for Vue 3!
+
+- This is the outline of a design system, a bank of components, colors.
+- Ready-to-use for create bundle plugins and new functionality, quickly, in a coherent way, while limiting the appearance bug
+:::
+![Banner](/illustration-banner.png)
+
+
+## What is Vue? {#what-is-vue}
+
 # Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.

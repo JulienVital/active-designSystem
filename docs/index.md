@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Active Publishing"
+  text: "Design system"
+  tagline: Vue library
+  image:
+    src: https://pimcore-x-active.datasolution.site/logo_AP-white.png
+    alt: Active publishing
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /guide/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Components
+      link: /components/
 
 features:
   - title: Feature A

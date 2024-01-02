@@ -1,7 +1,5 @@
 <template>
-  <i :class="props.name">
-
-  </i>
+  <i :class="props.name"> </i>
 </template>
 
 <script setup lang="ts">
@@ -9,16 +7,14 @@ const props = defineProps({
   /**
    * Display In header
    */
-   name: {
+  name: {
     required: true,
-    type: String,
+    type: String
   }
 })
-
 </script>
 
 <style scoped>
-  i {
-
-  }
+i {
+}
 </style>

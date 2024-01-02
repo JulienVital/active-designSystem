@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/vue3'
+import type { StoryObj } from '@storybook/vue3'
 // @ts-ignore
 import InputNumber from '@/components/Inputs/InputNumber/ApInputNumber.vue'
 // @ts-ignore
