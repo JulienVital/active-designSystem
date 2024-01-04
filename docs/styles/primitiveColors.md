@@ -45,7 +45,7 @@ const colorsList = {
 
 </script>
 <div class="colorContainer">
-<colorDoc v-for="(item, index) in colorsList" :copyContent="`var(--${index}})`">
+<colorDoc v-for="(item, index) in colorsList" :copyContent="`var(--${index})`">
     <div class="blockColor" :style="{
         'backgroundColor': item
     }" >

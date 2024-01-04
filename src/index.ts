@@ -6,8 +6,7 @@ import './assets/main.css'
 
 import ApTooltip from './directives/ApTooltip/ApTooltip'
 import TabPanel from 'primevue/tabpanel'
-// @ts-ignore
-import useToast from '@/composables/Toast/useToast'
+import useToast from './composables/Toast/useToast'
 import type { App } from 'vue'
 export { TabPanel as ApTabPanel, useToast }
 
@@ -33,6 +32,8 @@ function install(app: App) {
   for (const key in components) {
     app.component(key, components[key])
   }
+  app.component('ApTabPanel', TabPanel)
+
 }
 export const config = {
   install

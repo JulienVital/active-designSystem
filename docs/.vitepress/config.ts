@@ -2,6 +2,7 @@ import { fileURLToPath } from 'url'
 import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  
   appearance: 'dark',
   title: 'Active Publishing',
   description: 'A VitePress Site',
@@ -49,7 +50,10 @@ export default defineConfig({
       ]
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/JulienVital/active-designSystem' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/JulienVital/active-designSystem' }],
+    search: {
+      provider: 'local'
+    }
   },
   vite: {
     plugins: [],
@@ -61,5 +65,6 @@ export default defineConfig({
         '@': fileURLToPath(new URL('../../src', import.meta.url))
       }
     }
-  }
+  },
+  lastUpdated: true
 })

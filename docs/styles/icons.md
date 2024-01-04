@@ -47,13 +47,51 @@ const iconsList = [
 </script>
 
 # Icons
+
+Provided by material icon
+
+## How to use
+
+You must add 'ap-icon' and 'ap-*' css classes to your component
+```html
+<i class="ap-icon ap-stacks" :class="icon" />
+```
+
+## List
+
 <div class="iconContainer">
 <colorDoc  v-for="icon in iconsList">
     <i class="ap-icon" :class="icon" />
 </colorDoc >
 </div>
 
-## More docs
+## Customize
+
+*You can customize size and color with :*
+
+- "color" for icon fill
+- "font-size" for icon size
+
+### Sizing
+
+Although the icons in the font can be scaled to any size, in accordance with material design icons guidelines, we recommend them to be shown in either 18, 24, 36 or 48px. The default being 24px.
+<colorDoc :copyContent="'var(--icon-sm)'">
+    <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-sm)'}"/>
+    18
+</colorDoc >
+<colorDoc :copyContent="'var(--icon-md)'">
+    <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-md)'}"/>
+    24
+</colorDoc >
+<colorDoc :copyContent="'var(--icon-lg)'">
+    <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-lg)'}"/>
+    36
+</colorDoc >
+<colorDoc :copyContent="'var(--icon-xl)'">
+    <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-xl)'}"/>
+    48
+</colorDoc >
+
 <style>
     .iconContainer{
         display: grid;

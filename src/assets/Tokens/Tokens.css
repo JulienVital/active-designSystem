@@ -46,7 +46,11 @@
   --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
   --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
   --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
-
+/* icons */
+--icon-sm: 18px;
+--icon-md: 24px;
+--icon-lg: 32px;
+--icon-xl: 48px;
 
   /* Panel */
   --panel-radius: var(--radius);

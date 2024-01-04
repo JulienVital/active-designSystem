@@ -30,7 +30,7 @@ const themeList = {
 
 </script>
 <div class="colorContainer">
-<colorDoc v-for="(item, index) in themeList" :copyContent="`var(--${index}})`">
+<colorDoc v-for="(item, index) in themeList" :copyContent="`var(--${index})`">
     <div class="blockColor" :style="{
         'backgroundColor': item
     }" >
