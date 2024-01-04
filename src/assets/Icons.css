@@ -146,3 +146,6 @@
 .ap-stacks:before {
   content: '\f500';
 }
+.ap-copy:before {
+  content: '\e14d';
+}

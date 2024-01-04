@@ -1,10 +1,8 @@
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vitepress'
-import Components from 'unplugin-vue-components/vite'
-import { ActPubResolver } from '../../src'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  appearance: 'force-dark',
+  appearance: 'dark',
   title: 'Active Publishing',
   description: 'A VitePress Site',
   themeConfig: {
@@ -38,13 +36,14 @@ export default defineConfig({
             {
               text: 'Colors',
               items: [
-                { text: 'Primitives', link: '#' },
-                { text: 'Semantics', link: '#' }
+                { text: 'Primitives', link: '/styles/primitiveColors' },
+                { text: 'Semantics', link: '/styles/semanticsColors' }
               ]
             },
 
-            { text: 'Typography', link: '#' },
-            { text: 'Layout', link: '#' }
+            { text: 'Typography', link: '/styles/typography' },
+            { text: 'Layout', link: '/styles/layout' },
+            { text: 'Icons', link: '/styles/icons' }
           ]
         }
       ]
