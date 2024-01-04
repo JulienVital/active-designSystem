@@ -1,5 +1,4 @@
 <script setup>
-import colorDoc from './stylesContainer.vue'
 
 const iconsList = [
     "ap-trash",
@@ -60,9 +59,9 @@ You must add 'ap-icon' and 'ap-*' css classes to your component
 ## List
 
 <div class="iconContainer">
-<colorDoc  v-for="icon in iconsList">
+<copyContainer  v-for="icon in iconsList">
     <i class="ap-icon" :class="icon" />
-</colorDoc >
+</copyContainer >
 </div>
 
 ## Customize
@@ -75,22 +74,22 @@ You must add 'ap-icon' and 'ap-*' css classes to your component
 ### Sizing
 
 Although the icons in the font can be scaled to any size, in accordance with material design icons guidelines, we recommend them to be shown in either 18, 24, 36 or 48px. The default being 24px.
-<colorDoc :copyContent="'var(--icon-sm)'">
+<copyContainer :copyContent="'var(--icon-sm)'">
     <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-sm)'}"/>
     18
-</colorDoc >
-<colorDoc :copyContent="'var(--icon-md)'">
+</copyContainer >
+<copyContainer :copyContent="'var(--icon-md)'">
     <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-md)'}"/>
     24
-</colorDoc >
-<colorDoc :copyContent="'var(--icon-lg)'">
+</copyContainer >
+<copyContainer :copyContent="'var(--icon-lg)'">
     <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-lg)'}"/>
     36
-</colorDoc >
-<colorDoc :copyContent="'var(--icon-xl)'">
+</copyContainer >
+<copyContainer :copyContent="'var(--icon-xl)'">
     <i class="ap-icon ap-stacks"  :style="{ 'fontSize': 'var(--icon-xl)'}"/>
     48
-</colorDoc >
+</copyContainer >
 
 <style>
     .iconContainer{

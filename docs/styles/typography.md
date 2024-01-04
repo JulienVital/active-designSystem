@@ -11,7 +11,6 @@ Example of use
 ## Font-size
 
 <script setup lang="ts">
-import containerStyle from './stylesContainer.vue'
 
 const fontSize = {
   'text-xs': 'var(--text-xs)',
@@ -24,14 +23,14 @@ const fontSize = {
 }
 
 </script>
-<containerStyle v-for="(item, index) in fontSize" :copyContent="`var(--${index})`">
+<copyContainer v-for="(item, index) in fontSize" :copyContent="`var(--${index})`">
     <span :style="{
         'fontSize': item
     }" >
     Lorem ipsum dolor sit amet
     </span>
     --{{index}}
-</containerStyle >
+</copyContainer >
 
 <style>
     .blockColor{

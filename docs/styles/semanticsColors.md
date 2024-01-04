@@ -11,7 +11,6 @@ Example of use
 ## List
 
 <script setup lang="ts">
-import colorDoc from './stylesContainer.vue'
 
 const themeList = {
   'primary-color': 'var(--color-blue)',
@@ -30,13 +29,13 @@ const themeList = {
 
 </script>
 <div class="colorContainer">
-<colorDoc v-for="(item, index) in themeList" :copyContent="`var(--${index})`">
+<copyContainer v-for="(item, index) in themeList" :copyContent="`var(--${index})`">
     <div class="blockColor" :style="{
         'backgroundColor': item
     }" >
     </div>
     --{{index}}
-</colorDoc >
+</copyContainer >
 </div>
 
 <style>

@@ -12,7 +12,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' , activeMatch: '/guide/'},
       { text: 'Styles', link: '/styles/' },
-      { text: 'Components', link: '/components/' },
+      { text: 'Components', link: '/components/other' },
       { text: 'Directives', link: '#' },
       { text: 'Composables', link: '#' },
       { text: 'NpmJs', link: 'https://www.npmjs.com/package/active-designsystem' }
@@ -25,7 +25,8 @@ export default defineConfig({
           items: [
             { text: 'What is it ?', link: '/guide/' },
             { text: 'Installation', link: '/guide/installation' },
-            { text: 'Config', link: '/guide/config' }
+            { text: 'Config', link: '/guide/config' },
+            { text: 'Changelog', link: '/guide/changelog' }
           ]
         }
       ],
@@ -47,7 +48,24 @@ export default defineConfig({
             { text: 'Icons', link: '/styles/icons' }
           ]
         }
-      ]
+      ],
+      '/components/': [
+        {
+          text: 'Inputs',
+          items: [
+                { text: 'Number', link: '/components/form/inputnumber/' },
+                { text: 'Select', link: '/components/form/inputselect/' },
+                { text: 'Text', link: '#' },
+                { text: 'DropZone', link: '#' },
+                { text: 'Radio', link: '#' },
+                { text: 'Switch', link: '#' },
+          ]
+        },
+        { text: 'Buttons', items: [] },
+        { text: 'Menu', items: [] },
+        { text: 'Modals', items: [] },
+        { text: 'Panels', items: [] },
+      ],
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/JulienVital/active-designSystem' }],

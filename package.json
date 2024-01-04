@@ -42,7 +42,7 @@
     "@storybook/manager-api": "^7.6.1",
     "primevue": "^3.42.0",
     "storybook-addon-vue-mdx": "^0.1.5",
-    "vue": "^3.3.4"
+    "vue": "^3.4.5"
   },
   "devDependencies": {
     "@playwright/test": "^1.39.0",

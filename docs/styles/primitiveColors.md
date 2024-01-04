@@ -15,7 +15,6 @@ Example of use
 ## List
 
 <script setup lang="ts">
-import colorDoc from './stylesContainer.vue'
 
 const colorsList = {
   'color-blue': '#5cbdec',
@@ -45,13 +44,13 @@ const colorsList = {
 
 </script>
 <div class="colorContainer">
-<colorDoc v-for="(item, index) in colorsList" :copyContent="`var(--${index})`">
+<copyContainer v-for="(item, index) in colorsList" :copyContent="`var(--${index})`">
     <div class="blockColor" :style="{
         'backgroundColor': item
     }" >
     </div>
     --{{index}}
-</colorDoc >
+</copyContainer >
 </div>
 
 <style>
