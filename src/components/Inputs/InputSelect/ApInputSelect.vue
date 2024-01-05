@@ -1,26 +1,34 @@
 <template>
-  <div :class="inputSize">
-    <select
-      :class="['InputForm', inputSize]"
-      :value="currentValue ?? actualValue"
-      @change="handlerChange"
-      :disabled="props.disable"
-    >
-      <option
-        v-for="currentOption in modelValue"
-        :value="typeof currentOption == 'string' ? currentOption : currentOption.value"
-        :key="typeof currentOption == 'string' ? currentOption : currentOption.label"
-      >
-        {{ typeof currentOption == 'string' ? currentOption : currentOption.label }}
-      </option>
-    </select>
-    <InputBorder />
-  </div>
+
+  <Dropdown 
+  :class="inputSize" 
+  :modelValue="currentValue" 
+  @update:modelValue="(value)=>handlerChange(value)" 
+  :options="modelValue" 
+  optionLabel="name"
+  :pt="{
+        input: { class: inputSize },
+
+    }"
+  />
 </template>
 
 <script setup lang="ts">
-import { computed, type PropType } from 'vue'
-import InputBorder from '../InputBorder.vue'
+import Dropdown from 'primevue/dropdown';
+
+import { computed, ref, type PropType } from 'vue'
+
+
+const selectOptions = ref([
+  { name: 'choix 1', code: 'NY' },
+  { name: 'choix 2', code: 'RM' },
+  { name: 'choix 3', code: 'LDN' },
+  { name: 'choix 4', code: 'IST' },
+  { name: 'choix 5', code: 'PRS' }
+]);
+const selectedCity = ref({ name: 'choix 1', code: 'NY' },)
+
+
 
 type OptionsSelect = Options[]
 type Options = {
@@ -66,8 +74,49 @@ const inputSize = computed(() => ({
   [`input--${props.size}`]: true
 }))
 
-const handlerChange = (event: Event) => {
-  const inputValue = (event.target as HTMLInputElement).value
-  emit('update:modelValue', inputValue)
+const handlerChange = (newValue: string) => {
+  emit('update:modelValue', newValue)
 }
 </script>
+
+<style>
+.p-dropdown:not(.p-disabled):hover {
+  border-color: var(--primary-color);
+}
+.p-dropdown {
+  border: 1px solid var(--color-grey-30);
+}
+.p-inputtext {
+padding: 0 4px;
+color : var(--text-default-color);
+font-size: var(--text-xs);
+
+}
+.p-dropdown:not(.p-disabled).p-focus{
+
+  box-shadow: 0 0 0 0.1rem  var(--primary-color);
+}
+.p-dropdown .p-dropdown-trigger{
+  width: 1.2rem;
+  color : var(--text-default-color);
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item{
+  padding: 0 4px;
+  color : var(--text-default-color);
+  background-color: var(--input-background);
+font-size: var(--text-xs);
+
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover{
+  padding: 0 4px;
+  color : var(--text-default-color);
+  background-color: var(--primary-color);
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight{
+  background: var(--primary-color)
+}
+.p-dropdown{
+
+  background-color: var(--input-background);
+}
+</style>

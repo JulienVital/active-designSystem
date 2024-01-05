@@ -6,21 +6,11 @@
 
     </div>
 </template>
-<script setup lang="ts">
-import { ref } from 'vue';
-const props = defineProps({
 
-  copyContent: {
-    required: false,
-    type: String
-  }
-})
-
-const mySlot = ref(null);
-
-
-
-</script>
-
+<style>
+.mySlot{
+  width: 100%;
+}
+</style>
 
 
