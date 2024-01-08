@@ -2,7 +2,7 @@ import { fileURLToPath } from 'url'
 import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  
+  base: '/active-designSystem/',
   appearance: 'dark',
   title: 'Active Publishing',
   description: 'A VitePress Site',
