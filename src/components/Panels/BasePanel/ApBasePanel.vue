@@ -19,6 +19,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
 import IconMark from '@/components/Icons/IconMark.vue'
 
 const props = defineProps({
@@ -60,7 +61,7 @@ const handlerClose = () => {
   align-items: center;
   text-align: right;
   color: var(--color-text);
-  font-size: var(--text-size-xs);
+  font-size: var(--text-xs);
   box-shadow: var(--panel-shadow);
   background-color: var(--color-panel-header-background);
   border-top-left-radius: var(--radius);

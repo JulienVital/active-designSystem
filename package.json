@@ -1,6 +1,6 @@
 {
   "name": "active-designsystem",
-  "version": "1.0.53",
+  "version": "1.0.55",
   "type": "module",
   "typings": "./dist/active-designsystem.d.ts",
   "author": "Julien V",
@@ -13,34 +13,36 @@
     "dist",
     "illustration-banner.png"
   ],
-  "main": "./dist/active-designsystem.umd.cjs",
   "module": "./dist/active-designsystem.js",
   "exports": {
     ".": {
-      "import": "./dist/active-designsystem.js",
-      "require": "./dist/active-designsystem.umd.cjs"
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/active-designsystem.js"
     },
     "./style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build ",
+    "build": "rimraf dist && vite build ",
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "type-check": "vue-tsc --noEmit --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
-    "storybook-publish": "storybook build"
+    "storybook-publish": "storybook build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@storybook/addon-a11y": "^7.5.3",
     "@storybook/manager-api": "^7.6.1",
     "primevue": "^3.42.0",
     "storybook-addon-vue-mdx": "^0.1.5",
-    "vue": "^3.3.4"
+    "vue": "^3.4.5"
   },
   "devDependencies": {
     "@playwright/test": "^1.39.0",
@@ -71,8 +73,10 @@
     "storybook": "^7.5.1",
     "storybook-design-token": "^3.0.0-beta.7",
     "typescript": "5.3",
+    "unplugin-vue-components": "^0.26.0",
     "vite": "^4.4.11",
     "vite-plugin-dts": "^3.6.1",
+    "vitepress": "^1.0.0-rc.34",
     "vitest": "^0.34.6",
     "vue-tsc": "^1.8.19"
   }

@@ -1,3 +1,26 @@
+
+.p-inputnumber-input{
+  background-color: var(--color-input-background);
+  border: 1px solid var(--color-grey-30);
+  color: var(--color-text);
+  text-align: right;
+  margin: 0.1rem;
+}
+.p-inputnumber-input:focus{
+box-shadow: 0 0 0 0.1rem  var(--primary-color);
+}
+.input--small, .input--small .p-inputnumber-input{
+  width: calc(var(--gutter) * 5);
+}
+.input--medium, .input--medium .p-inputnumber-input{
+  width: calc(var(--gutter) * 9);
+}
+.input--large, .input--large .p-inputnumber-input{
+  width: 100%;
+}
+
+
+/* Deprecated  */
 .InputForm {
   line-height: 11pt;
   font-size: 11pt;

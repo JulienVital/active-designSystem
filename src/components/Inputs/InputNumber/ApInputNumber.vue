@@ -1,44 +1,35 @@
 <template>
-  <div :class="inputSize">
-    <input
-      type="number"
-      :class="['InputForm', inputSize]"
-      :value="props.modelValue"
-      :step="props.step"
-      @input="handlerChange"
-      :disabled="props.disable"
-    />
-    <InputBorder />
-  </div>
+  <InputNumber  
+  :modelValue="props.modelValue"  
+  @update:modelValue="(value)=>handlerChange(value)" 
+  :class="['apInputNumber',inputSize]" 
+  :step="props.step" 
+  :prefix="props.prefix" 
+  :suffix="props.suffix"
+  :min="props.min"
+  :max="props.max"
+  :disabled="props.disable || props.disabled"
+  />
 </template>
 
 <script lang="ts" setup>
+import InputNumber from 'primevue/inputnumber';
+
 import { computed } from 'vue'
-import InputBorder from '../InputBorder.vue'
 
 const props = defineProps({
-  /**
-   * Actual value to display
-   */
+
   modelValue: {
     type: Number,
-    required: false
+    required: false,
   },
-
-  /**
-   * Step increment/decrement value
-   */
   step: {
     type: Number,
     required: false,
     default: 1
   },
-  /**
-   * Size of input
-   */
   size: {
     validator(value: string) {
-      // The value must match one of these strings
       return ['small', 'medium', 'large'].includes(value)
     },
     required: false,
@@ -48,7 +39,28 @@ const props = defineProps({
     type: Boolean,
     required: false,
     default: false
-  }
+  },
+  disabled: {
+    type: Boolean,
+    required: false,
+    default: false
+  },
+  prefix: {
+    type: String,
+    required: false,
+  },
+  suffix: {
+    type: String,
+    required: false,
+  },
+  min: {
+    type: Number,
+    required: false,
+  },
+  max: {
+    type: Number,
+    required: false,
+  },
 })
 const emit = defineEmits<{
   (e: 'update:modelValue', newValue: number): void
@@ -58,8 +70,8 @@ const inputSize = computed(() => ({
   [`input--${props.size}`]: true
 }))
 
-const handlerChange = (event: Event) => {
-  const inputValue = parseFloat((event.target as HTMLInputElement).value)
-  emit('update:modelValue', inputValue)
+const handlerChange = (number: number) => {
+  emit('update:modelValue', number)
 }
+
 </script>

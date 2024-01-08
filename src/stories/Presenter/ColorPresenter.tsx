@@ -2,6 +2,7 @@ import React from 'react'
 
 export function ColorPresenter({ token }) {
   return (
+    // @ts-ignore
     <div
       style={{
         width: '100%',
