@@ -63,7 +63,7 @@ Or use :modelValue and listen @update:modelValue
 <script setup lang='ts'>
     import { ref } from 'vue';
 
-    import inputNumber from './inputNumberSize.vue';    
+    import inputNumber from './inputNumberSize.vue';
     const exampleNumber = ref(458);
     const value2 = ref(15);
 

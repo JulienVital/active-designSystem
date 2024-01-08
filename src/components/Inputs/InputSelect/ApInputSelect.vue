@@ -1,54 +1,28 @@
 <template>
+  <Dropdown :disabled="props.disabled" :class="inputSize" :modelValue="modelValue" @update:modelValue="(value) => handlerChange(value)"
+    :options="options" :optionLabel="props.optionLabel" :pt="{
+      input: { class: inputSize },
 
-  <Dropdown 
-  :class="inputSize" 
-  :modelValue="currentValue" 
-  @update:modelValue="(value)=>handlerChange(value)" 
-  :options="modelValue" 
-  optionLabel="name"
-  :pt="{
-        input: { class: inputSize },
-
-    }"
-  />
+    }" />
 </template>
 
 <script setup lang="ts">
 import Dropdown from 'primevue/dropdown';
 
-import { computed, ref, type PropType } from 'vue'
+import { computed } from 'vue'
 
-
-const selectOptions = ref([
-  { name: 'choix 1', code: 'NY' },
-  { name: 'choix 2', code: 'RM' },
-  { name: 'choix 3', code: 'LDN' },
-  { name: 'choix 4', code: 'IST' },
-  { name: 'choix 5', code: 'PRS' }
-]);
-const selectedCity = ref({ name: 'choix 1', code: 'NY' },)
-
-
-
-type OptionsSelect = Options[]
-type Options = {
-  label: string
-  value: any
-}
-// Define component props
 const props = defineProps({
   // Array of options to display in the select element
-  modelValue: {
-    type: Array as PropType<OptionsSelect | string[]>,
+  options: {
+    type: Array,
     required: true
   },
-  // Old props
-  actualValue: {
-    required: false,
-    type: String
-  },
   // Currently selected option value
-  currentValue: {
+  modelValue: {
+    required: false,
+    type: Object
+  },
+  optionLabel: {
     required: false,
     type: String
   },
@@ -58,7 +32,7 @@ const props = defineProps({
     required: false,
     default: 'medium'
   },
-  disable: {
+  disabled: {
     type: Boolean,
     required: false,
     default: false
@@ -74,7 +48,8 @@ const inputSize = computed(() => ({
   [`input--${props.size}`]: true
 }))
 
-const handlerChange = (newValue: string) => {
+const handlerChange = (newValue: any) => {
+  console.log(newValue)
   emit('update:modelValue', newValue)
 }
 </script>

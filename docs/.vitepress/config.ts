@@ -13,7 +13,7 @@ export default defineConfig({
       { text: 'Guide', link: '/guide/' , activeMatch: '/guide/'},
       { text: 'Styles', link: '/styles/' },
       { text: 'Components', link: '/components/other' },
-      { text: 'Directives', link: '#' },
+      { text: 'Directives', link: '/directives/' },
       { text: 'Composables', link: '#' },
       { text: 'NpmJs', link: 'https://www.npmjs.com/package/active-designsystem' }
     ],
@@ -27,6 +27,14 @@ export default defineConfig({
             { text: 'Installation', link: '/guide/installation' },
             { text: 'Config', link: '/guide/config' },
             { text: 'Changelog', link: '/guide/changelog' }
+          ]
+        }
+      ],
+      '/directives/': [
+        {
+          text: 'Introduction',
+          items: [
+            { text: 'Tooltip', link: '/directives/tooltip' },
           ]
         }
       ],

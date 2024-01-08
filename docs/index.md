@@ -17,12 +17,14 @@ hero:
       text: Components
       link: /components/
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - title: Styles
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Components
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Directives
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Composables
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
