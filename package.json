@@ -1,6 +1,6 @@
 {
   "name": "active-designsystem",
-  "version": "1.0.56",
+  "version": "1.0.57",
   "type": "module",
   "typings": "./dist/active-designsystem.d.ts",
   "author": "Julien V",
@@ -71,7 +71,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.5.1",
-    "storybook-design-token": "^3.0.0-beta.7",
     "typescript": "5.3",
     "unplugin-vue-components": "^0.26.0",
     "vite": "^4.4.11",
