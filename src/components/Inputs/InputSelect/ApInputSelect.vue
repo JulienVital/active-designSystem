@@ -20,8 +20,8 @@ const props = defineProps({
   // Currently selected option value
   modelValue: {
     required: false,
-    type: Object || String
-  },
+    validator: (value) => typeof value === 'string' || typeof value === 'object'
+    },
   optionLabel: {
     required: false,
     type: String
