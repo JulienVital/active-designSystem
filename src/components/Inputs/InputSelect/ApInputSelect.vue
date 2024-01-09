@@ -20,7 +20,7 @@ const props = defineProps({
   // Currently selected option value
   modelValue: {
     required: false,
-    type: Object
+    type: Object || String
   },
   optionLabel: {
     required: false,

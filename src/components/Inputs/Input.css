@@ -45,7 +45,6 @@ box-shadow: 0 0 0 0.1rem  var(--primary-color);
 /* Deprecated  */
 .InputForm {
   line-height: 11pt;
-  font-size: 11pt;
   background-color: var(--color-input-background);
   border: 1px solid var(--color-grey-30);
   color: var(--color-text);
