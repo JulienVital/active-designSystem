@@ -49,7 +49,6 @@ const inputSize = computed(() => ({
 }))
 
 const handlerChange = (newValue: any) => {
-  console.log(newValue)
   emit('update:modelValue', newValue)
 }
 </script>
