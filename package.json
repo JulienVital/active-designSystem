@@ -1,6 +1,6 @@
 {
   "name": "active-designsystem",
-  "version": "1.0.55",
+  "version": "1.0.56",
   "type": "module",
   "typings": "./dist/active-designsystem.d.ts",
   "author": "Julien V",

@@ -8,7 +8,7 @@
 @import '../directives/directives.css';
 @import '../components/Panels/Tabview/ApTabView.css';
 
-:root {
+:root, :host {
   /**
   * @tokens-end
   */
