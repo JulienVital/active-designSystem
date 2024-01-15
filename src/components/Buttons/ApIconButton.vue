@@ -30,8 +30,9 @@
 
   }
   .activeIconButton {
-    border: 2px solid var(--panel-background-separator);
+    border: 2px solid var(--icon-default-color);
     border-radius: var(--radius);
+    background-color: var(--input-background);
   }
   </style>
   
