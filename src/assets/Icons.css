@@ -1,7 +1,12 @@
+/*
+ Apache-2.0 license
+base material icons https://github.com/google/material-design-icons
+*/
+
 @font-face {
   font-family: 'Material Symbols Outlined';
   font-style: normal;
-  src: url(https://cdn-pim2print-dev.datasolution.site/assets/material-icons.woff2) format('woff2');
+  src: url(https://cdn-pim2print-dev.datasolution.site/assets/activePublishing.woff2) format('woff2');
 }
 .ap-icon {
   font-family: 'Material Symbols Outlined';
@@ -40,6 +45,13 @@
 .ap-zoom-out:before {
   content: '\e900';
 }
+.ap-zoom-in2:before {
+  content: '\e5e2';
+}
+.ap-zoom-out2:before {
+  content: '\e5e3';
+}
+
 .ap-shuffle:before {
   content: '\e043';
 }
@@ -147,4 +159,23 @@
 }
 .ap-copy:before {
   content: '\e14d';
+}
+.ap-magnet:before {
+  content: '\e84b';
+}
+.ap-logo:before {
+  content: '\e848';
+}
+
+.ap-scale:before {
+  content: '\e5e4';
+}
+.ap-unscale:before {
+  content: '\e5e5';
+}
+.ap-rotate:before{
+  content: '\e419';
+}
+.ap-warp:before{
+  content: '\e5e7';
 }

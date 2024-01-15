@@ -7,9 +7,13 @@ const iconsList = [
     "ap-palet",
     "ap-zoom-in",
     "ap-zoom-out",
+    "ap-zoom-in2",
+    "ap-zoom-out2",
     "ap-shuffle",
     "ap-fullscren-close",
     "ap-fullscren-open",
+    "ap-scale",
+    "ap-unscale",
     "ap-lock",
     "ap-lock-open",
     "ap-align-left",
@@ -42,6 +46,10 @@ const iconsList = [
     "ap-settings",
     "ap-stacks",
     "ap-copy",
+    "ap-magnet",
+    "ap-logo",
+    "ap-rotate",
+    "ap-warp",
     ];
 </script>
 
