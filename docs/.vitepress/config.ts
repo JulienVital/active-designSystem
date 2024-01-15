@@ -69,7 +69,9 @@ export default defineConfig({
                 { text: 'Switch', link: '#' },
           ]
         },
-        { text: 'Buttons', items: [] },
+        { text: 'Buttons', items: [
+          { text: 'IconButton', link: '/components/buttons/iconButton/' },
+        ] },
         { text: 'Menu', items: [] },
         { text: 'Modals', items: [] },
         { text: 'Panels', items: [] },
