@@ -50,6 +50,8 @@ const iconsList = [
     "ap-logo",
     "ap-rotate",
     "ap-warp",
+    "ap-resize",
+    "ap-preview"
     ];
 </script>
 
