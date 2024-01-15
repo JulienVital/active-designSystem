@@ -22,7 +22,8 @@
     color: var(--icon-default-color);
     border: 2px solid transparent;
     transition: background-color 0.9s ease;
-
+    background-color: transparent;
+    cursor: pointer;
   }
   .iconButton:hover {
     background-color: var(--input-background);
