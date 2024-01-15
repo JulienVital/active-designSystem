@@ -19,9 +19,13 @@
 
   .iconButton {
     padding: var(--sizePointHalf);
-    background-color: var(--input-background);
     color: var(--icon-default-color);
     border: 2px solid transparent;
+    transition: background-color 0.9s ease;
+
+  }
+  .iconButton:hover {
+    background-color: var(--input-background);
 
   }
   .activeIconButton {
