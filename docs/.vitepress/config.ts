@@ -66,7 +66,7 @@ export default defineConfig({
                 { text: 'Text', link: '/components/form/inputtext/' },
                 { text: 'DropZone', link: '#' },
                 { text: 'Radio', link: '#' },
-                { text: 'Switch', link: '#' },
+                { text: 'Switch', link: '/components/form/inputswitch/' },
           ]
         },
         { text: 'Buttons', items: [
