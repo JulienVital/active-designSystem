@@ -63,7 +63,7 @@ const handlerChange = (newValue: any) => {
 .p-inputtext {
 padding: 0 4px;
 color : var(--text-default-color);
-font-size: var(--text-xs);
+font-size: var(--text-sm);
 
 }
 .p-dropdown:not(.p-disabled).p-focus{
@@ -78,7 +78,7 @@ font-size: var(--text-xs);
   padding: 0 4px;
   color : var(--text-default-color);
   background-color: var(--input-background);
-font-size: var(--text-xs);
+font-size: var(--text-sm);
 
 }
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover{
