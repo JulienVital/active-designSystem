@@ -107,6 +107,8 @@ const iconsList = [
     "ap-rotate",
     "ap-warp",
     "ap-resize",
-    "ap-view"
+    "ap-view",
+    "ap-select",
+    "ap-text",
     ];
 </script>

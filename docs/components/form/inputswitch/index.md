@@ -13,7 +13,7 @@ InputText is an input component , a simple extension to standard input element.
 </presentationContainer>
 
 ```ts
-    <apInputText v-model="value" />
+    <InputSwitch v-model="value" />
 
 ```
 

@@ -11,7 +11,7 @@ InputSelect is an input component , is used to choose an item from a collection 
 </presentationContainer>
 
 ```ts
-    <apInputNumber v-model="selectedCity" :options="selectOptions"  />
+     <apInputSelect v-model="selectedCity" :options="selectOptions"  />
 ```
 
 ## Props

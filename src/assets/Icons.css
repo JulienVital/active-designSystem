@@ -185,3 +185,9 @@ base material icons https://github.com/google/material-design-icons
 .ap-view:before{
   content: '\e8f4';
 }
+.ap-select:before{
+  content: '\f82f';
+}
+.ap-text:before{
+  content: '\e262';
+}
