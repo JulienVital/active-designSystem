@@ -72,7 +72,10 @@ export default defineConfig({
         { text: 'Buttons', items: [
           { text: 'IconButton', link: '/components/buttons/iconButton/' },
         ] },
-        { text: 'Menu', items: [] },
+        { text: 'Menu', items: [
+          { text: 'Contextual', link: '/components/menu/contextualMenu/' },
+
+        ] },
         { text: 'Modals', items: [] },
         { text: 'Panels', items: [] },
       ],
