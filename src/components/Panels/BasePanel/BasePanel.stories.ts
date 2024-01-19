@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import ApBasePanel from './ApBasePanel.vue'
 import DropZone from '../../Inputs/DropZone/ApDropZone.vue'
 //@ts-ignore
-import IconLayer from '@/components/Icons/IconLayer.vue'
+// import IconLayer from '@/components/Icons/IconLayer.vue'
 const meta = {
   title: 'Design System/Panel/ApBasePanel',
   component: ApBasePanel,

@@ -3,6 +3,7 @@
   :class="['apInputText',inputSize]" 
   type="text" :modelValue="props.modelValue" 
   @update:modelValue="handlerChange"
+  :disabled="disabled"
   />
 
 </template>

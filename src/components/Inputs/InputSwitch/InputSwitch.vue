@@ -10,7 +10,6 @@ import InputSwitch from 'primevue/inputswitch';
 
 const props = defineProps({
   /**
-import { NONAME } from 'dns';
    * Actual value to display
    */
   modelValue: {
@@ -22,10 +21,10 @@ import { NONAME } from 'dns';
 })
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', newValue: string): void
+  (e: 'update:modelValue', newValue: Boolean): void
 }>()
 
-const handlerChange = (newValue: string) => {
+const handlerChange = (newValue: Boolean) => {
   emit('update:modelValue', newValue)
 }
 </script>

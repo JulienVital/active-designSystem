@@ -13,7 +13,7 @@ const meta: Meta = {
     },
     template: `
     <ul>
-    <li class="limenu" @contextmenu="test" > entree 1</li>
+    <li class="limenu" @contextmenu="test"@click="test" > entree 1</li>
     <li class="limenu" @contextmenu="test" > entree 2</li>
   </ul>
   <ApContextMenu  v-bind="args" ref=menu>

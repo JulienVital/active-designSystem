@@ -7,7 +7,7 @@
     @drop.prevent="onDrop"
     @dragenter.prevent
   >
-    <IconLayer width="75" height="75" :iconColor="colorZone" />
+    <i class="ap-icon ap-stacks dropzoneIcon"></i>
     <label class="dropzone--title">
       {{ props.title }}
       <input
@@ -19,7 +19,7 @@
         @change="onInput"
       />
     </label>
-    <h2 class="dropzone--formats">Supported formats : {{ props.formats.join(', ') }}</h2>
+    <span class="dropzone--formats">Supported formats : {{ props.formats.join(', ') }}</span>
     <div class="wrapperList">
       <ul v-if="validDroppedFile.length > 0">
         <li
@@ -46,7 +46,6 @@
 <script setup lang="ts">
 import { ref, type PropType, type Ref } from 'vue'
 // @ts-ignore
-import IconLayer from '@/components/Icons/IconLayer.vue'
 const props = defineProps({
   title: {
     default: 'Drop a file here or click to select one',
@@ -105,7 +104,15 @@ const onDrop = (event: DragEvent) => {
   }
 }
 </script>
+<style scoped>
+.dropzoneIcon{
+  color: v-bind(colorZone);
+  font-size: var(--icon-xl);
+}
+</style>
 <style>
+
+
 ul {
   list-style-type: none;
   padding: 0;

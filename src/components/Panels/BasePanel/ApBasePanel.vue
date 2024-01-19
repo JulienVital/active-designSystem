@@ -3,7 +3,7 @@
     <header :class="['basePanel--header', { 'basePanel--header-draggable': props.draggable }]">
       <span class="basePanel--header--title">{{ props.title }}</span>
       <slot name="header"></slot>
-      <IconMark
+      <i
         v-if="props.closable"
         :width="6"
         :height="6"
@@ -20,7 +20,6 @@
 
 <script setup lang="ts">
 // @ts-ignore
-import IconMark from '@/components/Icons/IconMark.vue'
 
 const props = defineProps({
   /**

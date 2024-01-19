@@ -1,9 +1,5 @@
 # Ap-InputSwitch
 
-InputText is an input component , a simple extension to standard input element.
-
-
-
 ## Example
 
 <presentationContainer>
