@@ -14,13 +14,13 @@ Example on div :
 <presentationContainer>
   <div id="firstDiv" @contextmenu="onRightClick">
   </div>
-<ApContextMenu ref="menuBasic" :items="items"  />
+<ApContextMenu ref="menuBasic" :items="itemsBasic"  />
 
 </presentationContainer>
 
 ```ts
 <div @contextmenu="onRightClick">
-<ApContextMenu ref="menuBasic" :items="items"  />
+<ApContextMenu ref="menuBasic" :items="itemsBasic"  />
 
 //script
 const menuBasic = ref(null)
@@ -42,9 +42,9 @@ const  items =  [
 ## With Icons and subMenu
 
 <presentationContainer>
-  <div id="SecondDiv" @contextmenu="onRightClick">
+  <div id="SecondDiv" @contextmenu="onRightClickSecond">
   </div>
-<ApContextMenu ref="menuBasic" :items="items2"  />
+<ApContextMenu ref="menuWithIcon" :items="items2"  />
 
 </presentationContainer>
 
@@ -101,11 +101,15 @@ Right-Click anywhere on this page to view the global ContextMenu.
 import { ref } from 'vue';
 
 const menuBasic = ref(null)
+const menuWithIcon = ref(null)
 const menu = ref(null)
 const selectedLi = ref(null)
 
 const onRightClick = (event) => {
     menuBasic.value.show(event);
+};
+const onRightClickSecond = (event) => {
+    menuWithIcon.value.show(event);
 };
 
 const  itemsGlobal =  [
@@ -134,7 +138,7 @@ const  itemsGlobal =  [
       },
     ]
 
-const  items =  [
+const  itemsBasic =  [
   {
     label: 'Option 1',
     command: () => {
