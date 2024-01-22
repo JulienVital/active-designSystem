@@ -110,5 +110,10 @@ const iconsList = [
     "ap-view",
     "ap-select",
     "ap-text",
+    "ap-settings2",
+    "ap-pen",
+    "ap-duplicate",
+    "ap-tag",
+    "ap-trash2",
     ];
 </script>

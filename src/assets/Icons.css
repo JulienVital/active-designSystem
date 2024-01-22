@@ -154,6 +154,9 @@ base material icons https://github.com/google/material-design-icons
 .ap-settings:before {
   content: '\e8b8';
 }
+.ap-settings2:before {
+  content: '\e005';
+}
 .ap-stacks:before {
   content: '\f500';
 }
@@ -190,4 +193,16 @@ base material icons https://github.com/google/material-design-icons
 }
 .ap-text:before{
   content: '\e262';
+}
+.ap-pen:before{
+  content: '\e006';
+}
+.ap-duplicate:before{
+  content: '\e007';
+}
+.ap-tag:before{
+  content: '\e008';
+}
+.ap-trash2:before{
+  content: '\e009';
 }

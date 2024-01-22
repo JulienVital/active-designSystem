@@ -30,14 +30,17 @@ const colorsList = {
   'color-green': '#97dc62',
   'color-green-tr40': '#97dc6240',
   'color-white': '#ffffff',
-  'color-grey-10': "#e4e4e4",
+  
+  'color-grey-5' : '#F9F9F9',
+  'color-grey-10': "#F0F0F0",
   'color-grey-20': "#a4a4a4",
   'color-grey-30': "#707070",
   'color-grey-40': "#595959",
   'color-grey-50': "#535353",
   'color-grey-55': "#444444",
   'color-grey-60': "#333333",
-  'color-grey-70': "#090606",
+  'color-grey-80': "#151515",
+  'color-grey-90': "#090606",
   'color-black': '#000000',
   'color-black-tr': '#00000029'
 }
@@ -64,4 +67,4 @@ const colorsList = {
         column-gap: 15px;
     }
 
-    </style>
+</style>

@@ -58,8 +58,12 @@
   --panel-border: solid 1px var(--grey-dark4);
 
   /* Size */
-  --radius: 5px;
   --sizePoint: 8px;
   --sizePointDouble: calc(var(--sizePoint) * 2);
   --sizePointHalf: calc(var(--sizePoint) / 2);
+
+  
+  --gutter: 8px;
+  --radius: 4px;
+  --radius-double: 8px;
 }
