@@ -75,7 +75,7 @@ const  items2=  [
 
 ```
 
-### Global
+## Global
 
 <presentationContainer>
 Right-Click anywhere on this page to view the global ContextMenu.
