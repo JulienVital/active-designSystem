@@ -39,6 +39,8 @@ const colorsList = {
   'color-grey-50': "#535353",
   'color-grey-55': "#444444",
   'color-grey-60': "#333333",
+  'color-grey-63': "#242424",
+  'color-grey-66': "#151515",
   'color-grey-80': "#151515",
   'color-grey-90': "#090606",
   'color-black': '#000000',
@@ -53,6 +55,7 @@ const colorsList = {
     }" >
     </div>
     --{{index}}
+    <span>{{item}}</span>
 </copyContainer >
 </div>
 
