@@ -26,6 +26,16 @@ You must add 'ap-icon' and 'ap-*' css classes to your component
 - "color" for icon fill
 - "font-size" for icon size
 
+<copyContainer >
+    <i class="ap-icon ap-stacks"  :style="{ 'color': 'red'}"/>
+</copyContainer >
+<copyContainer>
+    <i class="ap-icon ap-stacks"  :style="{ 'color': '#CCCCCC'}"/>
+</copyContainer >
+<copyContainer>
+    <i class="ap-icon ap-stacks"  :style="{ 'color': 'var(--color-blue)'}"/>
+</copyContainer >
+
 ### Sizing
 
 Although the icons in the font can be scaled to any size, in accordance with material design icons guidelines, we recommend them to be shown in either 18, 24, 36 or 48px. The default being 24px.
@@ -115,5 +125,6 @@ const iconsList = [
     "ap-duplicate",
     "ap-tag",
     "ap-trash2",
+    "ap-page",
     ];
 </script>

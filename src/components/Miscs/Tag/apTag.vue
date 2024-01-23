@@ -38,5 +38,6 @@ const background = computed(()=>{
     background: v-bind(background);
     font-size: var(--text-sm);
     line-height: var(--text-lg);
+    font-weight: 600;
 }
   </style>

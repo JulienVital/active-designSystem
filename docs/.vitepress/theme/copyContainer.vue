@@ -46,6 +46,7 @@ const copy = () => {
     /* align-content: center; */
     align-items: center;
     /* justify-content: center; */
+    gap: 5px;
 }
 #copyContainer{
     margin-top: 0;
