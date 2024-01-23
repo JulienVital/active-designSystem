@@ -4,7 +4,6 @@
   border: 1px solid var(--color-grey-30);
   color: var(--color-text);
   text-align: right;
-  margin: 0.1rem;
 }
 .p-inputnumber-input:focus{
 box-shadow: 0 0 0 0.1rem  var(--primary-color);
@@ -25,7 +24,6 @@ box-shadow: 0 0 0 0.1rem  var(--primary-color);
   border: 1px solid var(--color-grey-30);
   color: var(--color-text);
   text-align: right;
-  margin: 0.1rem;
 }
 .apInputText:focus{
 box-shadow: 0 0 0 0.1rem  var(--primary-color);
@@ -38,43 +36,4 @@ box-shadow: 0 0 0 0.1rem  var(--primary-color);
 }
 .input--large, .input--large .apInputText {
   width: 100%;
-}
-
-
-
-/* Deprecated  */
-.InputForm {
-  line-height: 11pt;
-  background-color: var(--color-input-background);
-  border: 1px solid var(--color-grey-30);
-  color: var(--color-text);
-  outline: none;
-  border-radius: var(--radius);
-  opacity: 1;
-  text-align: right;
-  transition: background-color 0.3s ease-in-out;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  min-height: calc(var(--gutter) * 3);
-  height: 100%;
-}
-.input--small {
-  width: calc(var(--gutter) * 5);
-  position: relative;
-}
-.input--medium {
-  width: calc(var(--gutter) * 9);
-  position: relative;
-}
-.input--large {
-  width: 100%;
-  position: relative;
-}
-.InputForm:focus {
-  outline: none;
-}
-
-.InputForm::placeholder {
-  color: hsla(0, 0%, 100%, 0.6);
 }

@@ -7,7 +7,8 @@ import ApTabView from './Panels/Tabview/ApTabView.vue'
 import ApToolbar from './Panels/Toolbar/ApToolbar.vue'
 import ApContextMenu from './Menu/ApContextMenu.vue'
 import ApIconButton from './Buttons/ApIconButton.vue'
-import InputSwitch from './Inputs/InputSwitch/InputSwitch.vue'
+import ApInputSwitch from './Inputs/InputSwitch/ApInputSwitch.vue'
+import ApTag from './Miscs/Tag/apTag.vue'
 
 export {
   ApInputNumber,
@@ -19,5 +20,6 @@ export {
   ApToolbar,
   ApContextMenu,
   ApIconButton,
-  InputSwitch
+  ApInputSwitch,
+  ApTag,
 }

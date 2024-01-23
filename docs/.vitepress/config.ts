@@ -78,6 +78,9 @@ export default defineConfig({
         ] },
         { text: 'Modals', items: [] },
         { text: 'Panels', items: [] },
+        { text: 'Miscs', items: [
+          { text: 'Tag', link: '/components/misc/tag/' },
+        ] },
       ],
     },
 

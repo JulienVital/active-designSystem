@@ -61,7 +61,7 @@ const handlerChange = (newValue: any) => {
   border: 1px solid var(--color-grey-30);
 }
 .p-inputtext {
-padding: 0 4px;
+padding: 4px 4px;
 color : var(--text-default-color);
 font-size: var(--text-sm);
 
