@@ -21,6 +21,7 @@ import Toolbar from 'primevue/toolbar'
   padding: 1.25rem;
   border-radius: inherit;
   gap: 0.5rem;
+  background: transparent;
   color: var(--color-text);
   font-family: var(--font-family);
 }
