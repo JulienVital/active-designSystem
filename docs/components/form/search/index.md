@@ -1,15 +1,15 @@
-# Ap-InputSwitch
+# Ap-Search
+
 
 ## Example
 
 <presentationContainer>
-    <ApInputSwitch v-model="value" /><br>
-    <ApInputSwitch v-model="value2" />
+    <ap-search/>
 
 </presentationContainer>
 
 ```ts
-    <ApInputSwitch v-model="value" />
+    <ap-search/>
 
 ```
 
@@ -17,13 +17,14 @@
 
 | Name        |            Type            |   Default | Required |
 |-------------|:--------------------------:|----------:|---------:|
-| modelValue  |            boolean             |      null |    false |
+| modelValue  |            Any             |      null |    false |
+| size        | 'small', 'medium', 'large' |    medium |    false |
+| disabled    |          Boolean           |     false |    false |
 
 
 <script setup lang="ts">
 
     import {ref} from 'vue'
 
-const value = ref(true)
-const value2 = ref(false)
+const value = ref('value 1')
 </script>

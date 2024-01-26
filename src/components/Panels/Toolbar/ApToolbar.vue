@@ -21,8 +21,6 @@ import Toolbar from 'primevue/toolbar'
   padding: 1.25rem;
   border-radius: inherit;
   gap: 0.5rem;
-  background: var(--color-panel-body-background);
-  border-bottom: 1px solid var(--color-topbar-border-bottom);
   color: var(--color-text);
   font-family: var(--font-family);
 }

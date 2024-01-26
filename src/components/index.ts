@@ -8,6 +8,7 @@ import ApToolbar from './Panels/Toolbar/ApToolbar.vue'
 import ApContextMenu from './Menu/ApContextMenu.vue'
 import ApIconButton from './Buttons/ApIconButton.vue'
 import ApInputSwitch from './Inputs/InputSwitch/ApInputSwitch.vue'
+import ApSearch from './Inputs/Search/ApSearch.vue'
 import ApTag from './Miscs/Tag/apTag.vue'
 
 export {
@@ -22,4 +23,5 @@ export {
   ApIconButton,
   ApInputSwitch,
   ApTag,
+  ApSearch
 }
