@@ -60,15 +60,15 @@ defineExpose({
 }
 .p-menuitem-text{
   font-family: Poppins;
-  font-size: var(  --text-sm);
-  font-style: normal;
+  font-size: var( --text-sm);
   font-weight: 600;
-  line-height: normal;
 }
 .p-menuitem-link{
   padding: 8px 6px;
 }
-
+.p-menuitem-icon{
+  margin-right: var(--gutter-double);
+}
 .p-menuitem-red{
   color: var(--color-red);
 }

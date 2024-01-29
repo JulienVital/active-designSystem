@@ -33,5 +33,6 @@
 
   
   --gutter: 8px;
+  --gutter-double: calc( var(--gutter) *2);
   --radius: 8px;
 }
