@@ -7,7 +7,7 @@
   --color-text : var(--color-white);
 }
 :root.light-theme {
-  --background-main: var(--white);
+  --background-main: var(--color-white);
   --background-section: var(--color-grey-5); 
   --background-card: var(--color-grey-10); 
   --background-card-hover: var(--color-grey-15); 
