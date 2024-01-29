@@ -4,6 +4,7 @@
   --background-card: var(--color-grey-10); 
   --background-card-hover: var(--color-grey-15); 
   --color-text: var(--color-grey-66); 
+  --color-text-secondary: var(--color-grey-20); 
 }
 
 :root.dark {
@@ -12,6 +13,7 @@
   --background-card: var(--color-grey-63); 
   --background-card-hover: var(--color-grey-60); 
   --color-text : var(--color-white);
+  --color-text-secondary: var(--color-grey-50);
 }
 
 
@@ -37,7 +39,6 @@
     */
   --color-focus: var(--primary-color);
   --color-hover: var(--primary-color);
-  --color-text: var(--text-default-color);
   --color-error: var(--error-color);
   --color-delete: var(--error-color);
   --color-valid: var(--valid-color);
