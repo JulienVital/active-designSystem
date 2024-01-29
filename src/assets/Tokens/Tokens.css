@@ -1,39 +1,6 @@
 @import './Colors.css';
 
 :root, :host {
-  /**
-  * colors
-    */
-  --primary-color: var(--color-blue);
-  --text-default-color: var(--color-white);
-  --error-color: var(--color-red);
-  --valid-color: var(--color-green);
-  --info-color: var(--color-orange);
-  --icon-default-color: var(--color-grey-10);
-  --panel-background-header: var(--color-grey-60);
-  --panel-background-body: var(--color-grey-50);
-  --panel-background-separator: var(--color-grey-20);
-  --panel-background-alternative: var(--color-grey-30);
-  --input-background: var(--color-grey-55);
-  --background: var(--color-grey-55);
-
-  /**
-    * Semantic colors
-    */
-  --color-focus: var(--primary-color);
-  --color-hover: var(--primary-color);
-  --color-text: var(--text-default-color);
-  --color-error: var(--error-color);
-  --color-delete: var(--error-color);
-  --color-valid: var(--valid-color);
-  --color-icon: var(--icon-default-color);
-  --color-panel-header-background: var(--panel-background-header);
-  --color-panel-body-background: var(--panel-background-body);
-  --color-panel-separator: var(--panel-background-separator);
-  --panel-background-onBackground: var(--panel-background-alternative);
-  --color-input-background: var(--input-background);
-  --color-app-background: var(--background);
-  --color-info: var(--info-color);
 
   /**
   * Font Size
@@ -66,6 +33,5 @@
 
   
   --gutter: 8px;
-  --radius: 4px;
-  --radius-double: 8px;
+  --radius: 8px;
 }

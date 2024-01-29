@@ -78,7 +78,9 @@ export default defineConfig({
 
         ] },
         { text: 'Modals', items: [] },
-        { text: 'Panels', items: [] },
+        { text: 'Layout', items: [
+          { text: 'Section', link: '/components/layout/section/' },
+        ] },
         { text: 'Miscs', items: [
           { text: 'Tag', link: '/components/misc/tag/' },
         ] },

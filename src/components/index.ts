@@ -3,6 +3,7 @@ import ApInputText from './Inputs/InputText/ApInputText.vue'
 import ApInputSelect from './Inputs/InputSelect/ApInputSelect.vue'
 import ApDropZone from './Inputs/DropZone/ApDropZone.vue'
 import ApBasePanel from './Panels/BasePanel/ApBasePanel.vue'
+import ApSection from './Panels/Section/ApSection.vue'
 import ApTabView from './Panels/Tabview/ApTabView.vue'
 import ApToolbar from './Panels/Toolbar/ApToolbar.vue'
 import ApContextMenu from './Menu/ApContextMenu.vue'
@@ -23,5 +24,6 @@ export {
   ApIconButton,
   ApInputSwitch,
   ApTag,
-  ApSearch
+  ApSearch,
+  ApSection
 }

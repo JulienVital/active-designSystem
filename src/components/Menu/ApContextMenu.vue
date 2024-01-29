@@ -44,7 +44,7 @@ defineExpose({
 <style>
 .p-contextmenu{
   padding: var(--gutter);
-  border-radius: var( --radius-double);
+  border-radius: var(--radius);
   min-width: 150px;
 
 }
