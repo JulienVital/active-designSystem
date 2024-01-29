@@ -45,7 +45,9 @@ defineExpose({
 .p-contextmenu{
   padding: var(--gutter);
   border-radius: var(--radius);
+  background-color: var(--background-main);
   min-width: 150px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
 
 }
 .p-menuitem-content{
@@ -53,11 +55,10 @@ defineExpose({
 }
 .p-menuitem-content:hover{
   border-radius: var( --radius);
-  background-color: var(--color-grey-10);
+  background-color: var(--background-card);
   min-width: 150px;
 }
 .p-menuitem-text{
-  color: var(--color-grey-70);
   font-family: Poppins;
   font-size: var(  --text-sm);
   font-style: normal;
@@ -67,9 +68,7 @@ defineExpose({
 .p-menuitem-link{
   padding: 8px 6px;
 }
-.p-menuitem-icon{
-  color: var(--color-grey-70);
-}
+
 .p-menuitem-red{
   color: var(--color-red);
 }

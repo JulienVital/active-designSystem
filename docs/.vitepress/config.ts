@@ -75,6 +75,7 @@ export default defineConfig({
         ] },
         { text: 'Menu', items: [
           { text: 'Contextual', link: '/components/menu/contextualMenu/' },
+          { text: 'Tab', link: '/components/menu/tabPanel/' },
 
         ] },
         { text: 'Modals', items: [] },

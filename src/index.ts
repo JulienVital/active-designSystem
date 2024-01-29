@@ -5,10 +5,9 @@ import * as components from './components'
 import './assets/main.css'
 
 import ApTooltip from './directives/ApTooltip/ApTooltip'
-import TabPanel from 'primevue/tabpanel'
 import useToast from './composables/Toast/useToast'
 import type { App } from 'vue'
-export { TabPanel as ApTabPanel, useToast }
+export { useToast }
 
 export function ActPubResolver() {
   return {
@@ -32,8 +31,6 @@ function install(app: App) {
   for (const key in components) {
     app.component(key, components[key])
   }
-  app.component('ApTabPanel', TabPanel)
-
 }
 export const config = {
   install

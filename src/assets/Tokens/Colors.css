@@ -1,18 +1,19 @@
-@import './Colors.css';
-:root.dark-theme {
-  --background-main: var(--color-grey-70); 
-  --background-section: var(--color-grey-66); 
-  --background-card: var(--color-grey-63); 
-  --background-card-hover: var(--color-grey-60); 
-  --color-text : var(--color-white);
-}
-:root.light-theme {
+:root {
   --background-main: var(--color-white);
   --background-section: var(--color-grey-5); 
   --background-card: var(--color-grey-10); 
   --background-card-hover: var(--color-grey-15); 
   --color-text: var(--color-grey-66); 
 }
+
+:root.dark {
+  --background-main: var(--color-grey-70); 
+  --background-section: var(--color-grey-66); 
+  --background-card: var(--color-grey-63); 
+  --background-card-hover: var(--color-grey-60); 
+  --color-text : var(--color-white);
+}
+
 
 :root, :host {
   /**

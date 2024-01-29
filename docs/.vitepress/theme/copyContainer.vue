@@ -31,6 +31,8 @@ const copy = () => {
 </script>
 <style>
 .language-{
+    font-size: small;
+    display: flex;
     display: flex;
     align-content: center;
     align-items: center;
@@ -40,8 +42,7 @@ const copy = () => {
     padding:7px;
 }
 .mySlot{
-    font-size: small;
-    display: flex;
+
     flex-direction: column;
     /* align-content: center; */
     align-items: center;

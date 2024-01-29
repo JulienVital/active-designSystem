@@ -33,6 +33,7 @@ const colorsList = {
   
   'color-grey-5' : '#F9F9F9',
   'color-grey-10': "#F0F0F0",
+  'color-grey-15': "#DFDFDF",
   'color-grey-20': "#a4a4a4",
   'color-grey-30': "#707070",
   'color-grey-40': "#595959",

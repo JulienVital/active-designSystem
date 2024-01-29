@@ -10,6 +10,8 @@
 <style>
 .mySlot{
   width: 100%;
+  all: initial;
+    all: unset;
 }
 </style>
 

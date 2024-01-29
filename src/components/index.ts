@@ -11,6 +11,7 @@ import ApIconButton from './Buttons/ApIconButton.vue'
 import ApInputSwitch from './Inputs/InputSwitch/ApInputSwitch.vue'
 import ApSearch from './Inputs/Search/ApSearch.vue'
 import ApTag from './Miscs/Tag/apTag.vue'
+import TabPanel from 'primevue/tabpanel'
 
 export {
   ApInputNumber,
@@ -19,6 +20,7 @@ export {
   ApDropZone,
   ApBasePanel,
   ApTabView,
+  TabPanel as ApTabPanel,
   ApToolbar,
   ApContextMenu,
   ApIconButton,
