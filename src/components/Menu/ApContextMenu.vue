@@ -48,6 +48,7 @@ defineExpose({
   background-color: var(--background-main);
   min-width: 150px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  color: var(--color-text);
 
 }
 .p-menuitem-content{

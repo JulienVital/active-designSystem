@@ -1,4 +1,4 @@
-:root {
+:root, :root.light  {
   --background-main: var(--color-white);
   --background-section: var(--color-grey-5); 
   --background-card: var(--color-grey-10); 
