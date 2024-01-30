@@ -9,10 +9,9 @@
 
 <style>
 .mySlot{
-  width: 100%;
-  all: initial;
-    all: unset;
+    width: 100%;
 }
+
 </style>
 
 

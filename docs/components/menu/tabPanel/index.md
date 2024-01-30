@@ -38,3 +38,9 @@
     </ApTabPanel>
 </ApTabView>
 ```
+
+<style>
+  .tabview p{
+    margin: 0;
+  }
+</style>

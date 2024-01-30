@@ -17,7 +17,7 @@ import TabView from 'primevue/tabview'
   flex-direction: row;
   margin: 0;
   padding: 0;
-  margin: 20px;
+  margin: 20px 20px 14px 20px ;
 }
 .tabview li  + li{
   margin: 0;
