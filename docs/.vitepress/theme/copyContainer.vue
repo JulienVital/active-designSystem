@@ -44,14 +44,15 @@ const copy = () => {
 .mySlot{
 
     flex-direction: column;
-    /* align-content: center; */
+    align-content: center;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 5px;
 }
 #copyContainer{
     margin-top: 0;
 }
+
 
 </style>
 
