@@ -126,6 +126,8 @@ const iconsList = [
     "ap-tag",
     "ap-trash2",
     "ap-page",
+    "ap-page2",
+    "ap-filters",
     "ap-squares",
     ];
 </script>
