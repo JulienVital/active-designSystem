@@ -5,6 +5,7 @@
   --background-card-hover: var(--color-grey-15); 
   --color-text: var(--color-grey-66); 
   --color-text-secondary: var(--color-grey-20); 
+  --background-info: var(--color-grey-20); 
 }
 
 :root.dark {
@@ -14,6 +15,8 @@
   --background-card-hover: var(--color-grey-60); 
   --color-text : var(--color-white);
   --color-text-secondary: var(--color-grey-50);
+  --color-sticker: var(--color-grey-20); 
+
 }
 
 
