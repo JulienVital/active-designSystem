@@ -4,12 +4,14 @@ base material icons https://github.com/google/material-design-icons
 */
 
 @font-face {
-  font-family: 'Material Symbols Outlined';
+  font-family: 'Actpublishing family';
   font-style: normal;
-  src: url(https://pimcore-x-active.datasolution.site/activePublishing.woff2) format('woff2');
+  src: 
+  url(https://pimcore-x-active.datasolution.site/activePublishing.woff2) format('woff2'),
+  url(https://cdn-pim2print-dev.datasolution.site/assets/activePublishing.woff2) format('woff2'),
 }
 .ap-icon {
-  font-family: 'Material Symbols Outlined';
+  font-family: 'Actpublishing family';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;

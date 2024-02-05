@@ -62,7 +62,7 @@ const handlerClose = () => {
   color: var(--color-text);
   font-size: var(--text-xs);
   box-shadow: var(--panel-shadow);
-  background-color: var(--color-panel-header-background);
+  background-color: var(--background-main);
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   padding: var(--sizePoint);

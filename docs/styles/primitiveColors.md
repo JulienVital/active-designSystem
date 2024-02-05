@@ -43,8 +43,6 @@ const colorsList = {
   'color-grey-63': "#242424",
   'color-grey-66': "#151515",
   'color-grey-70': "#090606",
-  'color-grey-80': "#151515",
-  'color-grey-90': "#090606",
   'color-black': '#000000',
   'color-black-tr': '#00000029'
 }
