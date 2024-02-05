@@ -7,8 +7,8 @@ base material icons https://github.com/google/material-design-icons
   font-family: 'Actpublishing family';
   font-style: normal;
   src: 
-  url(https://pimcore-x-active.datasolution.site/activePublishing.woff2) format('woff2'),
-  url(https://cdn-pim2print-dev.datasolution.site/assets/activePublishing.woff2) format('woff2'),
+    url(https://pimcore-x-active.datasolution.site/activePublishing.woff2) format('woff2'),
+    url(https://cdn-pim2print-dev.datasolution.site/assets/activePublishing.woff2) format('woff2'),
 }
 .ap-icon {
   font-family: 'Actpublishing family';
