@@ -1,6 +1,7 @@
 
 .p-inputnumber-input{
   border-radius: var(--radius);
+  border: 1px solid transparent;
   background-color: #242424;
   color: var(--color-text);
   text-align: right;
@@ -21,6 +22,7 @@
 
 
 .apInputText {
+  border: 1px solid transparent;
   border-radius: var(--radius);
   background-color: #242424;
   color: var(--color-text);
