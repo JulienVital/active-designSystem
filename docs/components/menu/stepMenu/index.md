@@ -4,14 +4,15 @@
 ## Example
 
 <presentationContainer>
-<ApStepMenu :items="items" :currentStep="1"/>
-
+<ApStepMenu :items="items" :currentStep="currentStep" @update:currentStep="(newvalue)=>currentStep= newvalue"/>
+  Current Step = {{currentStep}}
 </presentationContainer>
 
 ### Code : 
 
 ```ts
-<ApStepMenu :items="items" :currentStep="1"/>
+<ApStepMenu :items="items" :currentStep="currentStep" 
+@update:currentStep="(newvalue)=>currentStep= newvalue"/>
 
 const items = [
   {
@@ -41,7 +42,8 @@ const items = [
 </style>
 <script setup lang="ts">
 import Steps from 'primevue/steps'
-
+import {ref} from 'vue'
+const currentStep = ref(0);
 const items = [
     {
         label: 'Configuration',

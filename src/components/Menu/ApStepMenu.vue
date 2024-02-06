@@ -1,10 +1,10 @@
 <template>
     <Steps :model="props.items" :activeStep="props.currentStep" :readonly="false" >
-    <template #item="{ item, active }">
-        <span :class="['p-step-item-icon', { 'p-step-item-icon-active': active }]">
+    <template #item="{ item, active }" >
+        <span :class="['p-step-item-icon', { 'p-step-item-icon-active': active }]" @click="changeActive(item)">
             <i :class="item.icon"></i>
         </span>
-        <span :class="[{ 'p-step-item-active': active }, 'p-step-item-span']">{{ item.label }}</span>
+        <span :class="[{ 'p-step-item-active': active }, 'p-step-item-span']" @click="changeActive(item)" >{{ item.label }}</span>
     </template>
 </Steps></template>
 
@@ -22,6 +22,17 @@ const props = defineProps({
     }
 })
 
+const emit = defineEmits<{
+  (e: 'update:currentStep', newStep: number): void
+}>()
+const emitEvent = (newStep) => {
+  emit('update:currentStep', newStep)
+}
+
+const changeActive = (item)=>{
+    const finded = props.items.findIndex((currentItem)=> currentItem == item)
+    emitEvent(finded);
+}
 
 </script>
 <style>
@@ -48,7 +59,7 @@ const props = defineProps({
     font-size:16px;
 }
  .p-steps-item:not(:first-child):before {
-    font-family: 'Material Symbols Outlined';
+    font-family: 'Actpublishing family';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
