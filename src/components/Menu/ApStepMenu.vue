@@ -40,6 +40,7 @@ const changeActive = (item)=>{
     width: 100%;
 }
 .p-step-item-icon{
+    cursor: pointer;
     background-color: var(--background-card);
     width: 32px;
     height: 32px;
@@ -57,6 +58,7 @@ const changeActive = (item)=>{
 .p-step-item-icon .ap-icon{
     line-height: 16px;
     font-size:16px;
+    
 }
  .p-steps-item:not(:first-child):before {
     font-family: 'Actpublishing family';
