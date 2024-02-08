@@ -129,5 +129,7 @@ const iconsList = [
     "ap-page2",
     "ap-filters",
     "ap-squares",
+    "ap-cross",
+    "ap-home"
     ];
 </script>

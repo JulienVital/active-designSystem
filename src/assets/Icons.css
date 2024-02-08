@@ -220,3 +220,9 @@ base material icons https://github.com/google/material-design-icons
 .ap-page2:before{
   content: '\e07A';
 }
+.ap-cross:before{
+  content: '\e07B';
+}
+.ap-home:before{
+  content: '\e07C';
+}
