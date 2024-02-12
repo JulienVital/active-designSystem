@@ -6,6 +6,7 @@
   --color-text: var(--color-grey-66); 
   --color-text-secondary: var(--color-grey-20); 
   --background-info: var(--color-grey-10); 
+  --background-info-text: var(--color-grey-50); 
   
 }
 
@@ -17,6 +18,7 @@
   --color-text : var(--color-white);
   --color-text-secondary: var(--color-grey-50);
   --background-info: var(--color-grey-63); 
+  --background-info-text: var(--color-grey-20); 
 
 }
 
