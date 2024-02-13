@@ -1,10 +1,10 @@
 <template>
     <Steps :model="props.items" :activeStep="props.currentStep" :readonly="false" >
-    <template #item="{ item, active }" >
-        <span :class="['p-step-item-icon', { 'p-step-item-icon-active': active }]" @click="changeActive(item)">
+    <template #item="{ item, index }" >
+        <span :class="['p-step-item-icon', { 'p-step-item-icon-active': index == props.currentStep}]" @click="changeActive(item)">
             <i :class="item.icon"></i>
         </span>
-        <span :class="[{ 'p-step-item-active': active }, 'p-step-item-span']" @click="changeActive(item)" >{{ item.label }}</span>
+        <span :class="[{ 'p-step-item-active':  index == props.currentStep }, 'p-step-item-span']" @click="changeActive(item)" >{{ item.label }}</span>
     </template>
 </Steps></template>
 
