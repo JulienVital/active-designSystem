@@ -1,9 +1,6 @@
 <template>
-  <Dropdown :disabled="props.disabled" :class="inputSize" :modelValue="modelValue" @update:modelValue="(value) => handlerChange(value)"
-    :options="options" :optionLabel="props.optionLabel" :pt="{
-      input: { class: inputSize },
-
-    }" />
+  <Dropdown :disabled="props.disabled" :modelValue="modelValue" @update:modelValue="(value) => handlerChange(value)"
+    :options="options" :optionLabel="props.optionLabel" />
 </template>
 
 <script setup lang="ts">
@@ -21,7 +18,7 @@ const props = defineProps({
   modelValue: {
     required: false,
     validator: (value) => typeof value === 'string' || typeof value === 'object'
-    },
+  },
   optionLabel: {
     required: false,
     type: String
@@ -54,43 +51,25 @@ const handlerChange = (newValue: any) => {
 </script>
 
 <style>
-.p-dropdown:not(.p-disabled):hover {
-  border-color: var(--primary-color);
+.p-dropdown-items-wrapper{
+  border-radius: var(--gutter);
+  border: 1px solid var(--border-card);
+  background: var(--background-main);
+  box-shadow: var(--shadow-card);
+  
+  padding: var(--gutter);
 }
-.p-dropdown {
-  border: 1px solid var(--color-grey-30);
+.p-dropdown-item{
+  border-radius: 4px;
+  padding: var(--gutter);
+  font-size: var(--text-sm);
+  line-height: var(--text-sm);
+  color: var(--color-text);
+  font-family: Poppins;
+  font-style: normal;
 }
-.p-inputtext {
-padding: 4px 4px;
-color : var(--text-default-color);
-font-size: var(--text-sm);
-
-}
-.p-dropdown:not(.p-disabled).p-focus{
-
-  box-shadow: 0 0 0 0.1rem  var(--primary-color);
-}
-.p-dropdown .p-dropdown-trigger{
-  width: 1.2rem;
-  color : var(--text-default-color);
-}
-.p-dropdown-panel .p-dropdown-items .p-dropdown-item{
-  padding: 0 4px;
-  color : var(--text-default-color);
-  background-color: var(--input-background);
-font-size: var(--text-sm);
-
-}
-.p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover{
-  padding: 0 4px;
-  color : var(--text-default-color);
-  background-color: var(--primary-color);
-}
-.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight{
-  background: var(--primary-color)
-}
-.p-dropdown{
-
-  background-color: var(--input-background);
+.p-dropdown-item:hover{
+  background: var(--background-info);
+  
 }
 </style>
