@@ -15,7 +15,7 @@ You must add 'ap-icon' and 'ap-*' css classes to your component
 
 <div class="iconContainer">
 <copyContainer  v-for="icon in iconsList">
-    <i class="ap-icon doc-icon" :class="icon" />
+    <i class="ap-icon" :class="icon" />
 </copyContainer >
 </div>
 
@@ -63,7 +63,7 @@ Although the icons in the font can be scaled to any size, in accordance with mat
         grid-template-columns: 1fr 1fr  1fr;
         column-gap: 15px;
     }
-       .doc-icon{
+       .iconContainer *{
            font-size: var(--icon-lg);
        }
 
