@@ -63,6 +63,16 @@ const toast = useToast()
     life: 3000 })
 ````
 
+## Parameters
+
+| Name     |            Type            |
+|----------|:--------------------------:|
+| severity |           'error', 'success', 'warn'           |
+| summary  | string |
+| detail   |          string           |
+| life     |          Number           |
+
+
 
 <script setup lang="ts">
 import {useToast} from '@'
@@ -78,6 +88,7 @@ const showWarn = () => {
 const showError = () => {
   toast.add({ severity: 'error' , summary: 'Danger', detail: 'Message Content', life: 3000 })
 }
+
 
 </script>
 <style scoped >
