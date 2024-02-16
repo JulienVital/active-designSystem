@@ -13,6 +13,7 @@ import ApInputSwitch from './Inputs/InputSwitch/ApInputSwitch.vue'
 import ApSearch from './Inputs/Search/ApSearch.vue'
 import ApTag from './Miscs/Tag/apTag.vue'
 import TabPanel from 'primevue/tabpanel'
+import ApToast from '../composables/Toast/ApToast.vue';
 
 export {
   ApInputNumber,
@@ -29,5 +30,6 @@ export {
   ApTag,
   ApSearch,
   ApSection,
-  ApStepMenu
+  ApStepMenu,
+  ApToast
 }

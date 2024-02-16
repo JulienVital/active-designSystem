@@ -14,7 +14,7 @@ export default defineConfig({
       { text: 'Styles', link: '/styles/' },
       { text: 'Components', link: '/components/other' },
       { text: 'Directives', link: '/directives/' },
-      { text: 'Composables', link: '#' },
+      { text: 'Composables', link: '/composables/' },
       { text: 'NpmJs', link: 'https://www.npmjs.com/package/active-designsystem' }
     ],
 
@@ -86,6 +86,14 @@ export default defineConfig({
         { text: 'Miscs', items: [
           { text: 'Tag', link: '/components/misc/tag/' },
         ] },
+      ],
+      '/composables/': [
+        {
+          text: 'Composables',
+          items: [
+            { text: 'Toast', link: '/composables/toast/' },
+          ]
+        }
       ],
     },
 
