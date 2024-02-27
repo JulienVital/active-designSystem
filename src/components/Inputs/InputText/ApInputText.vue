@@ -3,6 +3,7 @@
   :class="['apInputText',inputSize]" 
   type="text" :modelValue="props.modelValue" 
   @update:modelValue="handlerChange"
+  @blur="handlerBlur"
   :disabled="disabled"
   />
 
@@ -38,12 +39,19 @@ const props = defineProps({
     default: false
   }
 })
+let localValue = props.modelValue;
 
 const emit = defineEmits<{
   (e: 'update:modelValue', newValue: string): void
+  (e: 'blur', newValue: string): void
 }>()
+
+const handlerBlur = () => {
+  emit('blur', localValue)
+}
 
 const handlerChange = (newValue: string) => {
   emit('update:modelValue', newValue)
+  localValue = newValue
 }
 </script>
