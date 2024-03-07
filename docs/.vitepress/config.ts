@@ -72,6 +72,7 @@ export default defineConfig({
         },
         { text: 'Buttons', items: [
           { text: 'IconButton', link: '/components/buttons/iconButton/' },
+          { text: 'Button', link: '/components/buttons/button/' },
         ] },
         { text: 'Menu', items: [
           { text: 'Contextual', link: '/components/menu/contextualMenu/' },

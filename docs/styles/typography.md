@@ -21,11 +21,34 @@ const fontSize = {
   'text-xxl': 'var(--text-xxl)',
   'text-xxxl': 'var(--text-xxxl)',
 }
+const fontweight = {
 
+  'weight-ultraLight' : 'var(--weight-ultraLight)',
+  'weight-regular' : 'var(--weight-regular)',
+  'weight-semiBold' : 'var(--weight-semiBold)',
+  'weight-bold' : 'var(--weight-bold)',
+}
 </script>
 <copyContainer v-for="(item, index) in fontSize" :copyContent="`var(--${index})`">
     <span :style="{
         'fontSize': item
+    }" >
+    Lorem ipsum dolor sit amet
+    </span>
+    --{{index}}
+</copyContainer >
+
+## Font- Family
+
+<copyContainer  :copyContent="`var(--font-family)`">
+  --font-family: 'Poppins', sans-serif;
+</copyContainer >
+
+## Font- weight
+
+<copyContainer v-for="(item, index) in fontweight" :copyContent="item">
+    <span :style="{
+        'fontWeight': item
     }" >
     Lorem ipsum dolor sit amet
     </span>

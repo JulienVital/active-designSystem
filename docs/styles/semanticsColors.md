@@ -18,6 +18,7 @@ const themeList = {
   'error-color': 'var(--color-red)',
   'valid-color': 'var(--color-green)',
   'info-color': 'var(--color-orange)',
+  'action-color': 'var(--action-color)',
   'icon-default-color': 'var(--color-grey-10)',
   'panel-background-header': 'var(--color-grey-60)',
   'panel-background-body': 'var(--color-grey-50)',

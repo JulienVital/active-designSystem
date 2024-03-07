@@ -35,7 +35,7 @@ const changeActive = (item)=>{
 }
 
 </script>
-<style>
+<style scoped>
 .p-steps{
     width: 100%;
 }

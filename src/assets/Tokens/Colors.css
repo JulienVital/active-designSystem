@@ -37,6 +37,7 @@
   --valid-color: var(--color-green);
   --info-color: var(--color-orange);
   --icon-default-color: var(--color-grey-10);
+  --action-color: var(--color-pink2);
   --panel-background-header: var(--color-grey-60);
   --panel-background-body: var(--color-grey-50);
   --panel-background-separator: var(--color-grey-20);
@@ -60,5 +61,6 @@
   --color-input-background: var(--input-background);
   --color-app-background: var(--background);
   --color-info: var(--info-color);
+  --color-disable: var(--color-grey-55);
 
 }

@@ -20,6 +20,7 @@ const colorsList = {
   'color-blue': '#5cbdec',
   'color-blue-tr40': '#5cbdec40',
   'color-pink': '#e72179',
+  'color-pink2': '#EB1E79',
   'color-pink-tr40': '#e7217940',
   'color-yellow': '#ffde00',
   'color-yellow-tr40': '#ffde0040',
