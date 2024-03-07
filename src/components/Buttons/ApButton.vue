@@ -36,8 +36,12 @@ const classStyle = computed(() => {
   display: inline-flex;
   padding: 8px 20px;
   gap: var(--gutter);
+  border: transparent;
   border-radius: var(--radius);
   font-family: var(--font-family);
+
+}
+.p-button-label{
   font-size: var(--text-md);
   font-weight: var(--weight-bold);
   line-height: calc(var(--text-md) * 1.55); 

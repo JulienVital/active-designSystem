@@ -137,6 +137,7 @@ const iconsList = [
     "ap-home",
     "ap-pdf",
     "ap-pdf2",
-    "ap-list"
+    "ap-list",
+    "ap-plus"
     ];
 </script>

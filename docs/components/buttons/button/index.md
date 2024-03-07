@@ -5,7 +5,7 @@ Button is an extension to standard input element with icons and theming.
 ## Example
 
 <presentationContainer>
-    <ApButton label="Étape suivante" />
+    <ApButton icon="ap-icon ap-plus" label="Nouvelle publication" />
     <ApButton label="Confirmer" variant="disable"/>
     <ApButton label="Annuler" variant="ghost"/>
     <ApButton label="Retour" variant="secondary"/>
@@ -14,11 +14,11 @@ Button is an extension to standard input element with icons and theming.
 ## Default
 
 <presentationContainer>
-    <ApButton label="Étape suivante" />
+    <ApButton icon="ap-icon ap-plus" label="Nouvelle publication" />
 </presentationContainer>
 
 ```ts
-    <ApButton label="Étape suivante" />
+    <ApButton icon="ap-icon ap-plus" label="Nouvelle publication" />
 ```
 
 ## Secondary

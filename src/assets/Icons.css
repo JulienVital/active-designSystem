@@ -234,3 +234,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-list:before{
   content: '\e66e';
 }
+.ap-plus:before{
+  content: '\e07d';
+}
