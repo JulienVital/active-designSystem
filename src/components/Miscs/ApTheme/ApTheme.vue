@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import InputSwitch from 'primevue/inputswitch';
-import { useTheme } from '../../../composables/theme';
+import { useTheme } from '@/composables/theme';
 const {toggleTheme, isDarkMode} = useTheme();
 
 </script>
