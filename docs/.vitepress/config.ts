@@ -86,6 +86,7 @@ export default defineConfig({
         ] },
         { text: 'Miscs', items: [
           { text: 'Tag', link: '/components/misc/tag/' },
+          { text: 'Theme', link: '/components/misc/theme/' },
         ] },
       ],
       '/composables/': [

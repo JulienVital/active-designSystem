@@ -1,5 +1,5 @@
 <template>
-  <InputSwitch :modelValue="props.modelValue" @update:modelValue="handlerChange" />
+  <InputSwitch class="ap-InputSwitch" :modelValue="props.modelValue" @update:modelValue="handlerChange" />
 
 </template>
 
@@ -30,29 +30,31 @@ const handlerChange = (newValue: Boolean) => {
 </script>
 
 <style>
-.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+.ap-InputSwitch.p-inputswitch-checked .p-inputswitch-slider {
     background: var(--primary-color);
 }
-.p-inputswitch .p-inputswitch-slider {
+.ap-InputSwitch .p-inputswitch-slider {
     background-color: var(--color-input-background);
+    border-radius: 15px;
 }
-.p-inputswitch.p-focus .p-inputswitch-slider{
+.ap-InputSwitch.p-focus .p-inputswitch-slider{
   box-shadow : none;
 }
 
-.p-inputswitch .p-inputswitch-slider:before {
+.ap-InputSwitch .p-inputswitch-slider:before {
     background: var(--text-default-color);
     width: 0.8rem;
     height: 0.8rem;
     margin-top: -0.4rem;
+    margin-left: 0.1rem;
     border-radius: 50%;
     transition-duration: 0.2s;
 }
-.p-inputswitch {
+.ap-InputSwitch {
     width: 2.1rem;
     height: 1.1rem;
 }
-.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
-    transform: translateX(0.8rem);
+.ap-InputSwitch.p-inputswitch-checked .p-inputswitch-slider:before {
+    transform: translateX(1rem);
 }
 </style>

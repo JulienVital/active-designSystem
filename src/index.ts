@@ -1,13 +1,13 @@
 import PrimeVue from 'primevue/config'
 import ToastService from 'primevue/toastservice'
 import * as components from './components'
-
+import { useTheme } from './composables/theme'
 import './assets/main.css'
 
 import ApTooltip from './directives/ApTooltip/ApTooltip'
 import useToast from './composables/Toast/useToast'
 import type { App } from 'vue'
-export { useToast }
+export { useToast, useTheme }
 
 export function ActPubResolver() {
   return {

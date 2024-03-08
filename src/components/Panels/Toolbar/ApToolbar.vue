@@ -18,7 +18,7 @@ import Toolbar from 'primevue/toolbar'
 <style>
 .p-toolbar {
   border: none;
-  padding: 1.25rem;
+  padding: 0 1.25rem;
   border-radius: inherit;
   gap: 0.5rem;
   background: transparent;

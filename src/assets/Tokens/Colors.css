@@ -9,6 +9,7 @@
   --background-info-text: var(--color-grey-50);
   --border-card: var(--color-grey-15);
   --shadow-card :  0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  --background-input: var(--color-grey-10);
 }
 
 :root.dark {
@@ -22,8 +23,7 @@
   --background-info-text: var(--color-grey-20); 
   --border-card: var(--color-grey-60);
   --shadow-card :  0px 0px 30px 0px rgba(0, 0, 0, 0.50);
-
-
+  --background-input: var(--color-grey-63);
 }
 
 
