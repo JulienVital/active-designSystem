@@ -1,6 +1,6 @@
 <template>
   <div class="themeswitchWrapper">
-    <InputSwitch :class="['apSwitchTheme', {'isLight': !isDarkMode}]" :modelValue="isDarkMode" />
+    <InputSwitch :class="['apSwitchTheme', {'isLight': !isDarkMode}]" :modelValue="isDarkMode"  @update:modelValue="toggle"/>
   </div>
 </template>
 
@@ -11,6 +11,10 @@ const props = defineProps({
   isDarkMode: {
   required: true,
   type: Boolean
+},
+toggle: {
+  required: true,
+  type: Function
 },
 
 })

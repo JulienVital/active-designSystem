@@ -9,7 +9,7 @@
 
 A component that is responsible for switching the site theme
 
-<ApTheme :isDarkMode="isDarkMode" @click="toggleTheme"/>
+<ApTheme :isDarkMode="isDarkMode" :toggle="toggleTheme"/>
 
 
 ```ts 
