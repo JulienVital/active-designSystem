@@ -25,4 +25,6 @@
 html {
   font-family: var(--font-family);
 }
-
+input{
+  all: unset;
+}

@@ -1,14 +1,16 @@
+<script setup lang="ts">
+    import { useTheme } from './theme';
+    import {ref } from 'vue';
+    const {initTheme,toggleTheme, isDarkMode} = useTheme();
+    initTheme()
+</script>
+
 # Ap-Theme
 
 A component that is responsible for switching the site theme
 
-<ApTheme/>
+<ApTheme :isDarkMode="isDarkMode" @click="toggleTheme"/>
 
-<script>
-    import { useTheme } from '@/composables/theme';
-    const {initTheme} = useTheme();
-    initTheme()
-</script>
 
 ```ts 
 <ApTheme/>

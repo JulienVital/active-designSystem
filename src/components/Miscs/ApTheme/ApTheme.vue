@@ -1,17 +1,23 @@
 <template>
   <div class="themeswitchWrapper">
-    <InputSwitch :class="['apSwitchTheme', {'isLight': !isDarkMode}]" :modelValue="isDarkMode" @update:modelValue="toggleTheme" />
+    <InputSwitch :class="['apSwitchTheme', {'isLight': !isDarkMode}]" :modelValue="isDarkMode" />
   </div>
 </template>
 
 <script setup lang="ts">
 import InputSwitch from 'primevue/inputswitch';
-import { useTheme } from '@/composables/theme';
-const {toggleTheme, isDarkMode} = useTheme();
+const props = defineProps({
+
+  isDarkMode: {
+  required: true,
+  type: Boolean
+},
+
+})
 
 </script>
 
-<style>
+<style >
 
 .themeswitchWrapper{
   position: relative;
