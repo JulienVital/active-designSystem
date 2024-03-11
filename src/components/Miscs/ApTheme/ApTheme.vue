@@ -1,71 +1,129 @@
 <template>
-  <div class="themeswitchWrapper">
-    <InputSwitch :class="['apSwitchTheme', {'isLight': !isDarkMode}]" :modelValue="isDarkMode"  @update:modelValue="toggle"/>
-  </div>
+  <label class="vc-switch">
+    <input type="checkbox" class="vc-switch-input" :checked="isDarkMode" @change="toggleTheme" />
+    <span class="vc-switch-label" data-on="Yes" data-off="No"></span>
+    <span class="vc-handle"></span>
+  </label>
 </template>
 
 <script setup lang="ts">
-import InputSwitch from 'primevue/inputswitch';
-const props = defineProps({
+import {useTheme}  from '@/composables/useTheme'
 
-  isDarkMode: {
-  required: true,
-  type: Boolean
-},
-toggle: {
-  required: true,
-  type: Function
-},
-
-})
+const {isDarkMode, toggleTheme} = useTheme();
 
 </script>
 
-<style >
+<style>
 
-.themeswitchWrapper{
-  position: relative;
+.vc-toggle-container * {
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
 }
-.apSwitchTheme {
+
+.vc-switch {
+  border-radius: 12px;
   position: relative;
-  border-radius: 40px;
-  background: var(--background-input);
   width: 44px;
   height: 24px;
-  flex-shrink: 0;
+  cursor: pointer;
+  display: inline-block;
 }
 
-.apSwitchTheme .p-inputswitch-slider:before {
-    background: var(--background-main);
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: 0.1rem;
-    border-radius: 50%;
-    transition-duration: 0.4s;
-    z-index:1;
+.vc-toggle-container label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
 }
-.apSwitchTheme.isLight .p-inputswitch-slider:after {
+
+.vc-switch-input {
+  position: absolute;
+  transform: translate3d(5px, 5px, 0);
+}
+
+.vc-switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  background: var(--background-input);
+  border-radius: inherit;
+}
+
+.vc-switch-label:before,
+.vc-switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  line-height: 1.1;
+}
+
+.vc-switch-label:before {
   font-family: 'Actpublishing family';
   font-size: 16px;
   content: "\e07e";
-  right: 3px;
-  display: block;
-  position: absolute;
 }
-.apSwitchTheme.p-inputswitch-checked .p-inputswitch-slider:before {
-    transform: translateX(1.2rem);
-    z-index: 1;
-    
-}
-.apSwitchTheme.p-inputswitch-checked::before{
-font-family: 'Actpublishing family';
+
+.vc-switch-label:after {
+  font-family: 'Actpublishing family';
   font-size: 16px;
   content: "\e07f";
-  left: 2px;
-  display: block;
+  opacity: 0;
+}
+
+.vc-switch-label:before {
+  right: 3px;
+}
+
+.vc-switch-label:after {
+  left: 3px;
+}
+
+.vc-switch-input:checked ~ .vc-switch-label {
+  background: var(--background-input);
+}
+
+.vc-switch-input:checked ~ .vc-switch-label:before {
+  opacity: 0;
+}
+
+.vc-switch-input:checked ~ .vc-switch-label:after {
+  opacity: 1;
+}
+
+.vc-handle {
+  position: absolute !important;
+  top: 5px;
+  left: 5px;
+  background: var(--background-main);
+  border-radius: 40px;
+}
+
+.vc-handle {
   position: absolute;
-  z-index:0;
- }
+  width: 20px;
+  height: 20px;
+  top: 2px;
+}
+
+.vc-handle:before {
+  content: "";
+  top: 50%;
+  left: 5%;
+  position: absolute !important;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+}
+
+.vc-switch-label:active ~ .vc-handle, .vc-handle:active {
+  width: 30px;
+}
+
+.vc-switch-input:checked ~ .vc-handle {
+  left: unset;
+  right: 5px;
+}
 
 </style>
