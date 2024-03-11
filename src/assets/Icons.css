@@ -243,3 +243,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-moon:before{
   content: '\e07f';
 }
+.ap-layer:before{
+  content: '\e080';
+}
