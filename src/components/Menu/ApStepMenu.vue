@@ -1,12 +1,15 @@
 <template>
-    <Steps :model="props.items" :activeStep="props.currentStep" :readonly="false" >
-    <template #item="{ item, index }" >
-        <span :class="['p-step-item-icon', { 'p-step-item-icon-active': index == props.currentStep}]" @click="changeActive(item)">
-            <i :class="item.icon"></i>
-        </span>
-        <span :class="[{ 'p-step-item-active':  index == props.currentStep }, 'p-step-item-span']" @click="changeActive(item)" >{{ item.label }}</span>
-    </template>
-</Steps></template>
+    <Steps :model="props.items" :activeStep="props.currentStep" :readonly="false">
+        <template #item="{ item, index }">
+            <span :class="['p-step-item-icon', { 'p-step-item-icon-active': index == props.currentStep }]"
+                @click="changeActive(item)">
+                <i :class="item.icon"></i>
+            </span>
+            <span :class="[{ 'p-step-item-active': index == props.currentStep }, 'p-step-item-span']"
+                @click="changeActive(item)">{{ item.label }}</span>
+        </template>
+    </Steps>
+</template>
 
 <script setup lang="ts">
 import Steps from 'primevue/steps'
@@ -23,19 +26,22 @@ const props = defineProps({
 })
 
 const emit = defineEmits<{
-  (e: 'update:currentStep', newStep: number): void
+    (e: 'update:currentStep', newStep: number): void
 }>()
 const emitEvent = (newStep) => {
-  emit('update:currentStep', newStep)
+    emit('update:currentStep', newStep)
 }
 
-const changeActive = (item)=>{
-    const finded = props.items.findIndex((currentItem)=> currentItem == item)
+const changeActive = (item) => {
+    const finded = props.items.findIndex((currentItem) => currentItem == item)
     emitEvent(finded);
 }
 
 </script>
-<style scoped>
+<style>
+.p-steps-item{
+    align-items: center;
+}
 .p-steps{
     width: 100%;
 }
@@ -83,18 +89,13 @@ const changeActive = (item)=>{
     cursor: pointer;
     color: var(--color-text-secondary);
 
-font-family: Poppins;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 .p-step-item-active{
     color: var(--color-text);
-
-}
-.p-steps-item{
-    align-items: center;
-
 }
 </style>
