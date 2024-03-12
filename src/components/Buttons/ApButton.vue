@@ -39,13 +39,17 @@ const classStyle = computed(() => {
   border: transparent;
   border-radius: var(--radius);
   font-family: var(--font-family);
-
+font-size: var(--text-sm);
 }
 .p-button-label{
   font-size: var(--text-md);
   font-weight: var(--weight-bold);
   line-height: calc(var(--text-md) * 1.55); 
 }
+.secondary .p-button-label{
+  font-weight: var(--weight-ultraLight);
+}
+
 .p-button.default{
   color: var(--color-white);
   background: var(--action-color);
@@ -58,17 +62,18 @@ const classStyle = computed(() => {
   background: var(--background-info);
 }
 .p-button.ghost{
-  color: var(--color-white);
+  color: var(--color-text );
   background: transparent;
 }
 .p-button.ghost:hover{
   filter: contrast(10%);
 }
 .p-button.secondary{
-  color: var(--color-white);
+  color: var(--color-text );
   background: var(--background-info);
+
 }
 .p-button.secondary:hover{
-  filter: contrast(105%);
+  background: var(--panel-background-alternative);
 }
   </style>
