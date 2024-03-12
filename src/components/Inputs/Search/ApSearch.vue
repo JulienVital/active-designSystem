@@ -38,4 +38,13 @@ const handlerChange = () => {
   font-family: Poppins;
   font-size: var(--text-md);
 }
+.ap-input-search{
+  font-family: Poppins;
+  font-size: var(--text-md);
+  background: transparent;
+  border: transparent;
+  color: var(--color-text);
+  outline: transparent;
+}
+
 </style>
