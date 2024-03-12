@@ -4,7 +4,7 @@
 ## Example
 
 <presentationContainer>
-    <ap-search/>
+    <ap-search />
 
 </presentationContainer>
 
@@ -15,12 +15,15 @@
 
 ## Props
 
-| Name        |            Type            |   Default | Required |
-|-------------|:--------------------------:|----------:|---------:|
-| modelValue  |            Any             |      null |    false |
-| size        | 'small', 'medium', 'large' |    medium |    false |
-| disabled    |          Boolean           |     false |    false |
+None
 
+## Emit
+
+```ts
+defineEmits<{
+  (e: 'update:searchValue', newValue: string): void
+}>()
+````
 
 <script setup lang="ts">
 

@@ -26,6 +26,18 @@ const themeList = {
   'panel-background-alternative': 'var(--color-grey-30)',
   'input-background': 'var(--color-grey-55)',
   'background': 'var(--color-grey-55)',
+
+  'background-main': 'var(--background-main)',
+  'background-section': 'var(--background-section)',
+  'background-card': 'var(--background-card)',
+  'background-card-hover': 'var(--background-card-hover)',
+  'color-text': 'var(--color-text)',
+  'color-text-secondary': 'var(--color-text-secondary)',
+  'background-info': 'var(--background-info)',
+  'background-info-text': 'var(--background-info-text)',
+  'border-card': 'var(--border-card)',
+  'shadow-card' :  'var(--shadow-card)',
+  'background-input': 'var(--background-input)',
 }
 
 </script>

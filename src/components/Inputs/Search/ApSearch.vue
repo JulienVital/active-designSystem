@@ -1,40 +1,41 @@
 <template>
-  <input class="ap-input-search" placeholder="Rechercher"
-  />
-  <i class="ap-input-search-icon ap-icon ap-search"></i>
+  <form class="searchWrapper" @submit.prevent="(aaa)=>console.log(aaa)">
+    <i class="ap-input-search-icon ap-icon ap-search"></i>
+
+    <input ref="inputSearchInput" class="ap-input-search" placeholder="Rechercher"  @input="handlerChange"/>
+  </form>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 
-const props = defineProps({
-  /**
-   * Actual value to display
-   */
-  modelValue: {
-    type: String,
-    required: false,
-    default: ''
-  },
-})
+const inputSearchInput = ref(null);
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', newValue: string): void
+  (e: 'update:searchValue', newValue: string): void
 }>()
 
-const handlerChange = (newValue: string) => {
-  emit('update:modelValue', newValue)
+const handlerChange = () => {
+  emit('update:searchValue', inputSearchInput.value.value)
 }
 </script>
 <style>
-.ap-input-search{
-
+.searchWrapper{
+  position: relative;
+  width: 240px;
+  height: 40px;
+  padding:var(--gutter) 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--background-input);
 }
-
-.ap-input-search::placeholder{
-color: var(--color-grey-20)
-}
-
 .ap-input-search-icon{
-  font-size: 36px
+  font-size: var(--icon-md);
+}
+.ap-input-search::placeholder{
+  font-family: Poppins;
+  font-size: var(--text-md);
 }
 </style>

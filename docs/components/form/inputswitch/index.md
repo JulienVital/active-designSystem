@@ -3,7 +3,7 @@
 ## Example
 
 <presentationContainer>
-    <ApInputSwitch v-model="value" /><br>
+    <ApInputSwitch v-model="value" />
     <ApInputSwitch v-model="value2" />
 
 </presentationContainer>
