@@ -2,7 +2,7 @@
   <form class="searchWrapper" @submit.prevent="(aaa)=>console.log(aaa)">
     <i class="ap-input-search-icon ap-icon ap-search"></i>
 
-    <input ref="inputSearchInput" class="ap-input-search" placeholder="Rechercher"  @input="handlerChange"/>
+    <input ref="inputSearchInput" class="ap-input-search" :placeholder="props.placeholder"  @input="handlerChange"/>
   </form>
 </template>
 
@@ -18,6 +18,14 @@ const emit = defineEmits<{
 const handlerChange = () => {
   emit('update:searchValue', inputSearchInput.value.value)
 }
+const props = defineProps({
+
+  placeholder: {
+  required: false,
+  type: String,
+  default:"Rechercher"
+}
+})
 </script>
 <style>
 .searchWrapper{
