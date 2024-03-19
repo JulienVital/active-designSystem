@@ -31,10 +31,9 @@ const classStyle = computed(() => {
 })
 </script>
 
-<style>
+<style >
 .p-button{
   display: inline-flex;
-  padding: 6px 20px;
   gap: var(--gutter);
   border: transparent;
   border-radius: var(--radius);
@@ -52,6 +51,7 @@ font-size: var(--text-sm);
 
 .p-button.default{
   color: var(--color-white);
+  padding: 6px 20px;
   background: var(--action-color);
 }
 .p-button.default:hover{
@@ -70,6 +70,7 @@ font-size: var(--text-sm);
 }
 .p-button.secondary{
   color: var(--color-text );
+  padding: 6px 20px;
   background: var(--background-info);
 
 }
