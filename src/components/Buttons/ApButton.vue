@@ -34,7 +34,7 @@ const classStyle = computed(() => {
 <style>
 .p-button{
   display: inline-flex;
-  padding: 8px 20px;
+  padding: 6px 20px;
   gap: var(--gutter);
   border: transparent;
   border-radius: var(--radius);
