@@ -1,5 +1,5 @@
 <template>
-  <ContextMenu ref="menu" :model="props.items" @hide="hide" :global="props.global" @blur="menu.hide">
+  <ContextMenu ref="menu" :model="props.items" @hide="hide" :global="props.global" @blur="()=>menu.hide()">
     <template #item="{ item, props }">
         <a v-bind="props.action" :class="{'p-menuitem-red': item.red}">
             <span :class="[{'p-menuitem-red': item.red}, 'p-menuitem-icon', item.icon]" />
@@ -42,7 +42,7 @@ defineExpose({
 })
 </script>
 <style>
-.p-contextmenu{
+.p-contextmenu, .p-submenu-list{
   padding: var(--gutter);
   border-radius: var(--radius);
   background-color: var(--background-main);
@@ -72,5 +72,8 @@ defineExpose({
 }
 .p-menuitem-red{
   color: var(--color-red);
+}
+.p-contextmenu-root-list:focus-visible{
+  outline: none;
 }
 </style>
