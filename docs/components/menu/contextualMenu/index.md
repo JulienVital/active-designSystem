@@ -94,7 +94,7 @@ Right-Click anywhere on this page to view the global ContextMenu.
 ````
 
 
-<ApContextMenu ref="menu" :items="itemsGlobal" @hideMenu="hide" global />
+<ApContextMenu ref="menu" :items="itemsGlobal" global />
 
 
 <script setup lang="ts">

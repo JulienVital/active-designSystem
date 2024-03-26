@@ -1,21 +1,23 @@
 <template>
-  <ContextMenu ref="menu" :model="props.items" @hide="hide" :global="props.global" @blur="()=>menu.hide()">
+  <ContextMenu ref="menu" :model="props.items" @hide="hide" :global="props.global">
     <template #item="{ item, props }">
-        <a v-bind="props.action" :class="{'p-menuitem-red': item.red}">
-            <span :class="[{'p-menuitem-red': item.red}, 'p-menuitem-icon', item.icon]" />
-            <span :class="[{'p-menuitem-red': item.red}, 'p-menuitem-text']">{{ item.label }}</span>
-            <i  v-if="item.items" class="ap-icon ap-chevron-right"></i>
-        </a>
+      <a v-bind="props.action" :class="{ 'p-menuitem-red': item.red }">
+        <span :class="[{ 'p-menuitem-red': item.red }, 'p-menuitem-icon', item.icon]" />
+        <span :class="[{ 'p-menuitem-red': item.red }, 'p-menuitem-text']">{{ item.label }}</span>
+        <i v-if="item.items" class="ap-icon ap-chevron-right"></i>
+      </a>
     </template>
-    </ContextMenu>
+  </ContextMenu>
 </template>
 
 <script setup lang="ts">
 import { ref, type PropType } from 'vue'
 import ContextMenu from 'primevue/contextmenu'
 import type { MenuItem } from 'primevue/menuitem'
+import { onClickOutside } from '@vueuse/core'
+
 const props = defineProps({
-  global:{
+  global: {
     required: false,
     type: Boolean,
     default: false
@@ -27,6 +29,11 @@ const props = defineProps({
 })
 
 const menu = ref()
+onClickOutside(menu, () => {
+  setTimeout(() => {
+    menu.value.hide()
+  }, 1);
+})
 
 const hide = () => {
   emit('hideMenu')
