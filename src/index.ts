@@ -23,7 +23,8 @@ export function ActPubResolver() {
 function install(app: App) {
   app.use(PrimeVue, {
     zIndex: {
-      tooltip: 100000
+      tooltip: 100000,
+      menu: 100000
     }
   }),
     app.use(ToastService)

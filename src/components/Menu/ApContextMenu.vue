@@ -1,5 +1,5 @@
 <template>
-  <ContextMenu ref="menu" :model="props.items" @hide="hide" :global="props.global">
+  <ContextMenu ref="menu" :model="props.items" @hide="hide" :global="props.global" @blur="menu.hide">
     <template #item="{ item, props }">
         <a v-bind="props.action" :class="{'p-menuitem-red': item.red}">
             <span :class="[{'p-menuitem-red': item.red}, 'p-menuitem-icon', item.icon]" />
