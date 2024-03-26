@@ -246,3 +246,12 @@ base material icons https://github.com/google/material-design-icons
 .ap-layer:before{
   content: '\e080';
 }
+.ap-picture:before{
+  content: '\e081';
+}
+.ap-table:before{
+  content: '\e083';
+}
+.ap-text2:before{
+  content: '\e082';
+}

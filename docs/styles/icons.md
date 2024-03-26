@@ -142,5 +142,8 @@ const iconsList = [
     "ap-sun",
     "ap-moon",
     "ap-layer",
+    "ap-picture",
+    "ap-table",
+    "ap-text2",
     ];
 </script>
