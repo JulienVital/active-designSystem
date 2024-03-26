@@ -28,7 +28,7 @@ const props = defineProps({
   }
 })
 
-const menu = ref()
+const menu = ref(null)
 onClickOutside(menu, () => {
   setTimeout(() => {
     menu.value.hide()

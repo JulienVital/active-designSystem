@@ -145,5 +145,6 @@ const iconsList = [
     "ap-picture",
     "ap-table",
     "ap-text2",
+    "ap-ellipsis",
     ];
 </script>

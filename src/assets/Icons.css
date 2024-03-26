@@ -255,3 +255,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-text2:before{
   content: '\e082';
 }
+.ap-ellipsis:before{
+  content: '\e084';
+}
