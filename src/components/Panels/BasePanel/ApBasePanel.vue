@@ -8,7 +8,7 @@
         :width="6"
         :height="6"
         :iconColor="'var(--color-text)'"
-        class="basePanel--header-close"
+        class="ap-icon ap-close basePanel-closeIcon"
         @click="handlerClose"
       />
     </header>
@@ -54,6 +54,10 @@ const handlerClose = () => {
 }
 </script>
 <style>
+.basePanel-closeIcon{
+  cursor:pointer;
+}
+
 .basePanel--header {
   display: flex;
   justify-content: space-between;
