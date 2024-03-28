@@ -14,7 +14,6 @@
 import { ref, type PropType } from 'vue'
 import ContextMenu from 'primevue/contextmenu'
 import type { MenuItem } from 'primevue/menuitem'
-import { onClickOutside } from '@vueuse/core'
 
 const props = defineProps({
   global: {
@@ -29,11 +28,7 @@ const props = defineProps({
 })
 
 const menu = ref(null)
-onClickOutside(menu, () => {
-  setTimeout(() => {
-    menu.value.hide()
-  }, 1);
-})
+
 
 const hide = () => {
   emit('hideMenu')
