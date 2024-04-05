@@ -1,23 +1,26 @@
 <template>
-  <form class="searchWrapper" @submit.prevent="(aaa)=>console.log(aaa)">
+  <form class="searchWrapper" @submit.prevent="">
     <i class="ap-input-search-icon ap-icon ap-search"></i>
 
-    <input ref="inputSearchInput" class="ap-input-search" :placeholder="props.placeholder"  @input="handlerChange"/>
+    <input v-model="internalValue" class="ap-input-search" :placeholder="props.placeholder"  @input="handlerChange"/>
   </form>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const inputSearchInput = ref(null);
-
+const internalValue= ref(null)
 const emit = defineEmits<{
   (e: 'update:searchValue', newValue: string): void
 }>()
 
 const handlerChange = () => {
-  emit('update:searchValue', inputSearchInput.value.value)
+  emit('update:searchValue', internalValue.value)
 }
+const reset = ()=>  internalValue.value = "";
+defineExpose({
+  reset
+})
 const props = defineProps({
 
   placeholder: {
