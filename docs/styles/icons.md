@@ -147,5 +147,7 @@ const iconsList = [
     "ap-text2",
     "ap-ellipsis",
     "ap-cotcotcot",
+    "ap-stop",
+    "ap-stop2",
     ];
 </script>

@@ -261,3 +261,9 @@ base material icons https://github.com/google/material-design-icons
 .ap-cotcotcot:before{
   content: '\e085';
 }
+.ap-stop:before{
+  content: '\e086';
+}
+.ap-stop2:before{
+  content: '\e087';
+}
