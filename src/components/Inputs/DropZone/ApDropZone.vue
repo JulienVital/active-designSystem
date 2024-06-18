@@ -147,7 +147,7 @@ ul {
 
 .dropzoneWrapper {
   color: var(--color-text);
-  background-color: var(--color-input-background);
+  background: var(--background-main);
   border-color: v-bind(colorZone);
   border-width: 2px;
   border-style: dashed;

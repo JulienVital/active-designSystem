@@ -2,7 +2,7 @@
 .p-inputnumber-input{
   border-radius: var(--radius);
   border: 1px solid transparent;
-  background-color: #242424;
+  background: var(--background-main);
   color: var(--color-text);
   text-align: right;
   outline: none;
@@ -24,7 +24,7 @@
 .apInputText {
   border: 1px solid transparent;
   border-radius: var(--radius);
-  background-color: #242424;
+  background: var(--background-main);
   color: var(--color-text);
   text-align: right;
 }
