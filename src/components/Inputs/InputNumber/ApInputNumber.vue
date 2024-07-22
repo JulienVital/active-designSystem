@@ -1,8 +1,7 @@
 <template>
   <InputNumber  
   :modelValue="props.modelValue"  
-  @blur="handlerBlur"
-  @update:modelValue="handlerChange"
+  @input="handlerChange"
   :class="['apInputNumber',inputSize]" 
   :step="props.step" 
   :prefix="props.prefix" 
@@ -63,24 +62,16 @@ const props = defineProps({
     required: false,
   },
 })
-let localValue = props.modelValue;
 
 const emit = defineEmits<{
   (e: 'update:modelValue', newValue: number): void
-  (e: 'blur', newValue: number): void
 }>()
-
 
 const inputSize = computed(() => ({
   [`input--${props.size}`]: true
 }))
 
-const handlerBlur = () => {
-  emit('blur', localValue)
-}
-
-const handlerChange = (newValue: number) => {
-  emit('update:modelValue', newValue)
-  localValue = newValue
+const handlerChange = (event: any) => {
+  emit('update:modelValue', event.value)
 }
 </script>
