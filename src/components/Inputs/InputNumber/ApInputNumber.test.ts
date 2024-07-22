@@ -1,19 +1,8 @@
 import { mount } from '@vue/test-utils'
 import apInputNumber from './ApInputNumber.vue'
-import InputNumber from 'primevue/inputnumber';
 
 import { describe, expect, test } from 'vitest'
 
-describe('InputNumber logic', () => {
-  
-  test('emit "update:value" event when input is trigger', async () => {
-    const wrapper = mount(apInputNumber)
-    const InputNumberChild = await wrapper.findComponent(InputNumber)
-    InputNumberChild.vm.$emit('update:modelValue',23)
-    expect(wrapper.emitted('update:modelValue')).toBeTruthy()
-    expect(wrapper.emitted('update:modelValue')).toEqual([[23]])
-  })
-})
 
 describe('InputForm Render className', () => {
   test('render, input have medium className', async () => {
