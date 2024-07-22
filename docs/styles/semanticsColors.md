@@ -23,10 +23,10 @@ const themeList = {
   'panel-background-header': 'var(--color-grey-60)',
   'panel-background-body': 'var(--color-grey-50)',
   'panel-background-separator': 'var(--color-grey-20)',
-  'panel-background-alternative': 'var(--color-grey-30)',
   'input-background': 'var(--color-grey-55)',
   'background': 'var(--color-grey-55)',
 
+  'panel-background-alternative': 'var(--panel-background-alternative)',
   'background-main': 'var(--background-main)',
   'background-section': 'var(--background-section)',
   'background-card': 'var(--background-card)',
