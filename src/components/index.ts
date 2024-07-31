@@ -16,8 +16,12 @@ import ApTag from './Miscs/Tag/apTag.vue'
 import TabPanel from 'primevue/tabpanel'
 import ApToast from '../composables/Toast/ApToast.vue';
 import ApTheme from './Miscs/ApTheme/ApTheme.vue';
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
 
 export {
+  Accordion as ApAccordion,
+  AccordionTab as ApAccordionTab,
   ApInputNumber,
   ApInputText,
   ApInputSelect,
