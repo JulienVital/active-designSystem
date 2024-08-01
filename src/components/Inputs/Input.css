@@ -1,43 +1,46 @@
-
-.p-inputnumber-input{
-  border-radius: var(--radius);
+.p-inputnumber-input {
+  border-radius: var(--radius-sm);
   border: 1px solid transparent;
-  background: var(--background-main);
+  background: var(--color-grey-66);
   color: var(--color-text);
   text-align: right;
   outline: none;
 }
-.p-inputnumber-input:focus{
-  outline: 1px  solid var(--primary-color);
+.p-inputnumber-input:focus {
+  outline: 1px solid var(--primary-color);
 }
-.input--small, .input--small .p-inputnumber-input{
+.input--small,
+.input--small .p-inputnumber-input {
   width: calc(var(--gutter) * 5);
 }
-.input--medium, .input--medium .p-inputnumber-input{
+.input--medium,
+.input--medium .p-inputnumber-input {
   width: calc(var(--gutter) * 9);
 }
-.input--large, .input--large .p-inputnumber-input{
+.input--large,
+.input--large .p-inputnumber-input {
   width: 100%;
 }
 
-
 .apInputText {
   border: 1px solid transparent;
-  border-radius: var(--radius);
-  background: var(--background-main);
+  border-radius: var(--radius-sm);
+  background: var(--color-grey-66);
   color: var(--color-text);
   text-align: right;
 }
-.apInputText:focus{
-  outline: 1px  solid var(--primary-color);
-
+.apInputText:focus {
+  outline: 1px solid var(--primary-color);
 }
-.input--small, .input--small .apInputText {
+.input--small,
+.input--small .apInputText {
   width: calc(var(--gutter) * 5);
 }
-.input--medium, .input--medium .apInputText {
+.input--medium,
+.input--medium .apInputText {
   width: calc(var(--gutter) * 9);
 }
-.input--large, .input--large .apInputText {
+.input--large,
+.input--large .apInputText {
   width: 100%;
 }
