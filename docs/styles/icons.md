@@ -13,8 +13,18 @@ You must add 'ap-icon' and 'ap-*' css classes to your component
 
 ## List
 
+### Initial
+
 <div class="iconContainer">
 <copyContainer  v-for="icon in iconsList">
+    <i class="ap-icon" :class="icon" />
+</copyContainer >
+</div>
+
+### Icons Wireframe
+
+<div class="iconContainer">
+<copyContainer  v-for="icon in iconsListWf">
     <i class="ap-icon" :class="icon" />
 </copyContainer >
 </div>
@@ -69,7 +79,33 @@ Although the icons in the font can be scaled to any size, in accordance with mat
 
 </style>
 <script setup>
-
+ const iconsListWf = [
+"ap-calendar_view_month",
+"ap-format_size",
+"ap-edit",
+"ap-photo_size_select_small",
+"ap-style",
+"ap-note_add",
+"ap-page_info",
+"ap-format_line_spacing",
+"ap-format_letter_spacing_wide",
+"ap-format_letter_spacing",
+"ap-format_align_left",
+"ap-format_align_center",
+"ap-format_align_right",
+"ap-format_align_justify",
+"ap-format_underlined",
+"ap-format_bold",
+"ap-format_italic",
+"ap-line_weight",
+"ap-format_strikethrough",
+"ap-align_horizontal_right",
+"ap-align_horizontal_center",
+"ap-align_horizontal_left",
+"ap-align_flex_start",
+"ap-align_flex_center"
+ ];
+ 
 const iconsList = [
     "ap-trash",
     "ap-update",
@@ -149,5 +185,6 @@ const iconsList = [
     "ap-cotcotcot",
     "ap-stop",
     "ap-stop2",
+    "ap-align_flex_end"
     ];
 </script>

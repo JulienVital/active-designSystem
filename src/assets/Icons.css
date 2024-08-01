@@ -267,3 +267,78 @@ base material icons https://github.com/google/material-design-icons
 .ap-stop2:before{
   content: '\e087';
 }
+.ap-calendar_view_month:before{
+  content: '\efe7';
+}
+.ap-format_size:before{
+  content: '\e245';
+}
+.ap-edit:before{
+  content: '\e3c9';
+}
+.ap-photo_size_select_small:before{
+  content: '\e434';
+}
+.ap-style:before{
+  content: '\e41d';
+}
+.ap-note_add:before{
+  content: '\e89c';
+}
+.ap-format_line_spacing:before{
+  content: '\e240';
+}
+.ap-page_info:before{
+  content: '\f614';
+}
+.ap-format_letter_spacing_wide:before{
+  content: '\f616';
+}
+.ap-format_letter_spacing:before{
+  content: '\f773';
+}
+.ap-format_align_left:before{
+  content: '\e236';
+}
+.ap-format_align_center:before{
+  content: '\e234';
+}
+.ap-format_align_right:before{
+  content: '\e237';
+}
+.ap-format_align_justify:before{
+  content: '\e235';
+}
+.ap-format_underlined:before{
+  content: '\e249';
+}
+.ap-format_bold:before{
+  content: '\e238';
+}
+.ap-format_italic:before{
+  content: '\e23f';
+}
+.ap-line_weight:before{
+  content: '\e91a';
+}
+.ap-format_strikethrough:before{
+  content: '\e246';
+}
+.ap-align_horizontal_right:before{
+  content: '\e010';
+}
+.ap-align_horizontal_center:before{
+  content: '\e00f';
+}
+.ap-align_horizontal_left:before{
+  content: '\e00d';
+}
+.ap-align_flex_start:before{
+  content: '\f794';
+}
+.ap-align_flex_center:before{
+  content: '\f796';
+}
+.ap-align_flex_end:before{
+  content: '\f795';
+}
