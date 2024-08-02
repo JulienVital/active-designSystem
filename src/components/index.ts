@@ -18,6 +18,7 @@ import ApToast from '../composables/Toast/ApToast.vue';
 import ApTheme from './Miscs/ApTheme/ApTheme.vue';
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
+import ApSelectButton from './Buttons/ApSelectButton.vue';
 
 export {
   Accordion as ApAccordion,
@@ -39,5 +40,6 @@ export {
   ApStepMenu,
   ApToast,
   ApButton,
-  ApTheme
+  ApTheme,
+  ApSelectButton
 }

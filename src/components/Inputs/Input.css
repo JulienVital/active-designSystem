@@ -1,43 +1,95 @@
-
-.p-inputnumber-input{
-  border-radius: var(--radius);
+.p-inputnumber-input {
+  border-radius: var(--radius-sm);
   border: 1px solid transparent;
-  background: var(--background-main);
+  background: var(--color-grey-66);
   color: var(--color-text);
   text-align: right;
   outline: none;
 }
-.p-inputnumber-input:focus{
-  outline: 1px  solid var(--primary-color);
+.p-inputnumber-input:focus {
+  outline: 1px solid var(--primary-color);
 }
-.input--small, .input--small .p-inputnumber-input{
+.input--small,
+.input--small .p-inputnumber-input {
   width: calc(var(--gutter) * 5);
 }
-.input--medium, .input--medium .p-inputnumber-input{
+.input--medium,
+.input--medium .p-inputnumber-input {
   width: calc(var(--gutter) * 9);
 }
-.input--large, .input--large .p-inputnumber-input{
+.input--large,
+.input--large .p-inputnumber-input {
   width: 100%;
 }
-
 
 .apInputText {
   border: 1px solid transparent;
-  border-radius: var(--radius);
-  background: var(--background-main);
+  border-radius: var(--radius-sm);
+  background: var(--color-grey-66);
   color: var(--color-text);
   text-align: right;
 }
-.apInputText:focus{
-  outline: 1px  solid var(--primary-color);
-
+.apInputText:focus {
+  outline: 1px solid var(--primary-color);
 }
-.input--small, .input--small .apInputText {
+.input--small,
+.input--small .apInputText {
   width: calc(var(--gutter) * 5);
 }
-.input--medium, .input--medium .apInputText {
+.input--medium,
+.input--medium .apInputText {
   width: calc(var(--gutter) * 9);
 }
-.input--large, .input--large .apInputText {
+.input--large,
+.input--large .apInputText {
   width: 100%;
+}
+
+.p-dropdown-items-wrapper {
+  border-radius: var(--gutter);
+  border: 1px solid var(--border-card);
+  background: var(--background-main);
+  box-shadow: var(--shadow-card);
+  padding: var(--gutter-half);
+  overflow-y: auto;
+
+  ul.p-dropdown-items {
+    /*itemS */
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+    .p-dropdown-item {
+      border-radius: var(--radius-xs);
+      padding: var(--gutter-half);
+      font-size: var(--text-xs);
+      line-height: var(--text-xs);
+      color: var(--color-text);
+      font-family: Poppins;
+      font-style: normal;
+
+      &:hover {
+        background: var(--background-info);
+      }
+    }
+  }
+}
+
+.p-dropdown-filter-container {
+  display: inline-flex;
+  align-items: center;
+
+  input.p-dropdown-filter {
+    border-radius: var(--radius-sm);
+    margin-inline-end: var(--gutter);
+    height: 22px;
+    border: none;
+
+    &:focus {
+      outline: 1px solid var(--primary-color);
+    }
+  }
+
+  svg {
+    color: white;
+  }
 }

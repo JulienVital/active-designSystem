@@ -1,6 +1,13 @@
 <template>
-  <Dropdown :disabled="props.disabled" :modelValue="modelValue" @update:modelValue="(value) => handlerChange(value)"
-    :options="options" :optionLabel="props.optionLabel" />
+  <Dropdown
+    class="pv-dropdown-container"
+    :disabled="props.disabled" 
+    :modelValue="modelValue" 
+    @update:modelValue="(value) => handlerChange(value)"
+    :options="options" 
+    :optionLabel="props.optionLabel"
+    :filter="props.filter"
+   />
 </template>
 
 <script setup lang="ts">
@@ -23,13 +30,17 @@ const props = defineProps({
     required: false,
     type: String
   },
-
   size: {
     type: String,
     required: false,
     default: 'medium'
   },
   disabled: {
+    type: Boolean,
+    required: false,
+    default: false
+  },
+  filter: {
     type: Boolean,
     required: false,
     default: false
@@ -51,25 +62,9 @@ const handlerChange = (newValue: any) => {
 </script>
 
 <style>
-.p-dropdown-items-wrapper{
-  border-radius: var(--gutter);
-  border: 1px solid var(--border-card);
-  background: var(--background-main);
-  box-shadow: var(--shadow-card);
-  
-  padding: var(--gutter);
-}
-.p-dropdown-item{
-  border-radius: 4px;
-  padding: var(--gutter);
-  font-size: var(--text-sm);
-  line-height: var(--text-sm);
-  color: var(--color-text);
-  font-family: Poppins;
-  font-style: normal;
-}
-.p-dropdown-item:hover{
-  background: var(--background-info);
-  
+.pv-dropdown-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>

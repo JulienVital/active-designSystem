@@ -6,9 +6,9 @@ base material icons https://github.com/google/material-design-icons
 @font-face {
   font-family: 'Actpublishing family';
   font-style: normal;
-  src: 
+  src:
     url(https://pimcore-x-active.datasolution.site/activePublishing.woff2) format('woff2'),
-    url(https://cdn-pim2print-dev.datasolution.site/assets/activePublishing.woff2) format('woff2'),
+    url(https://cdn-pim2print-dev.datasolution.site/assets/activePublishing.woff2) format('woff2');
 }
 .ap-icon {
   font-family: 'Actpublishing family';
@@ -21,6 +21,7 @@ base material icons https://github.com/google/material-design-icons
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
+  font-feature-settings: 'liga';
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
@@ -177,168 +178,171 @@ base material icons https://github.com/google/material-design-icons
 .ap-unscale:before {
   content: '\e5e5';
 }
-.ap-rotate:before{
+.ap-rotate:before {
   content: '\e419';
 }
-.ap-warp:before{
+.ap-warp:before {
   content: '\e5e7';
 }
-.ap-resize:before{
+.ap-resize:before {
   content: '\e3c2';
 }
-.ap-view:before{
+.ap-view:before {
   content: '\e8f4';
 }
-.ap-select:before{
+.ap-select:before {
   content: '\f82f';
 }
-.ap-text:before{
+.ap-text:before {
   content: '\e262';
 }
-.ap-pen:before{
+.ap-pen:before {
   content: '\e006';
 }
-.ap-duplicate:before{
+.ap-duplicate:before {
   content: '\e007';
 }
-.ap-tag:before{
+.ap-tag:before {
   content: '\e008';
 }
-.ap-trash2:before{
+.ap-trash2:before {
   content: '\e009';
 }
-.ap-page:before{
+.ap-page:before {
   content: '\e077';
 }
-.ap-squares:before{
+.ap-squares:before {
   content: '\e078';
 }
-.ap-filters:before{
+.ap-filters:before {
   content: '\e079';
 }
-.ap-page2:before{
+.ap-page2:before {
   content: '\e07A';
 }
-.ap-cross:before{
+.ap-cross:before {
   content: '\e07B';
 }
-.ap-home:before{
+.ap-home:before {
   content: '\e07C';
 }
-.ap-pdf:before{
+.ap-pdf:before {
   content: '\e415';
 }
-.ap-pdf2:before{
+.ap-pdf2:before {
   content: '\ef60';
 }
-.ap-list:before{
+.ap-list:before {
   content: '\e66e';
 }
-.ap-plus:before{
+.ap-plus:before {
   content: '\e07d';
 }
-.ap-sun:before{
+.ap-sun:before {
   content: '\e07e';
 }
-.ap-moon:before{
+.ap-moon:before {
   content: '\e07f';
 }
-.ap-layer:before{
+.ap-layer:before {
   content: '\e080';
 }
-.ap-picture:before{
+.ap-picture:before {
   content: '\e081';
 }
-.ap-table:before{
+.ap-table:before {
   content: '\e083';
 }
-.ap-text2:before{
+.ap-text2:before {
   content: '\e082';
 }
-.ap-ellipsis:before{
+.ap-ellipsis:before {
   content: '\e084';
 }
-.ap-cotcotcot:before{
+.ap-cotcotcot:before {
   content: '\e085';
 }
-.ap-stop:before{
+.ap-stop:before {
   content: '\e086';
 }
-.ap-stop2:before{
+.ap-stop2:before {
   content: '\e087';
 }
-.ap-calendar_view_month:before{
+.ap-calendar_view_month:before {
   content: '\efe7';
 }
-.ap-format_size:before{
+.ap-format_size:before {
   content: '\e245';
 }
-.ap-edit:before{
+.ap-edit:before {
   content: '\e3c9';
 }
-.ap-photo_size_select_small:before{
+.ap-photo_size_select_small:before {
   content: '\e434';
 }
-.ap-style:before{
+.ap-style:before {
   content: '\e41d';
 }
-.ap-note_add:before{
+.ap-note_add:before {
   content: '\e89c';
 }
-.ap-format_line_spacing:before{
+.ap-format_line_spacing:before {
   content: '\e240';
 }
-.ap-page_info:before{
+.ap-page_info:before {
   content: '\f614';
 }
-.ap-format_letter_spacing_wide:before{
+.ap-format_letter_spacing_wide:before {
   content: '\f616';
 }
-.ap-format_letter_spacing:before{
+.ap-format_letter_spacing:before {
   content: '\f773';
 }
-.ap-format_align_left:before{
+.ap-format_align_left:before {
   content: '\e236';
 }
-.ap-format_align_center:before{
+.ap-format_align_center:before {
   content: '\e234';
 }
-.ap-format_align_right:before{
+.ap-format_align_right:before {
   content: '\e237';
 }
-.ap-format_align_justify:before{
+.ap-format_align_justify:before {
   content: '\e235';
 }
-.ap-format_underlined:before{
+.ap-format_underlined:before {
   content: '\e249';
 }
-.ap-format_bold:before{
+.ap-format_bold:before {
   content: '\e238';
 }
-.ap-format_italic:before{
+.ap-format_italic:before {
   content: '\e23f';
 }
-.ap-line_weight:before{
+.ap-line_weight:before {
   content: '\e91a';
 }
-.ap-format_strikethrough:before{
+.ap-format_strikethrough:before {
   content: '\e246';
 }
-.ap-align_horizontal_right:before{
+.ap-align_horizontal_right:before {
   content: '\e010';
 }
-.ap-align_horizontal_center:before{
+.ap-align_horizontal_center:before {
   content: '\e00f';
 }
-.ap-align_horizontal_left:before{
+.ap-align_horizontal_left:before {
   content: '\e00d';
 }
-.ap-align_flex_start:before{
+.ap-align_flex_start:before {
   content: '\f794';
 }
-.ap-align_flex_center:before{
+.ap-align_flex_center:before {
   content: '\f796';
 }
-.ap-align_flex_end:before{
+.ap-align_flex_end:before {
   content: '\f795';
+}
+.ap-cut:before {
+  content: '\e14e';
 }
