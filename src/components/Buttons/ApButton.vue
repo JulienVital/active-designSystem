@@ -34,11 +34,14 @@ const classStyle = computed(() => {
 <style >
 .p-button{
   display: inline-flex;
+  align-items: center;
   gap: var(--gutter);
   border: transparent;
   border-radius: var(--radius);
   font-family: var(--font-family);
-font-size: var(--text-sm);
+  font-size: var(--text-sm);
+  padding-block: 0;
+  padding-inline: 0;
 }
 .p-button-label{
   font-size: var(--text-md);

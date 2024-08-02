@@ -44,3 +44,52 @@
 .input--large .apInputText {
   width: 100%;
 }
+
+.p-dropdown-items-wrapper {
+  border-radius: var(--gutter);
+  border: 1px solid var(--border-card);
+  background: var(--background-main);
+  box-shadow: var(--shadow-card);
+  padding: var(--gutter-half);
+  overflow-y: auto;
+
+  ul.p-dropdown-items {
+    /*itemS */
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+    .p-dropdown-item {
+      border-radius: var(--radius-xs);
+      padding: var(--gutter-half);
+      font-size: var(--text-xs);
+      line-height: var(--text-xs);
+      color: var(--color-text);
+      font-family: Poppins;
+      font-style: normal;
+
+      &:hover {
+        background: var(--background-info);
+      }
+    }
+  }
+}
+
+.p-dropdown-filter-container {
+  display: inline-flex;
+  align-items: center;
+
+  input.p-dropdown-filter {
+    border-radius: var(--radius-sm);
+    margin-inline-end: var(--gutter);
+    height: 22px;
+    border: none;
+
+    &:focus {
+      outline: 1px solid var(--primary-color);
+    }
+  }
+
+  svg {
+    color: white;
+  }
+}
