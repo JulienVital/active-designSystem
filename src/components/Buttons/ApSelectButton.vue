@@ -81,7 +81,7 @@ const classStyle = computed(() => {
 })
 </script>
 
-<style>
+<style lang="scss">
 .select-button-container {
   display: flex;
   justify-content: flex-end;
