@@ -1,6 +1,12 @@
 <template>
-  <Dropdown :disabled="props.disabled" :modelValue="modelValue" @update:modelValue="(value) => handlerChange(value)"
-    :options="options" :optionLabel="props.optionLabel" />
+  <Dropdown 
+    :disabled="props.disabled" 
+    :modelValue="modelValue" 
+    @update:modelValue="(value) => handlerChange(value)"
+    :options="options" 
+    :optionLabel="props.optionLabel"
+    :filter="props.filter"
+   />
 </template>
 
 <script setup lang="ts">
@@ -23,13 +29,17 @@ const props = defineProps({
     required: false,
     type: String
   },
-
   size: {
     type: String,
     required: false,
     default: 'medium'
   },
   disabled: {
+    type: Boolean,
+    required: false,
+    default: false
+  },
+  filter: {
     type: Boolean,
     required: false,
     default: false

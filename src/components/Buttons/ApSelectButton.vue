@@ -10,15 +10,15 @@
     :aria-labelledby="props.multiple? 'multiple':'basic'"
     :disabled="props.disable || props.disabled"
     :invalid="props.invalid"
-    class="select-btn-container"
+    class="select-button-container"
     :class="classStyle"
   >
-  <template #option="slotProps">
-      <div class="icon-btn-container">
-        <i :class="'ap-icon '+slotProps.option.icon" :disabled="props.disable || props.disabled"></i>
-      </div>
-    </template>
-</SelectButton>
+    <template #option="slotProps">
+        <div class="icon-btn-container">
+          <i :class="'ap-icon '+slotProps.option.icon" :disabled="props.disable || props.disabled"></i>
+        </div>
+      </template>
+  </SelectButton>
 </template>
 
 <script setup lang="ts">
@@ -81,76 +81,62 @@ const classStyle = computed(() => {
 })
 </script>
 
-<style scoped>
-.p-button{
-  display: inline-flex;
-  gap: var(--gutter);
-  border: transparent;
-  border-radius: var(--radius);
-  font-family: var(--font-family);
-  font-size: var(--text-sm);
-}
-.p-button-label{
-  font-size: var(--text-md);
-  font-weight: var(--weight-bold);
-  line-height: calc(var(--text-md) * 1.55); 
-}
-.secondary .p-button-label{
-  font-weight: var(--weight-ultraLight);
-}
-
-.p-button.default{
-  color: var(--color-white);
-  padding: 6px 20px;
-  background: grey;
-}
-.p-button.default:hover{
-  filter: contrast(150%);
-}
-.p-button.disable{
-  color: var(--background-info-text);
-  background: var(--background-info);
-}
-.p-button.ghost{
-  color: var(--color-text );
-  background: transparent;
-}
-.p-button.ghost:hover{
-  filter: contrast(10%);
-}
-.p-button.secondary{
-  color: var(--color-text );
-  padding: 6px 20px;
-  background: var(--background-info);
-
-}
-.p-button.secondary:hover{
-  background: var(--panel-background-alternative);
-}
-
-.select-btn-container {
+<style>
+.select-button-container {
   display: flex;
   justify-content: flex-end;
   gap: var(--gutter);
-}
 
-.p-button .icon-btn-container {
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  background: var(--color-grey-66);
-  border-radius: var(--radius-sm);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.p-button .icon-btn-container .ap-icon {
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-}
-.p-button.p-disabled .icon-btn-container .ap-icon{
-  opacity: 0.5;
-  cursor: default;
+  .icon-btn-container {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    background: var(--color-grey-66);
+    border-radius: var(--radius-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-button{
+    display: inline-flex;
+    gap: var(--gutter);
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+
+  .ap-icon {
+    text-align: center;
+    font-size: 16px;
+    padding: var(--sizePointHalf);
+    color: var(--icon-default-color);
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    transition: all 0.9s ease;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+    &:hover {
+      background-color: var(--input-background);
+    }
+  }
+
+  .p-highlight {
+    border: 2px solid var(--icon-default-color);
+    background-color: var(--input-background);
+    opacity: 1;
+    .ap-icon {
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  &.p-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    .ap-icon {
+      cursor: not-allowed;
+    }
+  }
 }
 </style>
