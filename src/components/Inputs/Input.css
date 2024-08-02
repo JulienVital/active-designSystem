@@ -53,7 +53,7 @@
   padding: var(--gutter-half);
   overflow-y: auto;
 
-  ul.p-dropdown-items {
+  :is(ul.p-dropdown-items) {
     /*itemS */
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -78,7 +78,7 @@
   display: inline-flex;
   align-items: center;
 
-  input.p-dropdown-filter {
+  :is(input.p-dropdown-filter) {
     border-radius: var(--radius-sm);
     margin-inline-end: var(--gutter);
     height: 22px;
@@ -89,7 +89,7 @@
     }
   }
 
-  svg {
+  :is(svg) {
     color: white;
   }
 }
