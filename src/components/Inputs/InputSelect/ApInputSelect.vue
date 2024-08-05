@@ -47,15 +47,13 @@ const props = defineProps({
   }
 })
 
-// Handle the change event of the select element
-const emit = defineEmits<{
-  (e: 'update:modelValue', newValue: string): void
-}>()
-
 const inputSize = computed(() => ({
   [`input--${props.size}`]: true
 }))
 
+const emit = defineEmits['update:modelValue'];
+
+// Handle the change event of the select element
 const handlerChange = (newValue: any) => {
   emit('update:modelValue', newValue)
 }
