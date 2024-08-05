@@ -5,7 +5,7 @@ import './assets/main.css'
 
 import ApTooltip from './directives/ApTooltip/ApTooltip'
 import useToast from './composables/Toast/useToast'
-import {useTheme} from './composables/useTheme'
+import { useTheme } from './composables/useTheme'
 import type { App } from 'vue'
 export { useToast }
 export { useTheme }
