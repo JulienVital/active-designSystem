@@ -79,7 +79,7 @@ Although the icons in the font can be scaled to any size, in accordance with mat
 
 </style>
 <script setup>
- const iconsListWf = [
+const iconsListWf = [
 "ap-calendar_view_month",
 "ap-format_size",
 "ap-edit",
@@ -103,8 +103,14 @@ Although the icons in the font can be scaled to any size, in accordance with mat
 "ap-align_horizontal_center",
 "ap-align_horizontal_left",
 "ap-align_flex_start",
-"ap-align_flex_center"
- ];
+"ap-align_flex_center",
+"ap-align_flex_end",
+"ap-cut",
+"ap-bottom_panel_close",
+"ap-top_panel_close",
+"ap-left_panel_close",
+"ap-right_panel_close"
+];
  
 const iconsList = [
     "ap-trash",
@@ -184,7 +190,6 @@ const iconsList = [
     "ap-ellipsis",
     "ap-cotcotcot",
     "ap-stop",
-    "ap-stop2",
-    "ap-align_flex_end"
+    "ap-stop2"
     ];
 </script>
