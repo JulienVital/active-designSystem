@@ -101,10 +101,10 @@ base material icons https://github.com/google/material-design-icons
   content: '\e00d';
 }
 .ap-align-horizontal-right:before {
-  content: '\e00f';
+  content: '\e010';
 }
 .ap-align-horizontal-center:before {
-  content: '\e010';
+  content: '\e00f';
 }
 
 .ap-chevron-bottom:before {
@@ -345,4 +345,16 @@ base material icons https://github.com/google/material-design-icons
 }
 .ap-cut:before {
   content: '\e14e';
+}
+.ap-bottom_panel_close:before {
+  content: '\f72a';
+}
+.ap-top_panel_close:before {
+  content: '\f733';
+}
+.ap-left_panel_close:before {
+  content: '\f717';
+}
+.ap-right_panel_close:before {
+  content: '\f705';
 }
