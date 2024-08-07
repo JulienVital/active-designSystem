@@ -15,7 +15,7 @@ import TabView from 'primevue/tabview'
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 0;
     margin: 0;
     padding: 0 0 8px 0;
@@ -33,14 +33,20 @@ import TabView from 'primevue/tabview'
         font-weight: 600;
         line-height: 12px;
         font-family: Poppins;
-        &:first-child {
+        &.p-tabview-header:first-of-type {
           border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+          flex-grow: 1;
         }
-        &:last-child {
+        &.p-tabview-header:nth-last-of-type(2) {
+          /* since the very last <li> is invisible */
           border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+          flex-grow: 1;
         }
         &.p-highlight {
-          background-color: var(--color-grey-66);;
+          background-color: var(--color-grey-66);
+        }
+        &.p-tabview-ink-bar {
+          display: none;
         }
     }
   }
@@ -63,4 +69,10 @@ import TabView from 'primevue/tabview'
   border-bottom: 1px solid var(--color-text);
 } */
 
+</style>
+
+<style scoped>
+:slotted(li.p-tabview-ink-bar) {
+  display: none !important;
+}
 </style>
