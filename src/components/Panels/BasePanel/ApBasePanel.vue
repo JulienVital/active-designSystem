@@ -60,6 +60,7 @@ const handlerClose = () => {
   emit('close')
 }
 </script>
+
 <style>
 .basePanel-closeIcon{
   cursor:pointer;
@@ -90,5 +91,8 @@ const handlerClose = () => {
   background-color: var(--color-panel-body-background);
   border: var(--panel-border);
   box-shadow: var(--panel-shadow);
+}
+.ap-drag_indicator {
+  opacity: 0.5;
 }
 </style>
