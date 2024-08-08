@@ -1,8 +1,15 @@
 <template>
   <div class="basePanel">
     <header :class="['basePanel--header', { 'basePanel--header-draggable': props.draggable }]">
+      <i
+        v-if="props.draggable"
+        :width="6"
+        :height="6"
+        :iconColor="'var(--color-text)'"
+        class="ap-icon ap-drag_indicator"
+      />
       <span class="basePanel--header--title">{{ props.title }}</span>
-      <slot name="header"></slot>
+      <!-- <slot name="header"></slot> -->
       <i
         v-if="props.closable"
         :width="6"

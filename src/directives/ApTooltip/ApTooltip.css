@@ -1,10 +1,10 @@
 .p-tooltip {
-}
-.p-tooltip-arrow {
-  border-right-color: var(--primary-color);
-}
-.p-tooltip-text {
-  background-color: var(--primary-color);
-  font-size: var(--text-xs);
-  padding: var(--sizePoint);
+  .p-tooltip-arrow {
+    border-right-color: var(--primary-color);
+  }
+  .p-tooltip-text {
+    background-color: var(--primary-color);
+    font-size: var(--text-xs);
+    padding: var(--sizePoint);
+  }
 }

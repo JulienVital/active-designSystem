@@ -109,7 +109,8 @@ const iconsListWf = [
 "ap-bottom_panel_close",
 "ap-top_panel_close",
 "ap-left_panel_close",
-"ap-right_panel_close"
+"ap-right_panel_close",
+"ap-drag_indicator"
 ];
  
 const iconsList = [
