@@ -1,14 +1,15 @@
 <template>
   <InputNumber  
-  :modelValue="props.modelValue"  
-  @input="handlerChange"
-  :class="['apInputNumber',inputSize]" 
-  :step="props.step" 
-  :prefix="props.prefix" 
-  :suffix="props.suffix"
-  :min="props.min"
-  :max="props.max"
-  :disabled="props.disable || props.disabled"
+    :modelValue="props.modelValue"  
+    @input="handlerChange"
+    :class="['apInputNumber',inputSize]" 
+    :step="props.step" 
+    :prefix="props.prefix" 
+    :suffix="props.suffix"
+    :min="props.min"
+    :max="props.max"
+    :disabled="props.disable || props.disabled"
+    :inputId="props.inputId"
   />
 </template>
 
@@ -18,7 +19,6 @@ import InputNumber from 'primevue/inputnumber';
 import { computed } from 'vue'
 
 const props = defineProps({
-
   modelValue: {
     type: Number,
     required: false,
@@ -59,6 +59,11 @@ const props = defineProps({
   },
   max: {
     type: Number,
+    required: false,
+  },
+  inputId: {
+    /* useful to give an id to the input node to be focus when clicking on the label */
+    type: String,
     required: false,
   },
 })

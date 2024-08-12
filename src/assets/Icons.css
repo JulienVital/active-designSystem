@@ -361,3 +361,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-drag_indicator:before {
   content: '\e945';
 }
+.ap-remove:before {
+  content: '\e15b';
+}

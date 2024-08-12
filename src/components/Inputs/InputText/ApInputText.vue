@@ -1,12 +1,11 @@
 <template>
   <InputText 
-  :class="['apInputText',inputSize]" 
-  type="text" :modelValue="props.modelValue" 
-  @update:modelValue="handlerChange"
-  @blur="handlerBlur"
-  :disabled="disabled"
+    :class="['apInputText',inputSize]" 
+    type="text" :modelValue="props.modelValue" 
+    @update:modelValue="handlerChange"
+    @blur="handlerBlur"
+    :disabled="disabled"
   />
-
 </template>
 
 <script setup lang="ts">
@@ -37,7 +36,12 @@ const props = defineProps({
     type: Boolean,
     required: false,
     default: false
-  }
+  },
+  inputId: {
+    /* useful to give an id to the input node to be focus when clicking on the label */
+    type: String,
+    required: false,
+  },
 })
 let localValue = props.modelValue;
 
