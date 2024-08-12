@@ -11,6 +11,11 @@ import TabView from 'primevue/tabview'
 <style>
 .tabview {
   /* padding: 0 var(--gutter); */
+
+  & .p-tabview-nav-container {
+    padding: 0 var(--gutter);
+  }
+
   & .p-tabview-nav {
     list-style: none;
     display: flex;
@@ -46,33 +51,9 @@ import TabView from 'primevue/tabview'
           background-color: var(--color-grey-66);
         }
         &.p-tabview-ink-bar {
-          display: none;
+          display: none !important;
         }
     }
   }
-}
-
-/* .tabview li  + li{
-  margin: 0;
-  margin-right: 15px;
-
-} */
-/* .tabview li {
-  margin-right: 15px;
-} */
-/* .tabview .p-tabview-nav-link{
-  
-} */
-/* 
-.tabview .p-highlight .p-tabview-nav-link, .tabview .p-tabview-nav-link:hover {
-  color: var(--color-text);
-  border-bottom: 1px solid var(--color-text);
-} */
-
-</style>
-
-<style scoped>
-:slotted(li.p-tabview-ink-bar) {
-  display: none !important;
 }
 </style>

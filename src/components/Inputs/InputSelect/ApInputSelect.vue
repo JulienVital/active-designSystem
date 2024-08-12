@@ -7,6 +7,7 @@
     :options="options" 
     :optionLabel="props.optionLabel"
     :filter="props.filter"
+    :appendTo="props.filter ? 'self': 'body'"
    />
 </template>
 
@@ -44,6 +45,12 @@ const props = defineProps({
     type: Boolean,
     required: false,
     default: false
+  },
+  appendTo: {
+    type: String,
+    required: false,
+    validator: (value) => value === 'self' || value === 'body',
+    default: "body"
   }
 })
 
@@ -66,5 +73,9 @@ const handlerChange = (newValue: any) => {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+
+  & .p-dropdown-label {
+    margin-right: 4px;
+  }
 }
 </style>
