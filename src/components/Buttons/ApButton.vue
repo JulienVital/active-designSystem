@@ -49,7 +49,7 @@ const classStyle = computed(() => {
   line-height: calc(var(--text-md) * 1.55); 
 }
 .secondary .p-button-label{
-  font-weight: var(--weight-ultraLight);
+  font-weight: var(--weight-light);
 }
 
 .p-button.default{

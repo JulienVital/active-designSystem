@@ -358,3 +358,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-right_panel_close:before {
   content: '\f705';
 }
+.ap-drag_indicator:before {
+  content: '\e945';
+}

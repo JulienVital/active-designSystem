@@ -1,8 +1,15 @@
 <template>
   <div class="basePanel">
     <header :class="['basePanel--header', { 'basePanel--header-draggable': props.draggable }]">
+      <i
+        v-if="props.draggable"
+        :width="6"
+        :height="6"
+        :iconColor="'var(--color-text)'"
+        class="ap-icon ap-drag_indicator"
+      />
       <span class="basePanel--header--title">{{ props.title }}</span>
-      <slot name="header"></slot>
+      <!-- <slot name="header"></slot> -->
       <i
         v-if="props.closable"
         :width="6"
@@ -53,6 +60,7 @@ const handlerClose = () => {
   emit('close')
 }
 </script>
+
 <style>
 .basePanel-closeIcon{
   cursor:pointer;
@@ -83,5 +91,8 @@ const handlerClose = () => {
   background-color: var(--color-panel-body-background);
   border: var(--panel-border);
   box-shadow: var(--panel-shadow);
+}
+.ap-drag_indicator {
+  opacity: 0.5;
 }
 </style>
