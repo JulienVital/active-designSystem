@@ -7,7 +7,7 @@
     :options="options" 
     :optionLabel="props.optionLabel"
     :filter="props.filter"
-    :appendTo="props.filter ? 'self': 'body'"
+    :appendTo="props.appendTo"
    />
 </template>
 
