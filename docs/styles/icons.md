@@ -192,6 +192,7 @@ const iconsList = [
     "ap-ellipsis",
     "ap-cotcotcot",
     "ap-stop",
-    "ap-stop2"
+    "ap-stop2",
+    "ap-folder_open"
     ];
 </script>
