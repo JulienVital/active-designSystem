@@ -364,6 +364,9 @@ base material icons https://github.com/google/material-design-icons
 .ap-remove:before {
   content: '\e15b';
 }
-.ap-folder_open:before{
+.ap-folder_open:before {
   content: '\e2c8';
+}
+.ap-visibility_off:before {
+  content: '\e8f5';
 }

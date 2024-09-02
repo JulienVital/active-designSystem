@@ -2,8 +2,10 @@
   <InputText 
     :class="['apInputText',inputSize]" 
     type="text" :modelValue="props.modelValue" 
-    @update:modelValue="handlerChange"
-    @blur="handlerBlur"
+    @update:modelValue="liveUpdateHandler"
+    @blur="updateHandler"
+    @keypress.enter="updateHandler"
+    @keypress.tab="updateHandler"
     :disabled="disabled"
   />
 </template>
@@ -42,20 +44,45 @@ const props = defineProps({
     type: String,
     required: false,
   },
+  hasToTrim: {
+    type: Boolean,
+    required: false,
+    default: false
+  },
+  min: {
+    type: Number,
+    required: false,
+    default: 0
+  },
+  max: {
+    type: Number,
+    required: false,
+    default: Infinity
+  },
 })
+
 let localValue = props.modelValue;
+let localValueIsUpdated = false;
+let lastSentLocalValue = props.modelValue;
 
 const emit = defineEmits<{
+  (e: 'live-update:modelValue', newValue: string): void
   (e: 'update:modelValue', newValue: string): void
-  (e: 'blur', newValue: string): void
 }>()
 
-const handlerBlur = () => {
-  emit('blur', localValue)
+const liveUpdateHandler = (newValue: string) => {
+  if (newValue.length >= props.min && newValue.length <= props.max) {
+    localValue = props.hasToTrim ? newValue.trim() : newValue;
+    localValueIsUpdated = true;
+    emit('live-update:modelValue', newValue);
+  }
 }
 
-const handlerChange = (newValue: string) => {
-  emit('update:modelValue', newValue)
-  localValue = newValue
+const updateHandler = () => {
+  if (localValueIsUpdated && (localValue !== lastSentLocalValue)) {
+    lastSentLocalValue = localValue;
+    localValueIsUpdated = false;
+    emit('update:modelValue', localValue);
+  }
 }
 </script>
