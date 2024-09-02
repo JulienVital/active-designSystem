@@ -1,11 +1,11 @@
 <template>
   <InputText 
-    :class="['apInputText',inputSize]" 
-    type="text" :modelValue="props.modelValue" 
-    @update:modelValue="liveUpdateHandler"
-    @blur="updateHandler"
-    @keypress.enter="updateHandler"
-    @keypress.tab="updateHandler"
+    :class="['apInputText', inputSize]" 
+    type="text" 
+    :modelValue="props.modelValue" 
+    @update:modelValue="handlerUpdate"
+    @blur="handlerBlur"
+    @keypress.enter="handlerStore"
     :disabled="disabled"
   />
 </template>
@@ -63,26 +63,34 @@ const props = defineProps({
 
 let localValue = props.modelValue;
 let localValueIsUpdated = false;
-let lastSentLocalValue = props.modelValue;
+let lastStoredLocalValue = props.modelValue;
 
 const emit = defineEmits<{
-  (e: 'live-update:modelValue', newValue: string): void
   (e: 'update:modelValue', newValue: string): void
+  (e: 'store:modelValue', newValue: string): void
+  (e: 'blur', newValue: string): void
 }>()
 
-const liveUpdateHandler = (newValue: string) => {
+// LIVE update
+const handlerUpdate = (newValue: string) => {
   if (newValue.length >= props.min && newValue.length <= props.max) {
     localValue = props.hasToTrim ? newValue.trim() : newValue;
     localValueIsUpdated = true;
-    emit('live-update:modelValue', newValue);
+    emit('update:modelValue', newValue);
   }
 }
 
-const updateHandler = () => {
-  if (localValueIsUpdated && (localValue !== lastSentLocalValue)) {
-    lastSentLocalValue = localValue;
+// update TO BE ALSO STORED IN HISTORY
+const handlerStore = () => {
+  if (localValueIsUpdated && (localValue !== lastStoredLocalValue)) {
+    lastStoredLocalValue = localValue;
     localValueIsUpdated = false;
-    emit('update:modelValue', localValue);
+    emit('store:modelValue', localValue);
   }
+}
+
+const handlerBlur = () => {
+  handlerStore();
+  emit('blur', localValue)
 }
 </script>
