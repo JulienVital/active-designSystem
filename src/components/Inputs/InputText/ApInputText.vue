@@ -14,10 +14,6 @@
 import { computed } from 'vue'
 import InputText from 'primevue/inputtext';
 
-const inputSize = computed(() => ({
-  [`input--${props.size}`]: true
-}))
-
 const props = defineProps({
   /**
    * Actual value to display
@@ -93,4 +89,8 @@ const handlerBlur = () => {
   handlerStore();
   emit('blur', localValue)
 }
+
+const inputSize = computed(() => ({
+  [`input--${props.size}`]: true
+}))
 </script>

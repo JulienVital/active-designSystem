@@ -1,8 +1,10 @@
 <template>
-  <InputNumber  
+  <InputNumber 
+    :class="['apInputNumber', inputSize]"  
     :modelValue="props.modelValue"  
-    @input="handlerChange"
-    :class="['apInputNumber',inputSize]" 
+    @input="handlerUpdate"
+    @blur="handlerBlur"
+    @keypress.enter="handlerStore"
     :step="props.step" 
     :prefix="props.prefix" 
     :suffix="props.suffix"
@@ -14,9 +16,8 @@
 </template>
 
 <script lang="ts" setup>
-import InputNumber from 'primevue/inputnumber';
-
 import { computed } from 'vue'
+import InputNumber from 'primevue/inputnumber';
 
 const props = defineProps({
   modelValue: {
@@ -68,15 +69,40 @@ const props = defineProps({
   },
 })
 
+let localValue = props.modelValue;
+let localValueIsUpdated = false;
+let lastStoredLocalValue = props.modelValue;
+
 const emit = defineEmits<{
-  (e: 'update:modelValue', newValue: number): void
+  (e: 'update:modelValue', newValue: any): void
+  (e: 'store:modelValue', newValue: any): void
+  (e: 'blur', newValue: any): void
 }>()
+
+// LIVE update
+const handlerUpdate = (event: any) => {
+  if (event.value && !isNaN(event.value)) {
+    localValue = event.value;
+    localValueIsUpdated = true;
+    emit('update:modelValue', event.value)
+  }
+}
+
+// update TO BE ALSO STORED IN HISTORY
+const handlerStore = () => {
+  if (localValueIsUpdated && (localValue !== lastStoredLocalValue)) {
+    lastStoredLocalValue = localValue;
+    localValueIsUpdated = false;
+    emit('store:modelValue', localValue);
+  }
+}
+
+const handlerBlur = () => {
+  handlerStore();
+  emit('blur', localValue)
+}
 
 const inputSize = computed(() => ({
   [`input--${props.size}`]: true
 }))
-
-const handlerChange = (event: any) => {
-  emit('update:modelValue', event.value)
-}
 </script>
