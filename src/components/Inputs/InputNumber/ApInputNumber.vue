@@ -57,10 +57,12 @@ const props = defineProps({
   min: {
     type: Number,
     required: false,
+    default: -Infinity
   },
   max: {
     type: Number,
     required: false,
+    default: Infinity
   },
   inputId: {
     /* useful to give an id to the input node to be focus when clicking on the label */
@@ -81,7 +83,10 @@ const emit = defineEmits<{
 
 // LIVE update
 const handlerUpdate = (event: any) => {
-  if (event.value && !isNaN(event.value)) {
+  if (event.value !== null
+    && !isNaN(event.value)
+    && event.value >= props.min
+    && event.value <= props.max) {
     localValue = event.value;
     localValueIsUpdated = true;
     emit('update:modelValue', event.value)
