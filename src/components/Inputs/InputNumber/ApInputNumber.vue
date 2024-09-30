@@ -1,6 +1,6 @@
 <template>
   <InputNumber 
-    :class="['apInputNumber', inputSize]"  
+    :class="['apInputNumber', inputSize, disabled? 'disabledStyle' : '']"  
     :modelValue="props.modelValue"  
     @input="handlerUpdate"
     @blur="handlerBlur"
@@ -83,6 +83,7 @@ const emit = defineEmits<{
 
 // LIVE update
 const handlerUpdate = (event: any) => {
+  //console.log("handlerUpdate:", localValue, event.value)
   if (event.value !== null
     && !isNaN(event.value)
     && event.value >= props.min
@@ -95,6 +96,7 @@ const handlerUpdate = (event: any) => {
 
 // update TO BE ALSO STORED IN HISTORY
 const handlerStore = () => {
+  //console.log("handlerStore:", lastStoredLocalValue, localValue)
   if (localValueIsUpdated && (localValue !== lastStoredLocalValue)) {
     lastStoredLocalValue = localValue;
     localValueIsUpdated = false;
