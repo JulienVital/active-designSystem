@@ -1,6 +1,6 @@
 <template>
   <InputNumber 
-    :class="['apInputNumber', inputSize, disabled? 'disabledStyle' : '']"  
+    :class="['apInputNumber', inputSize, (disable||disabled)? 'disabledStyle' : '']"  
     :modelValue="props.modelValue"  
     @input="handlerUpdate"
     @blur="handlerBlur"

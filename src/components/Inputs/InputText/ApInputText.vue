@@ -1,6 +1,6 @@
 <template>
   <InputText 
-    :class="['apInputText', inputSize]" 
+    :class="['apInputText', inputSize, (disable||disabled)? 'disabledStyle' : '']" 
     type="text" 
     :modelValue="props.modelValue" 
     @update:modelValue="handlerUpdate"
@@ -29,6 +29,11 @@ const props = defineProps({
     },
     required: false,
     default: 'medium'
+  },
+  disable: {
+    type: Boolean,
+    required: false,
+    default: false
   },
   disabled: {
     type: Boolean,
