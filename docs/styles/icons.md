@@ -113,6 +113,7 @@ const iconsListWf = [
 "ap-drag_indicator",
 "ap-remove",
 "ap-visibility_off",
+"ap-shadow",
 ];
  
 const iconsList = [

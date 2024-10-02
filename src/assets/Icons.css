@@ -370,3 +370,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-visibility_off:before {
   content: '\e8f5';
 }
+.ap-shadow:before {
+  content: '\e9df';
+}
