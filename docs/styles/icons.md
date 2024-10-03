@@ -114,6 +114,11 @@ const iconsListWf = [
 "ap-remove",
 "ap-visibility_off",
 "ap-shadow",
+"ap-one_page",
+"ap-two_pages",
+"ap-document_scanner",
+"ap-auto_stories",
+"ap-cloud_upload",
 ];
  
 const iconsList = [

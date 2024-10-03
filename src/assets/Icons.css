@@ -373,3 +373,18 @@ base material icons https://github.com/google/material-design-icons
 .ap-shadow:before {
   content: '\e9df';
 }
+.ap-one_page:before {
+  content: '\e032';
+}
+.ap-two_pages:before {
+  content: '\f51f';
+}
+.ap-document_scanner:before {
+  content: '\e5fa';
+}
+.ap-auto_stories:before {
+  content: '\e666';
+}
+.ap-cloud_upload:before {
+  content: '\e2c3';
+}
