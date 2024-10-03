@@ -119,8 +119,12 @@ const iconsListWf = [
 "ap-document_scanner",
 "ap-auto_stories",
 "ap-cloud_upload",
+"ap-edit_note:before",
+"ap-frame_reload",
+"ap-autorenew",
+"ap-history"
 ];
- 
+
 const iconsList = [
     "ap-trash",
     "ap-update",

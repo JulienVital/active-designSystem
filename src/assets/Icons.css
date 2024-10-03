@@ -29,18 +29,15 @@ base material icons https://github.com/google/material-design-icons
 .ap-trash:before {
   content: '\e872';
 }
-
 .ap-update:before {
   content: '\e923';
 }
 .ap-edit:before {
   content: '\e3c9';
 }
-
 .ap-palet:before {
   content: '\e40a';
 }
-
 .ap-zoom-in:before {
   content: '\e8ff';
 }
@@ -53,7 +50,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-zoom-out2:before {
   content: '\e5e3';
 }
-
 .ap-shuffle:before {
   content: '\e043';
 }
@@ -106,7 +102,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-align-horizontal-center:before {
   content: '\e00f';
 }
-
 .ap-chevron-bottom:before {
   content: '\e5cf';
 }
@@ -134,7 +129,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-underlined:before {
   content: '\e249';
 }
-
 .ap-close:before {
   content: '\e5cd';
 }
@@ -171,7 +165,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-logo:before {
   content: '\e848';
 }
-
 .ap-scale:before {
   content: '\e5e4';
 }
@@ -387,4 +380,19 @@ base material icons https://github.com/google/material-design-icons
 }
 .ap-cloud_upload:before {
   content: '\e2c3';
+}
+.ap-edit_note:before {
+  content: '\e745';
+}
+.ap-frame_reload:before {
+  content: '\f771';
+}
+.ap-reset_shutter:before {
+  content: '\f47d';
+}
+.ap-autorenew:before {
+  content: '\e863';
+}
+.ap-history:before {
+  content: '\e8b5';
 }
