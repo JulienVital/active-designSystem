@@ -414,3 +414,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-design_services:before {
   content: '\f10a';
 }
+.ap-drag_handle:before {
+  content: '\e25d';
+}

@@ -129,7 +129,8 @@ const iconsListWf = [
 "ap-picture_in_picture",
 "ap-text_fields",
 "ap-view_list",
-"ap-design_services"
+"ap-design_services",
+"ap-drag_handle"
 ];
 
 const iconsList = [
