@@ -119,10 +119,17 @@ const iconsListWf = [
 "ap-document_scanner",
 "ap-auto_stories",
 "ap-cloud_upload",
-"ap-edit_note:before",
+"ap-edit_note",
 "ap-frame_reload",
 "ap-autorenew",
-"ap-history"
+"ap-history",
+"ap-brand_family",
+"ap-labs",
+"ap-experiment",
+"ap-picture_in_picture",
+"ap-text_fields",
+"ap-view_list",
+"ap-design_services"
 ];
 
 const iconsList = [

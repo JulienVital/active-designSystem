@@ -387,12 +387,30 @@ base material icons https://github.com/google/material-design-icons
 .ap-frame_reload:before {
   content: '\f771';
 }
-.ap-reset_shutter:before {
-  content: '\f47d';
-}
 .ap-autorenew:before {
   content: '\e863';
 }
 .ap-history:before {
   content: '\e8b5';
+}
+.ap-brand_family:before {
+  content: '\f4f1';
+}
+.ap-labs:before {
+  content: '\e105';
+}
+.ap-experiment:before {
+  content: '\e686';
+}
+.ap-picture_in_picture:before {
+  content: '\e8aa';
+}
+.ap-text_fields:before {
+  content: '\e262';
+}
+.ap-view_list:before {
+  content: '\e8ef';
+}
+.ap-design_services:before {
+  content: '\f10a';
 }
