@@ -212,6 +212,13 @@ const iconsList = [
     "ap-cotcotcot",
     "ap-stop",
     "ap-stop2",
-    "ap-folder_open"
+    "ap-folder_open",
+    "ap-home2",
+    "ap-history2",
+    "ap-undo",
+    "ap-redo",
+    "ap-more_horiz",
+    "ap-list2",
+    "ap-table2"
     ];
 </script>

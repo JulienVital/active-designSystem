@@ -3,10 +3,10 @@
 </template>
 
 <script setup lang="ts">
-import Button from 'primevue/button';
-import { computed } from 'vue';
-const props = defineProps({
+import Button from 'primevue/button'
+import { computed } from 'vue'
 
+const props = defineProps({
   label:  {
     type: String,
     required: true
@@ -15,8 +15,8 @@ const props = defineProps({
     type: String,
     default: 'default',
   },
-
 })
+
 const classStyle = computed(() => {
   switch (props.variant) {
     case 'disable':
@@ -27,7 +27,6 @@ const classStyle = computed(() => {
       return 'secondary'
   }
   return 'default';
-
 })
 </script>
 

@@ -417,3 +417,24 @@ base material icons https://github.com/google/material-design-icons
 .ap-drag_handle:before {
   content: '\e25d';
 }
+.ap-home2:before {
+  content: '\e88a';
+}
+.ap-history2:before {
+  content: '\e889';
+}
+.ap-undo:before {
+  content: '\e166';
+}
+.ap-redo:before {
+  content: '\e15a';
+}
+.ap-more_horiz:before {
+  content: '\e5d3';
+}
+.ap-list2:before {
+  content: '\e896';
+}
+.ap-table2:before {
+  content: '\f191';
+}
