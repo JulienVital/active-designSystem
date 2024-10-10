@@ -369,7 +369,7 @@ base material icons https://github.com/google/material-design-icons
 .ap-one_page:before {
   content: '\e032';
 }
-.ap-two_pages:before {
+.ap-two_pager:before {
   content: '\f51f';
 }
 .ap-document_scanner:before {
@@ -437,4 +437,13 @@ base material icons https://github.com/google/material-design-icons
 }
 .ap-table2:before {
   content: '\f191';
+}
+.ap-grid_view:before {
+  content: '\e9b0';
+}
+.ap-description:before {
+  content: '\e873';
+}
+.ap-draft:before {
+  content: '\e66d';
 }

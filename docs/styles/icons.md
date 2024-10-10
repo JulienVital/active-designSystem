@@ -115,7 +115,7 @@ const iconsListWf = [
 "ap-visibility_off",
 "ap-shadow",
 "ap-one_page",
-"ap-two_pages",
+"ap-two_pager",
 "ap-document_scanner",
 "ap-auto_stories",
 "ap-cloud_upload",
@@ -130,7 +130,17 @@ const iconsListWf = [
 "ap-text_fields",
 "ap-view_list",
 "ap-design_services",
-"ap-drag_handle"
+"ap-drag_handle",
+"ap-home2",
+"ap-history2",
+"ap-undo",
+"ap-redo",
+"ap-more_horiz",
+"ap-list2",
+"ap-table2",
+"ap-grid_view",
+"ap-description",
+"ap-draft"
 ];
 
 const iconsList = [
@@ -212,13 +222,6 @@ const iconsList = [
     "ap-cotcotcot",
     "ap-stop",
     "ap-stop2",
-    "ap-folder_open",
-    "ap-home2",
-    "ap-history2",
-    "ap-undo",
-    "ap-redo",
-    "ap-more_horiz",
-    "ap-list2",
-    "ap-table2"
-    ];
+    "ap-folder_open"
+];
 </script>
