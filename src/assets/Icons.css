@@ -447,3 +447,15 @@ base material icons https://github.com/google/material-design-icons
 .ap-draft:before {
   content: '\e66d';
 }
+.ap-import_contacts:before {
+  content: '\e0e0';
+}
+.ap-more:before {
+  content: '\e619';
+}
+.ap-move_item:before {
+  content: '\f1ff';
+}
+.ap-line_style:before {
+  content: '\e919';
+}

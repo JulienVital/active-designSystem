@@ -1,5 +1,3 @@
-
-
 # Icons
 
 Provided by material icon
@@ -7,6 +5,7 @@ Provided by material icon
 ## How to use
 
 You must add 'ap-icon' and 'ap-*' css classes to your component
+
 ```html
 <i class="ap-icon ap-stacks" :class="icon" />
 ```
@@ -140,7 +139,11 @@ const iconsListWf = [
 "ap-table2",
 "ap-grid_view",
 "ap-description",
-"ap-draft"
+"ap-draft",
+"ap-import_contacts",
+"ap-more",
+"ap-move_item",
+"ap-line_style"
 ];
 
 const iconsList = [
