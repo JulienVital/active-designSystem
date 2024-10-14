@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed, onUpdated } from 'vue'
 import InputNumber from 'primevue/inputnumber';
 
 const props = defineProps({
@@ -83,7 +83,7 @@ const emit = defineEmits<{
 
 // LIVE update
 const handlerUpdate = (event: any) => {
-  //console.log("handlerUpdate:", localValue, event.value)
+  console.debug("handlerUpdate:", localValue, event.value)
   if (event.value !== null
     && !isNaN(event.value)
     && event.value >= props.min
@@ -96,13 +96,21 @@ const handlerUpdate = (event: any) => {
 
 // update TO BE ALSO STORED IN HISTORY
 const handlerStore = () => {
-  //console.log("handlerStore:", lastStoredLocalValue, localValue)
+  console.debug("handlerStore:", lastStoredLocalValue, localValue)
   if (localValueIsUpdated && (localValue !== lastStoredLocalValue)) {
     lastStoredLocalValue = localValue;
     localValueIsUpdated = false;
     emit('store:modelValue', localValue);
   }
 }
+
+// IMPORTANT to reset if props change (new selection, interactive action...)
+onUpdated(() => {
+  console.debug("onUpdated", props.modelValue)
+  localValue = props.modelValue
+  localValueIsUpdated = false;
+  lastStoredLocalValue = props.modelValue
+})
 
 const handlerBlur = () => {
   handlerStore();

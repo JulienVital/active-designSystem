@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onUpdated } from 'vue'
 import InputText from 'primevue/inputtext';
 
 const props = defineProps({
@@ -89,6 +89,14 @@ const handlerStore = () => {
     emit('store:modelValue', localValue);
   }
 }
+
+// IMPORTANT to reset if props change (new selection, interactive action...)
+onUpdated(() => {
+  console.debug("onUpdated", props.modelValue)
+  localValue = props.modelValue
+  localValueIsUpdated = false;
+  lastStoredLocalValue = props.modelValue
+})
 
 const handlerBlur = () => {
   handlerStore();
