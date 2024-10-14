@@ -21,6 +21,7 @@ import AccordionTab from 'primevue/accordiontab'
 import ApSelectButton from './Buttons/ApSelectButton.vue'
 import TieredMenu from 'primevue/tieredmenu'
 import Badge from 'primevue/badge'
+import Dialog from 'primevue/dialog'
 
 export {
   Accordion as ApAccordion,
@@ -45,5 +46,6 @@ export {
   ApTheme,
   ApSelectButton,
   TieredMenu as ApTieredMenu,
-  Badge as ApBadge
+  Badge as ApBadge,
+  Dialog as ApDialog
 }
