@@ -459,3 +459,9 @@ base material icons https://github.com/google/material-design-icons
 .ap-line_style:before {
   content: '\e919';
 }
+.ap-note_add:before {
+  content: '\e89c';
+}
+.ap-history_edu:before {
+  content: '\ea3e';
+}

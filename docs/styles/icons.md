@@ -143,7 +143,9 @@ const iconsListWf = [
 "ap-import_contacts",
 "ap-more",
 "ap-move_item",
-"ap-line_style"
+"ap-line_style",
+"ap-note_add",
+"ap-history_edu"
 ];
 
 const iconsList = [
