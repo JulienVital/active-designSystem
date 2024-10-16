@@ -92,7 +92,7 @@ const handlerStore = () => {
 
 // IMPORTANT to reset if props change (new selection, interactive action...)
 onUpdated(() => {
-  console.debug("onUpdated", props.modelValue)
+  //console.debug("onUpdated", props.modelValue)
   localValue = props.modelValue
   localValueIsUpdated = false;
   lastStoredLocalValue = props.modelValue
