@@ -1,5 +1,3 @@
-
-
 # Icons
 
 Provided by material icon
@@ -7,6 +5,7 @@ Provided by material icon
 ## How to use
 
 You must add 'ap-icon' and 'ap-*' css classes to your component
+
 ```html
 <i class="ap-icon ap-stacks" :class="icon" />
 ```
@@ -111,9 +110,44 @@ const iconsListWf = [
 "ap-left_panel_close",
 "ap-right_panel_close",
 "ap-drag_indicator",
-"ap-remove"
+"ap-remove",
+"ap-visibility_off",
+"ap-shadow",
+"ap-one_page",
+"ap-two_pager",
+"ap-document_scanner",
+"ap-auto_stories",
+"ap-cloud_upload",
+"ap-edit_note",
+"ap-frame_reload",
+"ap-autorenew",
+"ap-history",
+"ap-brand_family",
+"ap-labs",
+"ap-experiment",
+"ap-picture_in_picture",
+"ap-text_fields",
+"ap-view_list",
+"ap-design_services",
+"ap-drag_handle",
+"ap-home2",
+"ap-history2",
+"ap-undo",
+"ap-redo",
+"ap-more_horiz",
+"ap-list2",
+"ap-table2",
+"ap-grid_view",
+"ap-description",
+"ap-draft",
+"ap-import_contacts",
+"ap-more",
+"ap-move_item",
+"ap-line_style",
+"ap-note_add",
+"ap-history_edu"
 ];
- 
+
 const iconsList = [
     "ap-trash",
     "ap-update",
@@ -194,5 +228,5 @@ const iconsList = [
     "ap-stop",
     "ap-stop2",
     "ap-folder_open"
-    ];
+];
 </script>

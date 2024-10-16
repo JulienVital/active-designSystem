@@ -1,8 +1,10 @@
 <template>
-  <InputNumber  
+  <InputNumber 
+    :class="['apInputNumber', inputSize, (disable||disabled)? 'disabledStyle' : '']"  
     :modelValue="props.modelValue"  
-    @input="handlerChange"
-    :class="['apInputNumber',inputSize]" 
+    @input="handlerUpdate"
+    @blur="handlerBlur"
+    @keypress.enter="handlerStore"
     :step="props.step" 
     :prefix="props.prefix" 
     :suffix="props.suffix"
@@ -14,9 +16,8 @@
 </template>
 
 <script lang="ts" setup>
+import { computed, onUpdated } from 'vue'
 import InputNumber from 'primevue/inputnumber';
-
-import { computed } from 'vue'
 
 const props = defineProps({
   modelValue: {
@@ -56,10 +57,12 @@ const props = defineProps({
   min: {
     type: Number,
     required: false,
+    default: -Infinity
   },
   max: {
     type: Number,
     required: false,
+    default: Infinity
   },
   inputId: {
     /* useful to give an id to the input node to be focus when clicking on the label */
@@ -68,15 +71,53 @@ const props = defineProps({
   },
 })
 
+let localValue = props.modelValue;
+let localValueIsUpdated = false;
+let lastStoredLocalValue = props.modelValue;
+
 const emit = defineEmits<{
-  (e: 'update:modelValue', newValue: number): void
+  (e: 'update:modelValue', newValue: any): void
+  (e: 'store:modelValue', newValue: any): void
+  (e: 'blur', newValue: any): void
 }>()
+
+// LIVE update
+const handlerUpdate = (event: any) => {
+  //console.debug("handlerUpdate:", localValue, event.value)
+  if (event.value !== null
+    && !isNaN(event.value)
+    && event.value >= props.min
+    && event.value <= props.max) {
+    localValue = event.value;
+    localValueIsUpdated = true;
+    emit('update:modelValue', event.value)
+  }
+}
+
+// update TO BE ALSO STORED IN HISTORY
+const handlerStore = () => {
+  //console.debug("handlerStore:", lastStoredLocalValue, localValue)
+  if (localValueIsUpdated && (localValue !== lastStoredLocalValue)) {
+    lastStoredLocalValue = localValue;
+    localValueIsUpdated = false;
+    emit('store:modelValue', localValue);
+  }
+}
+
+// IMPORTANT to reset if props change (new selection, interactive action...)
+onUpdated(() => {
+  //console.debug("onUpdated", props.modelValue)
+  localValue = props.modelValue
+  localValueIsUpdated = false;
+  lastStoredLocalValue = props.modelValue
+})
+
+const handlerBlur = () => {
+  handlerStore();
+  emit('blur', localValue)
+}
 
 const inputSize = computed(() => ({
   [`input--${props.size}`]: true
 }))
-
-const handlerChange = (event: any) => {
-  emit('update:modelValue', event.value)
-}
 </script>

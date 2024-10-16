@@ -6,8 +6,6 @@
 <script setup lang="ts">
 import InputSwitch from 'primevue/inputswitch';
 
-
-
 const props = defineProps({
   /**
    * Actual value to display

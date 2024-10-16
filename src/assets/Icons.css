@@ -29,18 +29,15 @@ base material icons https://github.com/google/material-design-icons
 .ap-trash:before {
   content: '\e872';
 }
-
 .ap-update:before {
   content: '\e923';
 }
 .ap-edit:before {
   content: '\e3c9';
 }
-
 .ap-palet:before {
   content: '\e40a';
 }
-
 .ap-zoom-in:before {
   content: '\e8ff';
 }
@@ -53,7 +50,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-zoom-out2:before {
   content: '\e5e3';
 }
-
 .ap-shuffle:before {
   content: '\e043';
 }
@@ -106,7 +102,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-align-horizontal-center:before {
   content: '\e00f';
 }
-
 .ap-chevron-bottom:before {
   content: '\e5cf';
 }
@@ -134,7 +129,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-underlined:before {
   content: '\e249';
 }
-
 .ap-close:before {
   content: '\e5cd';
 }
@@ -171,7 +165,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-logo:before {
   content: '\e848';
 }
-
 .ap-scale:before {
   content: '\e5e4';
 }
@@ -364,6 +357,111 @@ base material icons https://github.com/google/material-design-icons
 .ap-remove:before {
   content: '\e15b';
 }
-.ap-folder_open:before{
+.ap-folder_open:before {
   content: '\e2c8';
+}
+.ap-visibility_off:before {
+  content: '\e8f5';
+}
+.ap-shadow:before {
+  content: '\e9df';
+}
+.ap-one_page:before {
+  content: '\e032';
+}
+.ap-two_pager:before {
+  content: '\f51f';
+}
+.ap-document_scanner:before {
+  content: '\e5fa';
+}
+.ap-auto_stories:before {
+  content: '\e666';
+}
+.ap-cloud_upload:before {
+  content: '\e2c3';
+}
+.ap-edit_note:before {
+  content: '\e745';
+}
+.ap-frame_reload:before {
+  content: '\f771';
+}
+.ap-autorenew:before {
+  content: '\e863';
+}
+.ap-history:before {
+  content: '\e8b5';
+}
+.ap-brand_family:before {
+  content: '\f4f1';
+}
+.ap-labs:before {
+  content: '\e105';
+}
+.ap-experiment:before {
+  content: '\e686';
+}
+.ap-picture_in_picture:before {
+  content: '\e8aa';
+}
+.ap-text_fields:before {
+  content: '\e262';
+}
+.ap-view_list:before {
+  content: '\e8ef';
+}
+.ap-design_services:before {
+  content: '\f10a';
+}
+.ap-drag_handle:before {
+  content: '\e25d';
+}
+.ap-home2:before {
+  content: '\e88a';
+}
+.ap-history2:before {
+  content: '\e889';
+}
+.ap-undo:before {
+  content: '\e166';
+}
+.ap-redo:before {
+  content: '\e15a';
+}
+.ap-more_horiz:before {
+  content: '\e5d3';
+}
+.ap-list2:before {
+  content: '\e896';
+}
+.ap-table2:before {
+  content: '\f191';
+}
+.ap-grid_view:before {
+  content: '\e9b0';
+}
+.ap-description:before {
+  content: '\e873';
+}
+.ap-draft:before {
+  content: '\e66d';
+}
+.ap-import_contacts:before {
+  content: '\e0e0';
+}
+.ap-more:before {
+  content: '\e619';
+}
+.ap-move_item:before {
+  content: '\f1ff';
+}
+.ap-line_style:before {
+  content: '\e919';
+}
+.ap-note_add:before {
+  content: '\e89c';
+}
+.ap-history_edu:before {
+  content: '\ea3e';
 }

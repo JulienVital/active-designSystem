@@ -43,39 +43,48 @@ defineExpose({
   show
 })
 </script>
+
 <style>
-.p-contextmenu, .p-submenu-list{
+.p-contextmenu, .p-tieredmenu {
   padding: var(--gutter);
   border-radius: var(--radius);
   background-color: var(--background-main);
-  min-width: 150px;
+  min-width: 200px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
   color: var(--color-text);
 
-}
-.p-menuitem-content{
-  min-width: 150px;
-}
-.p-menuitem-content:hover{
-  border-radius: var( --radius);
-  background-color: var(--background-card);
-  min-width: 150px;
-}
-.p-menuitem-text{
-  font-family: Poppins;
-  font-size: var( --text-sm);
-  font-weight: 600;
-}
-.p-menuitem-link{
-  padding: 8px 6px;
-}
-.p-menuitem-icon{
-  margin-right: var(--gutter-double);
-}
-.p-menuitem-red{
-  color: var(--color-red);
-}
-.p-contextmenu-root-list:focus-visible{
-  outline: none;
+  .p-submenu-list{
+    padding: var(--gutter);
+    border-radius: var(--radius);
+    background-color: var(--background-main);
+    min-width: 200px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    color: var(--color-text);
+  }
+  .p-menuitem-content{
+    min-width: 200px;
+  }
+  .p-menuitem-content:hover{
+    border-radius: var( --radius);
+    background-color: var(--background-card);
+    min-width: 200px;
+  }
+  .p-menuitem-text{
+    font-family: Poppins;
+    font-size: var( --text-sm);
+    font-weight: 600;
+  }
+  .p-menuitem-link{
+    padding: 8px 6px;
+  }
+  .p-menuitem-icon{
+    margin-right: var(--gutter-double);
+  }
+  .p-menuitem-red{
+    color: var(--color-red);
+  }
+  .p-contextmenu-root-list:focus-visible{
+    outline: none;
+  }
 }
 </style>

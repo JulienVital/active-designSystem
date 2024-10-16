@@ -14,11 +14,14 @@ import ApInputSwitch from './Inputs/InputSwitch/ApInputSwitch.vue'
 import ApSearch from './Inputs/Search/ApSearch.vue'
 import ApTag from './Miscs/Tag/apTag.vue'
 import TabPanel from 'primevue/tabpanel'
-import ApToast from '../composables/Toast/ApToast.vue';
-import ApTheme from './Miscs/ApTheme/ApTheme.vue';
-import Accordion from 'primevue/accordion';
-import AccordionTab from 'primevue/accordiontab';
-import ApSelectButton from './Buttons/ApSelectButton.vue';
+import ApToast from '../composables/Toast/ApToast.vue'
+import ApTheme from './Miscs/ApTheme/ApTheme.vue'
+import Accordion from 'primevue/accordion'
+import AccordionTab from 'primevue/accordiontab'
+import ApSelectButton from './Buttons/ApSelectButton.vue'
+import TieredMenu from 'primevue/tieredmenu'
+import Badge from 'primevue/badge'
+import Dialog from 'primevue/dialog'
 
 export {
   Accordion as ApAccordion,
@@ -41,5 +44,8 @@ export {
   ApToast,
   ApButton,
   ApTheme,
-  ApSelectButton
+  ApSelectButton,
+  TieredMenu as ApTieredMenu,
+  Badge as ApBadge,
+  Dialog as ApDialog
 }
