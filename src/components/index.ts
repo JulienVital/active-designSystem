@@ -22,6 +22,10 @@ import ApSelectButton from './Buttons/ApSelectButton.vue'
 import TieredMenu from 'primevue/tieredmenu'
 import Badge from 'primevue/badge'
 import Dialog from 'primevue/dialog'
+import OverlayPanel from 'primevue/overlaypanel'
+import ScrollPanel from 'primevue/scrollpanel'
+import Textarea from 'primevue/textarea'
+import Dropdown from 'primevue/dropdown'
 
 export {
   Accordion as ApAccordion,
@@ -47,5 +51,9 @@ export {
   ApSelectButton,
   TieredMenu as ApTieredMenu,
   Badge as ApBadge,
-  Dialog as ApDialog
+  Dialog as ApDialog,
+  OverlayPanel as ApOverlayPanel,
+  ScrollPanel as ApScrollPanel,
+  Textarea as ApTextarea,
+  Dropdown as ApDropdown,
 }
