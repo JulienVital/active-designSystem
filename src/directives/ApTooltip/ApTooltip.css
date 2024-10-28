@@ -5,9 +5,13 @@
 
   .p-tooltip-text {
     background-color: var(--primary-color);
-    font-size: var(--text-xs);
-    padding: var(--sizePoint);
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    padding: 6px 8px;
     position: relative;
+    text-align: center;
+    border-radius: 4px;
   }
   .p-tooltip-arrow {
     height: 0px;
@@ -26,6 +30,11 @@
 }
 
 .p-tooltip.p-tooltip-top {
+  .p-tooltip-text {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: calc(var(--tooltip-arrow-size) * 1);
+  }
   .p-tooltip-arrow {
     border-left: var(--tooltip-arrow-half-size) solid transparent;
     border-right: var(--tooltip-arrow-half-size) solid transparent;
@@ -37,7 +46,7 @@
 .p-tooltip.p-tooltip-right {
   .p-tooltip-text {
     left: var(--tooltip-arrow-size);
-    top: calc(var(--tooltip-arrow-size) * -1);
+    transform: translateY(-60%);
   }
   .p-tooltip-arrow {
     border-top: var(--tooltip-arrow-half-size) solid transparent;
@@ -49,7 +58,7 @@
 
 .p-tooltip.p-tooltip-left {
   .p-tooltip-text {
-    top: calc(var(--tooltip-arrow-size) * -1);
+    transform: translateY(-60%);
   }
   .p-tooltip-arrow {
     border-top: var(--tooltip-arrow-half-size) solid transparent;
