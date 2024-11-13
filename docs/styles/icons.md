@@ -145,7 +145,8 @@ const iconsListWf = [
 "ap-move_item",
 "ap-line_style",
 "ap-note_add",
-"ap-history_edu"
+"ap-history_edu",
+"ap_database"
 ];
 
 const iconsList = [

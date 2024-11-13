@@ -465,3 +465,6 @@ base material icons https://github.com/google/material-design-icons
 .ap-history_edu:before {
   content: '\ea3e';
 }
+.ap-database:before {
+  content: '\f20e';
+}
