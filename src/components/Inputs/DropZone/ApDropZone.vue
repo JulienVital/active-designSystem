@@ -19,7 +19,7 @@
         @change="onInput"
       />
     </label>
-    <span class="dropzone--formats">{{ props.formatLabel }}: {{ props.formats.join(', ') }}</span>
+    <span class="dropzone--formats">{{ props.formatLabel }} {{ props.formats.join(', ') }}</span>
     <div class="wrapperList">
       <ul v-if="validDroppedFile.length > 0">
         <li
