@@ -19,7 +19,7 @@
         @change="onInput"
       />
     </label>
-    <span class="dropzone--formats">Supported formats : {{ props.formats.join(', ') }}</span>
+    <span class="dropzone--formats">{{ props.formatLabel }}: {{ props.formats.join(', ') }}</span>
     <div class="wrapperList">
       <ul v-if="validDroppedFile.length > 0">
         <li
@@ -45,6 +45,7 @@
 </template>
 <script setup lang="ts">
 import { ref, type PropType, type Ref } from 'vue'
+
 // @ts-ignore
 const props = defineProps({
   title: {
@@ -61,6 +62,11 @@ const props = defineProps({
     default: () => ['*'],
     required: false,
     type: Array as PropType<Array<String>>
+  },
+  formatLabel: {
+    type: String,
+    require: false,
+    default: "Supported formats :"
   }
 })
 const invalidDroppedFile: Ref<File[]> = ref([])
@@ -104,15 +110,15 @@ const onDrop = (event: DragEvent) => {
   }
 }
 </script>
+
 <style scoped>
 .dropzoneIcon{
   color: v-bind(colorZone);
   font-size: var(--icon-xl);
 }
 </style>
+
 <style>
-
-
 ul {
   list-style-type: none;
   padding: 0;
